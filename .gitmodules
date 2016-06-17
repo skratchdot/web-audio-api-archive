@@ -1,0 +1,3 @@
+[submodule "web-audio-api"]
+	path = web-audio-api
+	url = git@github.com:WebAudio/web-audio-api.git
