@@ -9,7 +9,6 @@ class Header extends Component {
     return this.context.router.isActive(pathname) ? 'active' : '';
   }
   render() {
-    const { counter } = this.props;
     return (
       <header>
         <Row className="header">
@@ -33,24 +32,11 @@ class Header extends Component {
                 className={this.isLinkActive(`/${packageInfo.name}/about`)}>
                 <Link to={`/${packageInfo.name}/about`}>About</Link>
               </li>
-              <li key="counter"
-                className={this.isLinkActive(`/${packageInfo.name}/counter`)}>
-                <Link to={`/${packageInfo.name}/counter`}>Counter</Link>
-              </li>
-              <li key="echo"
-                className={this.isLinkActive(
-                  `/${packageInfo.name}/echo/${this.props.pageParams.echo}`)}>
-                <Link to={`/${packageInfo.name}/echo`}>Echo</Link>
+              <li key="view"
+                className={this.isLinkActive(`/${packageInfo.name}/view`)}>
+                <Link to={`/${packageInfo.name}/view`}>View</Link>
               </li>
             </Nav>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12}><div className="main-seperator"></div></Col>
-        </Row>
-        <Row>
-          <Col md={12}>
-            Redux Counter: {counter}
           </Col>
         </Row>
         <Row>
@@ -65,8 +51,4 @@ Header.contextTypes = {
   router: React.PropTypes.object
 };
 
-export default connect(function (state) {
-  return {
-    counter: state.counter
-  };
-})(Header);
+export default connect()(Header);

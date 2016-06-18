@@ -52,6 +52,7 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
     "history": "^2.0.2",
+    "immutable": "^3.8.1",
     "isparta": "^4.0.0",
     "json-loader": "^0.5.4",
     "less": "^2.6.1",

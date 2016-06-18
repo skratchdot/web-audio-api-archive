@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import counter from './counter';
+import commits from './commits';
 import { routerReducer } from 'react-router-redux';
+import selectedCommit from './selectedCommit';
 
 const rootReducer = combineReducers({
-  counter,
-  routing: routerReducer
+  commits,
+  routing: routerReducer,
+  selectedCommit
 });
 
 export default rootReducer;

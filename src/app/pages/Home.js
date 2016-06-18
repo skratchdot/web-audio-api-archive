@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
+import CommitRange from '../components/CommitRange';
 import { Jumbotron } from 'react-bootstrap';
 import { connect } from 'react-redux';
 
 class Home extends Component {
   render() {
+    const { commits, selectedCommit } = this.props;
     return (
       <div>
+        <div>
+          count: {commits.count()}
+          / hash: {selectedCommit.get('hash')}
+          / time: {selectedCommit.get('time')}
+          / index: {commits.indexOf(selectedCommit)}
+        </div>
+        <CommitRange />
         <Jumbotron className="text-center">
           <h1 className="title">
             web-audio-api-archive
@@ -21,4 +30,9 @@ class Home extends Component {
   }
 }
 
-export default connect()(Home);
+export default connect((state) => {
+  return {
+    commits: state.commits,
+    selectedCommit: state.selectedCommit
+  };
+})(Home);
