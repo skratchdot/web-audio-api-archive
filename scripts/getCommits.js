@@ -1,22 +1,29 @@
 #!/usr/bin/env node
+const childProcess = require('child_process');
+const execSync = childProcess.execSync;
+const fs = require('fs');
+const gitDir = `${__dirname}/../web-audio-api/`;
 
-var childProcess = require('child_process');
-var execSync = childProcess.execSync;
-var fs = require('fs');
+const gitLog = function (format, path, max) {
+  return execSync(`git log --pretty=format:"${format}" -n ${max} ${path}`, {
+    cwd: gitDir
+  }).toString().trim();
+};
 
-var commitsAsText = execSync('git log --pretty=format:"%H,%ct" index.html', {
-  cwd: `${__dirname}/../web-audio-api/`
-}).toString();
+const commitsAsText = gitLog('%H,%ct', 'index.html', 10000);
 
-var commits = commitsAsText.split('\n').map((line) => {
-  var items = line.split(',');
-  return {
-    hash: items[0],
-    time: parseInt(items[1], 10)
-  };
+const commits = commitsAsText.split('\n').map((line) => {
+  const items = line.split(',');
+  const hash = items[0];
+  const time = parseInt(items[1], 10);
+  const name = gitLog('%cn', hash, 1);
+  const email = gitLog('%ce', hash, 1);
+  const subject = gitLog('%s', hash, 1);
+  const body = gitLog('%b', hash, 1);
+  return { hash, time, name, email, subject, body };
 });
 
-var commitsStringified = JSON.stringify(commits, null, '\t');
+const commitsStringified = JSON.stringify(commits, null, '\t');
 
 // write files
 fs.writeFileSync('./data/commits.txt', commitsAsText, 'utf-8');

@@ -1,2598 +1,5194 @@
 [
 	{
 		"hash": "74946c86efec6cf5e679c095d111b3d83bf28eae",
-		"time": 1465465600
+		"time": 1465465600,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Have the OscillatorNode.frequency nominal range to be [-nyquist, +nyquist].",
+		"body": "This fixe issue #813."
 	},
 	{
 		"hash": "e9e67c4c00cd12da1a983bd73b733a65531f6486",
-		"time": 1464962432
+		"time": 1464962432,
+		"name": "Mikhail Pozdnyakov",
+		"email": "mikhail.pozdnyakov@intel.com",
+		"subject": "Fix #830 by converting 'outputTimeStamp' attribute to method",
+		"body": "Whereas 'AudioContext.outputTimeStamp' attribute is returning a new object every time it should be converted to a method."
 	},
 	{
 		"hash": "67e53ef9b52c8e79464c4325e743a37fea52869b",
-		"time": 1464618659
+		"time": 1464618659,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix garbage introduced in previous commit.",
+		"body": ""
 	},
 	{
 		"hash": "d6430b09639a20e7e699eb839a174d1c86a16a2a",
-		"time": 1464618222
+		"time": 1464618222,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix MathJax",
+		"body": "https://lists.w3.org/Archives/Public/spec-prod/2016AprJun/0052.html tells us\nthat the behaviour has been inversed, we need to annotate the maths so that it\ndoes not get highlighted by hljs and then processed by MathJax that gets very\nconfused.\n\nAlso removed the deprecated \"highlight\" attribute from code examples and spec\nbloc."
 	},
 	{
 		"hash": "ee1090becbcc71ca21b08abeb5ad4b8061d65627",
-		"time": 1464366524
+		"time": 1464366524,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #821: specify behavior of setValueCurveAtTime",
+		"body": "setValueCurveAtTime is modified so that an implicit call to\nsetValueAtTime is made at the end of the curve duration.  This makes\nany following automation events start from the end of the\nsetValueCurveAtTime event with the last value of the curve.\n\nWithout this, a linearRamp following setValueCurve would replace\nsetValueCurve.  This is not the desired behavior."
 	},
 	{
 		"hash": "582d7f6a91f3d6168ac784655e62d1b5d2f5579b",
-		"time": 1464274533
+		"time": 1464274533,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #827 from WebAudio/826-orientationX",
+		"body": "Issue #826, fix markup so that the right text for `orientationX` appears"
 	},
 	{
 		"hash": "2677c099f51cd2babb7e7f2631178fbf822db5fa",
-		"time": 1464269287
+		"time": 1464269287,
+		"name": "Mikhail Pozdnyakov",
+		"email": "mikhail.pozdnyakov@intel.com",
+		"subject": "Fix #817 by moving outputTimeStamp and outputLatency to context",
+		"body": ""
 	},
 	{
 		"hash": "c8e48ab738e7d4aaad371ea1575f1c6487204fb0",
-		"time": 1464261710
+		"time": 1464261710,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #812 from rtoy/797-widen-audiobuffer-playbackrate",
+		"body": "Fix #797: Widen nominal range of playbackRate"
 	},
 	{
 		"hash": "54f48283082ca846f196b2d31da64fb47e08066e",
-		"time": 1464261684
+		"time": 1464261684,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #820 from rtoy/794-move-audio-context-options",
+		"body": "Fix #794: Move AudioContextOptions to AudioContext section"
 	},
 	{
 		"hash": "d37195daa36bd36221ab4f7ec063b551f6c9578a",
-		"time": 1464261645
+		"time": 1464261645,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #809 from rtoy/762-rename-audioparam-min/max",
+		"body": "Fix #762: Rename min/max attributes to minValue/maxValue"
 	},
 	{
 		"hash": "9a91b4a29df02f4c36b5a674ac388920dced69dd",
-		"time": 1464261542
+		"time": 1464261542,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Issue #826, fix markup so that the right text for `orientationX` appears.",
+		"body": ""
 	},
 	{
 		"hash": "817c4a1f0ae55ef52a23fce780b092a861e76cbb",
-		"time": 1463760716
+		"time": 1463760716,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Remove setValueCurveAtTime change; it's not relevant.",
+		"body": ""
 	},
 	{
 		"hash": "8c009c9626bb06f6737de2d26dc99c16cd6fbd23",
-		"time": 1463760427
+		"time": 1463760427,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #794: Move AudioContextOptions to AudioContext section",
+		"body": "The definition of AudioContextOptions was in the BaseAudioContext\nsection.  But this dictionary is only applicable for AudioContexts.\nMove it to the AudioContext section."
 	},
 	{
 		"hash": "a067bb9e273656becad3b3d660c20850516a175b",
-		"time": 1463756216
+		"time": 1463756216,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #815: setValueCurve should throw on non-finite elements.",
+		"body": "If the curve contains non-finite values, setValueCurveAtTime must\nsignal a TypeError.  These values are illegal."
 	},
 	{
 		"hash": "8306a69d946e2c08bcb2f09378cc24945a1e64ed",
-		"time": 1463178846
+		"time": 1463178846,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #797: Widen nominal range of playbackRate",
+		"body": "The playbackRate is widened to +/- infinity."
 	},
 	{
 		"hash": "c8ea132caadbcf3ee4fec5b7fc389602c3d9d192",
-		"time": 1463177073
+		"time": 1463177073,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #810: Q is used in peaking filter.",
+		"body": "Correct typo in description of Q AudioParam."
 	},
 	{
 		"hash": "6a043cb214d27fbf9d64b2c16a310a17e1b91bb0",
-		"time": 1463092922
+		"time": 1463092922,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Rebase and tidy.",
+		"body": ""
 	},
 	{
 		"hash": "a7750423040f868b359bab7fea93eb1a26e4a153",
-		"time": 1463092893
+		"time": 1463092893,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 762-rename-audioparam-min/max",
+		"body": ""
 	},
 	{
 		"hash": "1e0dd8c312396ee75205f2027850823128de9eea",
-		"time": 1463055507
+		"time": 1463055507,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #721 from rtoy/695-revert-cone-angle-mod-360",
+		"body": "Revert change for cone angle mod 360."
 	},
 	{
 		"hash": "4e678a872663bac2a12094bd9a5599479b45d296",
-		"time": 1463055502
+		"time": 1463055502,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #734 from rtoy/730-remove-panner-setvelocity",
+		"body": "Remove PannerNode's setVelocity"
 	},
 	{
 		"hash": "1c6778be6a2109600743581f9c38eab6ccdb9981",
-		"time": 1463055176
+		"time": 1463055176,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #754 from pozdnyakov/12-dest-node-get-position",
+		"body": "Fix #12 by adding outputTimeStamp attribute to AudioDestinationNode"
 	},
 	{
 		"hash": "7f128c450dd1caf06e44916af46ddfdce4fe6e48",
-		"time": 1463055044
+		"time": 1463055044,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #775 from rtoy/348-processing-latency",
+		"body": "Fix #348: Add latencyHint, replacing playbackCategory"
 	},
 	{
 		"hash": "1b9b2e41bba6152fc065c700326836369a7331f7",
-		"time": 1463054996
+		"time": 1463054996,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #800 from rtoy/798-fix-biquad-q-range",
+		"body": "Fix biquad q range"
 	},
 	{
 		"hash": "ae02b707808c4d39b3579936c8d88a55f7bbaec2",
-		"time": 1463054984
+		"time": 1463054984,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #801 from rtoy/767-use-newer-license",
+		"body": "Fix #767: Use newer Software and Document License"
 	},
 	{
 		"hash": "11e87fc941d14f8c33754ee6a8d4745d76616d80",
-		"time": 1463002289
+		"time": 1463002289,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #762: Rename min/max attributes to minValue/maxValue",
+		"body": "The AudioParam nominal range attributes min/max are renamed to\nminValue and maxValue."
 	},
 	{
 		"hash": "ae22039995eba8e33c1aa1f206a019cb0a8ed237",
-		"time": 1463001990
+		"time": 1463001990,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #766: Behavior of automations and nominal ranges",
+		"body": "Specify the behavior of automations with nominal ranges.  Automations\nare internally computed as there were no nominal ranges.  Only when\nthey are applied is the clamping done.  A simple example is given."
 	},
 	{
 		"hash": "71771967cbf7c6a92f955e1ebff79ddfcb0fa872",
-		"time": 1462949710
+		"time": 1462949710,
+		"name": "Mikhail Pozdnyakov",
+		"email": "mikhail.pozdnyakov@intel.com",
+		"subject": "Fix #12 by adding 'AudioDestinationNode.outputTimeStamp' and 'AudioDestinationNode.outputLatency'",
+		"body": "This patch introduces 'AudioDestinationNode.outputTimeStamp' and 'AudioDestinationNode.outputLatency' attributes, so that it's possible to estimate when the given context's stream position is audible."
 	},
 	{
 		"hash": "fbf13c970b066a2361983bae4c40022fbf7f2826",
-		"time": 1462905074
+		"time": 1462905074,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy.",
+		"body": ""
 	},
 	{
 		"hash": "968646f83192ebe16aa929ebaf22f7b79d02f181",
-		"time": 1462904676
+		"time": 1462904676,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use Unix end-of-line character (LF)",
+		"body": "Automatically converted Windows style to Unix style end-of-line\ncharacter.\n\nFix #804."
 	},
 	{
 		"hash": "8c83b1de8b61e74a822d92c28f3faf905fb39320",
-		"time": 1462469808
+		"time": 1462469808,
+		"name": "Chris Lilley",
+		"email": "nantonos@epona.net",
+		"subject": "now make the actual small edits to the security section, from Wendy's review",
+		"body": ""
 	},
 	{
 		"hash": "49ae518458d679c82e5bd5b636b96af5fbd1a9b7",
-		"time": 1462469581
+		"time": 1462469581,
+		"name": "Chris Lilley",
+		"email": "nantonos@epona.net",
+		"subject": "undo botched merge conflict edit",
+		"body": ""
 	},
 	{
 		"hash": "ffd4a827f0a1408577e47a682313e7e23c649b74",
-		"time": 1462467647
+		"time": 1462467647,
+		"name": "Chris Lilley",
+		"email": "nantonos@epona.net",
+		"subject": "Merge branch 'gh-pages' of https://github.com/WebAudio/web-audio-api into gh-pages",
+		"body": ""
 	},
 	{
 		"hash": "cb83b9e3a2274ed664c79ac0efbb3f2b87615985",
-		"time": 1462398799
+		"time": 1462398799,
+		"name": "Chris Lilley",
+		"email": "nantonos@epona.net",
+		"subject": "update to Security & Privacy",
+		"body": ""
 	},
 	{
 		"hash": "204fcda686f5945b50aebca5bf02c0c12fdb859e",
-		"time": 1462228329
+		"time": 1462228329,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #767: Use newer Software and Document License",
+		"body": "Specify the w3c software license."
 	},
 	{
 		"hash": "f14a75ee79cca0cbbf96cccc4d91863e92fdc615",
-		"time": 1462227396
+		"time": 1462227396,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy.",
+		"body": ""
 	},
 	{
 		"hash": "f428532a1e8ea9e301d7c2b4b6d8143441d5992a",
-		"time": 1462227272
+		"time": 1462227272,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 695-revert-cone-angle-mod-360",
+		"body": ""
 	},
 	{
 		"hash": "ac8d1d14a94ccf503687fcbaa56c17082abd9d8a",
-		"time": 1462226899
+		"time": 1462226899,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 730-remove-panner-setvelocity",
+		"body": ""
 	},
 	{
 		"hash": "13f76ba6ec3ff6e2234aea237a0c1528033c6bc6",
-		"time": 1462221607
+		"time": 1462221607,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy.",
+		"body": ""
 	},
 	{
 		"hash": "411b8afda3e2e0d9f89bd803ea8cd9a0e3faf086",
-		"time": 1462221552
+		"time": 1462221552,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 348-processing-latency",
+		"body": ""
 	},
 	{
 		"hash": "0d0dbee2fb26d0470063251b0dda50090afc42a6",
-		"time": 1461702111
+		"time": 1461702111,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 798-fix-biquad-q-range",
+		"body": ""
 	},
 	{
 		"hash": "cda0eaca9b2499ef080eae36f7baa892c0cdda8b",
-		"time": 1461701826
+		"time": 1461701826,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy.",
+		"body": ""
 	},
 	{
 		"hash": "83bb964fab696aa1ed01651b3687c641d48b1d12",
-		"time": 1461701668
+		"time": 1461701668,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #798: Incorrect nominal range for Biquad Q",
+		"body": "The actual nominal range is (-infinity, +infinity) since Q is in dB\nand the valid range for the linear Q value is (0, infinity)."
 	},
 	{
 		"hash": "954416b1c5fc648a1ec72d71299bb7609c87a820",
-		"time": 1461458581
+		"time": 1461458581,
+		"name": "Chris Lilley",
+		"email": "nantonos@epona.net",
+		"subject": "Merge branch 'gh-pages' of https://github.com/WebAudio/web-audio-api into gh-pages",
+		"body": ""
 	},
 	{
 		"hash": "da7c5f353157ad53ba147be7b4ae730b9d3812c1",
-		"time": 1461277580
+		"time": 1461277580,
+		"name": "Chris Lilley",
+		"email": "nantonos@epona.net",
+		"subject": "First draft of security section",
+		"body": "Merged security and privacy as the questionnaire merges them"
 	},
 	{
 		"hash": "071505a5053a44c3a3bf0a209e6e15a03481da86",
-		"time": 1461100271
+		"time": 1461100271,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 348-processing-latency",
+		"body": ""
 	},
 	{
 		"hash": "73bbf5ea9906d1828bf475452550f633d5340bc7",
-		"time": 1460714401
+		"time": 1460714401,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #659 from rtoy/130-add-initial-event",
+		"body": "Specify initial event for linear and exponential ramp."
 	},
 	{
 		"hash": "a50f7c8c166b6a075820933c543059955b9caaaf",
-		"time": 1460714230
+		"time": 1460714230,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Tidy after all the merges",
+		"body": ""
 	},
 	{
 		"hash": "373518c6007dcb6298fbc98b3903f2187fb3a990",
-		"time": 1460714177
+		"time": 1460714177,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #706 from rtoy/rtoy-add-link-for-fetch-algo",
+		"body": "Update link for fetching algorithm."
 	},
 	{
 		"hash": "3ed6f405e3c2b0c34f0fb78f0ab6ce2685b854f9",
-		"time": 1460714170
+		"time": 1460714170,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #774 from rtoy/749-merge-spatial-panner-into-panner",
+		"body": "Fix #749: merge spatial panner into panner"
 	},
 	{
 		"hash": "8d95757aea400081d4b5864d2d0d3c4dd7eae786",
-		"time": 1460713919
+		"time": 1460713919,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #792 from rtoy/760-biquad-gain-range",
+		"body": "Fix #760 by widening the range to (-inf,inf)"
 	},
 	{
 		"hash": "12d4840884432125bdfe7176a34ef8867da5184d",
-		"time": 1460713910
+		"time": 1460713910,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #793 from rtoy/748-remove-base-audio-context-constructor",
+		"body": "Fix #748: remove base audio context constructor"
 	},
 	{
 		"hash": "f0e9d0a15ded53cc6ab1151a8aa4e0d79ca24c66",
-		"time": 1460713900
+		"time": 1460713900,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #795 from rtoy/771-some-filters-not-representable",
+		"body": "Fix #771 some filters not representable"
 	},
 	{
 		"hash": "b0af596ed3fa33fd059a2e9e0613fbdec92ca264",
-		"time": 1460672970
+		"time": 1460672970,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #762: Add missing nominal ranges for AudioParams.",
+		"body": "Add text to specify the nominal ranges as given in #762.  This should\ncomplete the set of nominal ranges so that AudioParam min/max\nattributes can be properly set for each AudioParam."
 	},
 	{
 		"hash": "a9388e65c6b720a6d368b47ad078a808d911da43",
-		"time": 1460662926
+		"time": 1460662926,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Replace processingLatency with baseLatency.",
+		"body": "Update links and other references appropriately."
 	},
 	{
 		"hash": "0e7f5205e3bf89f11d3f36dd3430dd86cca3e01f",
-		"time": 1460567904
+		"time": 1460567904,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Make the spec a bit larger, waiting for new rspec markup.",
+		"body": ""
 	},
 	{
 		"hash": "e2ccc4d51173fcdf626cbb69e2a2c7d5317a203f",
-		"time": 1460564284
+		"time": 1460564284,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 771-some-filters-not-representable",
+		"body": ""
 	},
 	{
 		"hash": "59ac586afa74ae86240eeb61c4f06cae396fec14",
-		"time": 1460560266
+		"time": 1460560266,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Tidy the document.",
+		"body": ""
 	},
 	{
 		"hash": "fe08c91866cef6a4bee09631e681e6b17998c5e6",
-		"time": 1460560003
+		"time": 1460560003,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #782 from marcoscaceres/gh-pages",
+		"body": "Feat (index.html): don't use Mathjax during spec-generation"
 	},
 	{
 		"hash": "8240c3559970a8f13273f579e4d8f1f3c733622f",
-		"time": 1460523138
+		"time": 1460523138,
+		"name": "Marcos Caceres",
+		"email": "marcos+github@marcosc.com",
+		"subject": "Fixed typo",
+		"body": ""
 	},
 	{
 		"hash": "a6842f2f733911a8ac6b330a405eac19878adc15",
-		"time": 1460485104
+		"time": 1460485104,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #771 by using Audio Cookbook formula",
+		"body": "Use the Audio Cookbook formula for the lowpass and highpass filters.\nHowever, the cookbook has Q in linear units.  This change makes Q in\ndB.  This preserves the old behavior which used Q in dB for the\nlowpass and highpass filters, so that automations have the same value.\n(See #769)\n\nThis also minimizes the difference in sound quality between these new\nfilters and the old ones."
 	},
 	{
 		"hash": "b023e692b12131b8f7694f017069e159b3a9454a",
-		"time": 1460406568
+		"time": 1460406568,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Tidy.",
+		"body": ""
 	},
 	{
 		"hash": "3d7347e2140ae54e658c890221811f09649790ba",
-		"time": 1460406545
+		"time": 1460406545,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #748:  Remove constructor from BaseAudioContext",
+		"body": "Move the constructor from BaseAudioContext to AudioContext where it\nbelongs; BaseAudioContext is not constructible."
 	},
 	{
 		"hash": "3a0121956457a744802995bbe4f91cb5552ead00",
-		"time": 1460405251
+		"time": 1460405251,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #760 by widening the range to (-inf,inf)",
+		"body": "Change the nominal range of the Biquad gain parameter to be any real\nvalue."
 	},
 	{
 		"hash": "6a0938bc46cc7030577f285378ec864705eefc01",
-		"time": 1460062737
+		"time": 1460062737,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Make it so that the lower bound for the required sample-rate is 8000",
+		"body": "Because 8192 is not very common for sample-rates."
 	},
 	{
 		"hash": "f633b27f68afffaaf4206c8a96a9aa1c3ee75f0c",
-		"time": 1460045599
+		"time": 1460045599,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #773 from rtoy/759-biquad-gain-is-db",
+		"body": "759 biquad gain is db"
 	},
 	{
 		"hash": "cbf0b4f4288148380411a91ce370583ff79b9205",
-		"time": 1459913408
+		"time": 1459913408,
+		"name": "Marcos Caceres",
+		"email": "marcos@marcosc.com",
+		"subject": "Feat (index.html): don't use Mathjax during spec-generation",
+		"body": ""
 	},
 	{
 		"hash": "ab068b55b1f096fd44af608eb9c0be28b690ce73",
-		"time": 1459895876
+		"time": 1459895876,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #781 from rtoy/update-editors",
+		"body": "Update editors"
 	},
 	{
 		"hash": "6568f96d6ed019748640a7daec3d6e573b472ed5",
-		"time": 1459895340
+		"time": 1459895340,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #397 from WebAudio/349-destination-output",
+		"body": "Make the AudioDestinationNode have an output.\r\n\r\nFix #349."
 	},
 	{
 		"hash": "3499c0b017323fa94bf41bc7bdcf9d0e05e34578",
-		"time": 1459893049
+		"time": 1459893049,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Update editors",
+		"body": ""
 	},
 	{
 		"hash": "3e5d7a9783ee3da118fc7673ce04cdc8504a50b7",
-		"time": 1459186173
+		"time": 1459186173,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy.",
+		"body": ""
 	},
 	{
 		"hash": "3929fb075c70dbd83ed93bd2e2cef46a5b8bc7cb",
-		"time": 1459186129
+		"time": 1459186129,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #348: Add latencyHint",
+		"body": "This updates and replaces the current playbackCategory to a\nlatencyHint that accepts an AudioContextLatencyCategory (a renaming of\nAudioContextPlaybackCategory to reflect better the actual intent) or a\ndouble for finer control of the latency.\n\nAn additional attribute, processingLatency, is added to the\nBaseAudioContext to indicate what latency was actually used by the\ncontext."
 	},
 	{
 		"hash": "56943e35a68da1905e60a6b7152e36b724030eee",
-		"time": 1459183896
+		"time": 1459183896,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy.",
+		"body": ""
 	},
 	{
 		"hash": "2de7a5ea7dd1a2022aea7e74aef165f7aadf4a6d",
-		"time": 1459183872
+		"time": 1459183872,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Remove extra closing tag.",
+		"body": ""
 	},
 	{
 		"hash": "a7c86d5b7550e6a004d3fd69e9183b79b7fce341",
-		"time": 1459183628
+		"time": 1459183628,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #749: Merge SpatialPannerNode to PannerNode",
+		"body": "Merge the SpatialPannerNode into the PannerNode, undeprecating the\nPannerNode.  The SpatialListener is also merged into the\nAudioListener, which is undeprecated as well.\n\nThe setPosition and setOrientation methods for both the PannerNode and\nAudioListener are also deprecated because they can be done using the\ncorresponding AudioParams."
 	},
 	{
 		"hash": "60025a52b28ecf257378b9066c2f1f07bcddfbf3",
-		"time": 1458943941
+		"time": 1458943941,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Tidy",
+		"body": ""
 	},
 	{
 		"hash": "0855669d2900daa79ef42ec13078459716211e1a",
-		"time": 1458943926
+		"time": 1458943926,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #759:  biquad gain is in dB",
+		"body": "Add text to say that the gain parameter is in dB.  Also mention which\nfilters actually use the gain.\n\nAlso took this opportunity to say that Q is not used for some filters."
 	},
 	{
 		"hash": "a80a25aacd0255315a222a564659abf27dd4aa56",
-		"time": 1458314846
+		"time": 1458314846,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #763:  detune is in cents.",
+		"body": "We were missing this description for AudioBufferSource detune."
 	},
 	{
 		"hash": "ff812d227df0a12ce73664cbd23414fa037902ac",
-		"time": 1458162643
+		"time": 1458162643,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #763:  detune is in cents.",
+		"body": "We were missing this description for AudioBufferSource detune."
 	},
 	{
 		"hash": "c5d57859d6f17322210c850b507840114a8dc9f6",
-		"time": 1458123429
+		"time": 1458123429,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #691 from rtoy/690-add-offline-context-length",
+		"body": "Add length attribute to OfflineAudioContext"
 	},
 	{
 		"hash": "018776627d6ae7ef652dd855214d0f220895cd76",
-		"time": 1457993090
+		"time": 1457993090,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #755 from rtoy/673-add-min/max-attributes-for-audioparam",
+		"body": "Fix #673: Add min/max attribute to AudioParam"
 	},
 	{
 		"hash": "91397fdaf0f2e70112bc577db302e78e6bae2778",
-		"time": 1457992960
+		"time": 1457992960,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy.",
+		"body": ""
 	},
 	{
 		"hash": "74fd0617e757b5135d090dbed7254e371b077184",
-		"time": 1457971677
+		"time": 1457971677,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #758 from rtoy/756-wrap-code",
+		"body": "Fix #756: wrap code and run beautifier"
 	},
 	{
 		"hash": "afd248d256b52eb316835ea1c6c970267de7d9f1",
-		"time": 1457968890
+		"time": 1457968890,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix typo",
+		"body": ""
 	},
 	{
 		"hash": "6f55777f1964d391d60b75cff1c2c9af753d72bf",
-		"time": 1457968827
+		"time": 1457968827,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Revert part of the prose on 7ec4b676",
+		"body": ""
 	},
 	{
 		"hash": "a5ae723350179e51e6a5a49eb0d85833da524e67",
-		"time": 1457968827
+		"time": 1457968827,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Address the comments on bf130ff",
+		"body": ""
 	},
 	{
 		"hash": "c026dc2ccf0d660339acc62267411df105778bce",
-		"time": 1457968827
+		"time": 1457968827,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Tighten the prose around decodeAudioData, startRendering, and annotate more synchronous sections",
+		"body": ""
 	},
 	{
 		"hash": "a862a3c774cbe650b8af04cbf84149ca6e705f67",
-		"time": 1457968827
+		"time": 1457968827,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Remove old prose about state transitions.",
+		"body": ""
 	},
 	{
 		"hash": "5e3a996bc15eb8feefc1cb765674519614169d3d",
-		"time": 1457968826
+		"time": 1457968826,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Annotate more synchronous sections",
+		"body": ""
 	},
 	{
 		"hash": "1693431c4f8d2135260fc2fc56a4c4c437812a1b",
-		"time": 1457968826
+		"time": 1457968826,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Address rtoy's comments.",
+		"body": ""
 	},
 	{
 		"hash": "d3102e963f088cb4da660c4c967d1486c690de8b",
-		"time": 1457968826
+		"time": 1457968826,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Tidy",
+		"body": ""
 	},
 	{
 		"hash": "81299f4e5e6a13fea7b02df74d5e9389a6040e9b",
-		"time": 1457968826
+		"time": 1457968826,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Typos and quote harmonization",
+		"body": ""
 	},
 	{
 		"hash": "928aa33edcf1ce18d15a20fd9ce1c71dc1c5bb78",
-		"time": 1457968826
+		"time": 1457968826,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Address comments.",
+		"body": ""
 	},
 	{
 		"hash": "e1e1dd00b3f8d719e93c73ae2bb7654ce6e71528",
-		"time": 1457968793
+		"time": 1457968793,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Spec the processing model for the Web Audio API",
+		"body": ""
 	},
 	{
 		"hash": "96a21c4759e102c7fa3c705cdd7ca11843664cef",
-		"time": 1457722092
+		"time": 1457722092,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run JS beautifier on the code too.",
+		"body": ""
 	},
 	{
 		"hash": "d12df392461b6e36a1d0abae05db73b83f0587f8",
-		"time": 1457719226
+		"time": 1457719226,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #756: Wrap code so to fit within the page width.",
+		"body": ""
 	},
 	{
 		"hash": "5e459fe8d3984898aac431513327b886892cb882",
-		"time": 1457471120
+		"time": 1457471120,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #673: Add min/max attribute to AudioParam",
+		"body": "Puts back the readonly min and max attributes for an AudioParam to\nmake introspection of the actual nominal range of the AudioParam\npossible.\n\nThis is a follow on of the discussion in #620."
 	},
 	{
 		"hash": "1b20b82418ba80a7c324219d6f4ba2aa9b43653c",
-		"time": 1457455920
+		"time": 1457455920,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #620 from WebAudio/391-nominal-range",
+		"body": "Spec nominal ranges, nyquist, and behavior when outside the range.\r\n\r\nFix #391"
 	},
 	{
 		"hash": "fb1d50e3d560e5f15fb86ed6662141728fa066a2",
-		"time": 1457455778
+		"time": 1457455778,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #627 from WebAudio/469-nodes-latency",
+		"body": "Add a list of nodes and reason why they can add latency, in an inform…"
 	},
 	{
 		"hash": "877996438cda9a1caf1159723d8bd678b50fce3f",
-		"time": 1457453541
+		"time": 1457453541,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Tidy it up.",
+		"body": ""
 	},
 	{
 		"hash": "f2de2f763cc00f83d8653cd589d3178edf1d0c2b",
-		"time": 1457453432
+		"time": 1457453432,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Make the nominal range of BiquadFilterNode.Q be (0, ∞).",
+		"body": ""
 	},
 	{
 		"hash": "c9fe8e86cc54036c2048a33a53848f25e449d7b3",
-		"time": 1457453290
+		"time": 1457453290,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix typos",
+		"body": ""
 	},
 	{
 		"hash": "78365ec96c38ee1e96d22ff4eb51668eeb12098a",
-		"time": 1457453290
+		"time": 1457453290,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "[0,Nyquist for the biquad",
+		"body": ""
 	},
 	{
 		"hash": "f8ad0c66c51be039cdb3c3caf488372263282ada",
-		"time": 1457453290
+		"time": 1457453290,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Make the section about computing the values for AudioParams clearer",
+		"body": ""
 	},
 	{
 		"hash": "bb90092a4c80d2d8a57b600dd9a444772255eb7b",
-		"time": 1457453290
+		"time": 1457453290,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Intruduce compound parameters and note compound parameters as such",
+		"body": ""
 	},
 	{
 		"hash": "3d04d26fb96372ee0ca222888dffe0314099c174",
-		"time": 1457453289
+		"time": 1457453289,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Address some comments",
+		"body": ""
 	},
 	{
 		"hash": "217d6c55c8de5bc6a9c7cada6274d588c565492e",
-		"time": 1457453289
+		"time": 1457453289,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Spec nominal ranges, nyquist, and behavior when outside the range.",
+		"body": "This fixes #391."
 	},
 	{
 		"hash": "4e68d2baf915e1f46a151105c259b813ddaaee65",
-		"time": 1457371195
+		"time": 1457371195,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #751: Scalar PannerNode attributes are doubles",
+		"body": "The scalar attributes such as refDistance, maxDistance, rolloffFactor,\nand the cone angles for the PannerNode (and SpatialPannerNode) are\nchanged from float to double because Chrome, Firefox, and Safari\nactually implement them as doubles in both the IDL files and the\ninternal implementation."
 	},
 	{
 		"hash": "efe1cce0fb9b81e835d9fac6759cf52668f2af8b",
-		"time": 1457366966
+		"time": 1457366966,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Allow setting a null buffer multiple times.",
+		"body": ""
 	},
 	{
 		"hash": "954dcb8b70442ec2e84b8a4717124a5718d4f3a1",
-		"time": 1457366215
+		"time": 1457366215,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Spell out the algorithm to set AudioBufferSourceNode.buffer.",
+		"body": "This fixes #666."
 	},
 	{
 		"hash": "d48c4a544ef233bf115ac058b80a992e3fdbd219",
-		"time": 1457100878
+		"time": 1457100878,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Use a link for input summing.",
+		"body": ""
 	},
 	{
 		"hash": "b410e76c66abf7460156658f74341056f1c6714a",
-		"time": 1457096667
+		"time": 1457096667,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #752 from rtoy/747-audiobuffer-use-unsigned",
+		"body": "Use unsigned long for AudioBuffer length and numberOfChannels."
 	},
 	{
 		"hash": "b8a0857e77620e894b5cea2b57209ee6fb8cd973",
-		"time": 1457096657
+		"time": 1457096657,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #744 from rtoy/719-clarify-analyser-downmixing-more",
+		"body": "Clarify AnalyserNode dowmixing more."
 	},
 	{
 		"hash": "18483676b8a56972f3aa3b1195df61233bfe1811",
-		"time": 1457096586
+		"time": 1457096586,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #746 from rtoy/745-use-sqrt-half",
+		"body": "Replace 0.7071 with sqrt(0.5)"
 	},
 	{
 		"hash": "6a697fb3d984571c3e0b2406433310d00ff8510c",
-		"time": 1457041488
+		"time": 1457041488,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use unsigned long for AudioBuffer length and numberOfChannels.",
+		"body": "Change type for length and numberOfChannels from long to unsigned\nlong.\n\nFix #747"
 	},
 	{
 		"hash": "6b348edcff9a988607c7293b91fff4d8333fa1bd",
-		"time": 1456960272
+		"time": 1456960272,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Update to use Mathjax 2.6.1",
+		"body": "Fix #688"
 	},
 	{
 		"hash": "e960a32a07c75cd53fe7a2d2fa928f1996c37576",
-		"time": 1456873323
+		"time": 1456873323,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Replace 0.7071 with sqrt(0.5)",
+		"body": "Fix #745."
 	},
 	{
 		"hash": "490eff1502c2e68f06a7d53f435b3fb7e0f47899",
-		"time": 1456869710
+		"time": 1456869710,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Clarify AnalyserNode dowmixing more.",
+		"body": "Fix #719.\n\nExplicitly state the values of the channelCount, mode, and\ninterpretation to be used for downmixing in the AnalyserNode and state\nthat these are independent of the AnalyserNode itself."
 	},
 	{
 		"hash": "712c0b565ea2797e4a9e255e13ea9dde6815669e",
-		"time": 1456849882
+		"time": 1456849882,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #742 from WebAudio/686-decodeAudioData-dead-code",
+		"body": "Validating the arguments is better performed by WebIDL.\r\n\r\nFix #686."
 	},
 	{
 		"hash": "7c541bb8005ae6e0b83ea31840afaad7da215315",
-		"time": 1456839333
+		"time": 1456839333,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Add a list of nodes and reason why they can add latency, in an informative section",
+		"body": ""
 	},
 	{
 		"hash": "19a0e4e3fbf7090656493e5001c2da16c10922d4",
-		"time": 1456838635
+		"time": 1456838635,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #552 from rtoy/447-define-osc-carefully",
+		"body": "Fix #447: Define oscillator carefully."
 	},
 	{
 		"hash": "2fa475cc741831ad80eb56ad7a30e10c9dbd4846",
-		"time": 1456838253
+		"time": 1456838253,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #733 from rtoy/719-clarify-analyser-downmixing",
+		"body": "Clarify downmixing of the AnalyserNode"
 	},
 	{
 		"hash": "a2e72fda9ef72f6bf2b00a71a6cde51146a0abf2",
-		"time": 1456838227
+		"time": 1456838227,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #732 from rtoy/731-remove-doppler-text",
+		"body": "Remove section titled \"Doppler Shift\""
 	},
 	{
 		"hash": "384780aadb27767133831a37d9e5050172ccbc29",
-		"time": 1456838214
+		"time": 1456838214,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #716 from rtoy/714-spatial-listener-on-audiocontext",
+		"body": "Add spatialListener attribute to AudioContext."
 	},
 	{
 		"hash": "b6acfabccbd60f704c4e98101ddfef39eb987acf",
-		"time": 1456838194
+		"time": 1456838194,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #715 from rtoy/707-spec-setValueCurveAtTime-args",
+		"body": "Specify behavior of parameters of setValueCurveAtTime"
 	},
 	{
 		"hash": "b020217adcb52866b76791eb08df917ccab6ca64",
-		"time": 1456429575
+		"time": 1456429575,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use TeX formulas for SpatialPanner distance models",
+		"body": "Copy the formulas from PannerNode's distance models to the\nSpatialPanner.\n\nFix #735"
 	},
 	{
 		"hash": "ad2a15f554b5ec71ef46bb021a410b643b3fb66a",
-		"time": 1456428938
+		"time": 1456428938,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Remove PannerNode's setVelocity",
+		"body": "Since Doppler effects were removed sometime ago, setVelociy has no\neffect anyway, so it should be removed.\n\nFix #730"
 	},
 	{
 		"hash": "7894fa73791a434bcbbdea3397a02a0f89489612",
-		"time": 1456428480
+		"time": 1456428480,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Tidy.",
+		"body": ""
 	},
 	{
 		"hash": "2221d5be036aed5d157bfed46411ffa1072f09cd",
-		"time": 1456426627
+		"time": 1456426627,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Clarify downmixing of the AnalyserNode",
+		"body": "Adds link to the downmixing section to clarify exactly how the\ndownmixing to mono is done.\n\nFix #719"
 	},
 	{
 		"hash": "a01d0abb3d5c9d8587be55160654014120c94b32",
-		"time": 1456353818
+		"time": 1456353818,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Remove section titled \"Doppler Shift\"",
+		"body": "Fix #731\n\nThe Doppler effect was removed in #372, so the section on Doppler\nshift should complete removed."
 	},
 	{
 		"hash": "7ace9b0cb4cb06345d3843d04e367b4d6ee9d0f3",
-		"time": 1456351274
+		"time": 1456351274,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix issues according to review.",
+		"body": ""
 	},
 	{
 		"hash": "ee7ce11b0b1eac46c868813529ce8565dc29bd6d",
-		"time": 1456350891
+		"time": 1456350891,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #727 from rtoy/722-get-byte-data-floor",
+		"body": "Truncate float to integer for Analyser.getByte.*Data\r\n\r\nFix #722"
 	},
 	{
 		"hash": "01c15ccfa77339136f220e51319b79f09d2a7980",
-		"time": 1456350504
+		"time": 1456350504,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Appease tidy.",
+		"body": ""
 	},
 	{
 		"hash": "f30f6a8bce5c9408a21237e58f1c0962669d9409",
-		"time": 1456334748
+		"time": 1456334748,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Make the AudioDestinationNode have an output",
+		"body": "This fixes #349."
 	},
 	{
 		"hash": "222eb02172357bc84f3e7b7077e23b870dcd862d",
-		"time": 1456321061
+		"time": 1456321061,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #720 from rtoy/718-5.1-to-mono-formula",
+		"body": "Replace 0.7071 with sqrt(0.5)"
 	},
 	{
 		"hash": "1cc18de7820dcad2f8380cd4983ba0934141ce17",
-		"time": 1455920627
+		"time": 1455920627,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Scale the FFT by 1/N in the AnalyserNode",
+		"body": "Apply a scale factor to the FFT so that a 0 dbFS sine wave is 0 dBfs.\n\nChrome does this; I didn't check anywhere else, but it makes sense\nthat the FFT output should have the same amplitude as the input,\ninstead of leaving the FFT unscaled.\n\nFix 725."
 	},
 	{
 		"hash": "8923e7c5b9e334d3230efbb37e0428a2b7a1cce5",
-		"time": 1455830385
+		"time": 1455830385,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Truncate float to integer for Analyser.getByte.*Data",
+		"body": "Explicitly say that the byte data is computed from the floating point\ndata by truncating the float to an integer.\n\nFix #722"
 	},
 	{
 		"hash": "03588c814e0999120022b28b7adcb5da201621f3",
-		"time": 1455318940
+		"time": 1455318940,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Revert change for cone angle mod 360.",
+		"body": "Fix #695 by reverting the change and also specifying that angles\noutside the interval [0, 360] invokes undefined behavior."
 	},
 	{
 		"hash": "6179e063c35d40dc43418a7801856bca629ac5a3",
-		"time": 1455317745
+		"time": 1455317745,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Replace 0.7071 with sqrt(0.5)",
+		"body": "Fix issue #718.  I think the intent is use sqrt(0.5) and not 0.7071."
 	},
 	{
 		"hash": "800898f02bb85953d8f738321844306984760843",
-		"time": 1455122132
+		"time": 1455122132,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Add spatialListener attribute to AudioContext.",
+		"body": "Fix #714 by adding spatialListener attribute."
 	},
 	{
 		"hash": "c546dc2ce11f18719792026086cb55724d93c8d2",
-		"time": 1455061897
+		"time": 1455061897,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 707-spec-setValueCurveAtTime-args",
+		"body": ""
 	},
 	{
 		"hash": "df8735bd6b814988d9954e59494a6830bee1fcf1",
-		"time": 1455061853
+		"time": 1455061853,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Specify behavior of setValueCurveAtTime parameters.",
+		"body": "If the curve has fewer than 2 points and error is thrown.  If the\nduration is not strictly positive (and finite), an error is also\nthrown."
 	},
 	{
 		"hash": "7cbfdd45ccb5d601b5f93bd2851eb7f9f2947830",
-		"time": 1454621304
+		"time": 1454621304,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "fixed comment",
+		"body": ""
 	},
 	{
 		"hash": "f555a80f965557b6ef5e869935a3011421df6153",
-		"time": 1454345666
+		"time": 1454345666,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "remove incorrect description",
+		"body": ""
 	},
 	{
 		"hash": "f9df6285c6f7d55085cc52a10b93a9f063a6fdc5",
-		"time": 1454112413
+		"time": 1454112413,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "fix 2",
+		"body": ""
 	},
 	{
 		"hash": "70e5863d1b1fcec3656d1b1039235a535ebaf51a",
-		"time": 1454111678
+		"time": 1454111678,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "fix #708",
+		"body": ""
 	},
 	{
 		"hash": "39e7c0e046f4659793e41ca6bd0230a227b5ff79",
-		"time": 1453396267
+		"time": 1453396267,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Update link for fetching algorithm.",
+		"body": "Removes a warning from respec about a linkless <a> element."
 	},
 	{
 		"hash": "606bd2c734e76b7a95b0aeaf60933e3226a9ebc6",
-		"time": 1452202853
+		"time": 1452202853,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy because it's new text.",
+		"body": ""
 	},
 	{
 		"hash": "58c70f06c44bf1b855894799a885169712f8f544",
-		"time": 1452202614
+		"time": 1452202614,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Add length attribute to OfflineAudioContext",
+		"body": "Fixes #690"
 	},
 	{
 		"hash": "3e000dcfc7f10397c64d256ff6f8ce659e9a3f53",
-		"time": 1451918779
+		"time": 1451918779,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Validating the arguments is better performed by WebIDL.",
+		"body": "This fixes #686."
 	},
 	{
 		"hash": "5091cbf3eb1b767ca0381012b1a3c0168cfb0a4f",
-		"time": 1450560659
+		"time": 1450560659,
+		"name": "plehegar",
+		"email": "plh@w3.org",
+		"subject": "Don't fail if spec-generator doesn't include MathJax",
+		"body": ""
 	},
 	{
 		"hash": "62f82503021707d879899e68236085422f9a9b7e",
-		"time": 1449786863
+		"time": 1449786863,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix #444 documentation on ordering of onstatechange and oncomplete",
+		"body": ""
 	},
 	{
 		"hash": "aa51c314c082ca514ae0cd01b0d2d2274f2746db",
-		"time": 1449785239
+		"time": 1449785239,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix tidy issues.",
+		"body": ""
 	},
 	{
 		"hash": "db06477d79bedb2bffec6322cf2b79d0828197b8",
-		"time": 1449785021
+		"time": 1449785021,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix respec warnings.",
+		"body": "Use correct links for\n o createIIRFIlter (commented out in aa3b6f45).\n o AudioContext.listener (commented out in 8cc56fe7).\n o createPeriodicWave (commented out in 31c4806).\n\nLink for fetch algorithm is still broken."
 	},
 	{
 		"hash": "0782390807089882ee4ee5ccd4e65e14b7ac6b2f",
-		"time": 1449693112
+		"time": 1449693112,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #624 from rtoy/612-exponential-ramp-0-behavior",
+		"body": "Specify exponential ramp behavior when previous value is 0"
 	},
 	{
 		"hash": "2627f4df9c3b368d834443b074a736a76f75a648",
-		"time": 1449621033
+		"time": 1449621033,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix after tidy merge",
+		"body": ""
 	},
 	{
 		"hash": "971ae4121e1a3f04cc525a170390af9e6cc85de6",
-		"time": 1449615489
+		"time": 1449615489,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy again 2.",
+		"body": ""
 	},
 	{
 		"hash": "d2c21f792cb919e61d25f215c39f23b8d0ce054e",
-		"time": 1449615339
+		"time": 1449615339,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Run tidy again.",
+		"body": ""
 	},
 	{
 		"hash": "0d21f106529278efc913315de7d4e29990cfec7c",
-		"time": 1449614703
+		"time": 1449614703,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix up complaints from tidy.",
+		"body": ""
 	},
 	{
 		"hash": "d30b80467e99d77d7ae37867486944cd2855ffb5",
-		"time": 1449590128
+		"time": 1449590128,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix redirected workers spec",
+		"body": ""
 	},
 	{
 		"hash": "333c880ed7de44eec97fc2cdd00e4a99123c13d7",
-		"time": 1449590015
+		"time": 1449590015,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix cors-enabled fetch",
+		"body": "infrastructure.html#cors-enabled-fetch no longer exists in the HTML 5.1\ndraft (nor in Fetch); commented out for now"
 	},
 	{
 		"hash": "63a2f11833e184ec1a084e281098300c689b0d62",
-		"time": 1449589530
+		"time": 1449589530,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix to convolution appendix",
+		"body": ""
 	},
 	{
 		"hash": "96e5f7cd91146d15a56555cadfa5a769f002c839",
-		"time": 1449589278
+		"time": 1449589278,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix",
+		"body": "typo #widl-BiquadFilterNode-freuqnecy"
 	},
 	{
 		"hash": "2fcf14d3061ea1f0e51ac24daccf234b56ccf8a7",
-		"time": 1449589198
+		"time": 1449589198,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix audioworker number of input channels",
+		"body": "Comment out #AudioWorker-numberOfInputChannels"
 	},
 	{
 		"hash": "31c4806e2fb30064b0e4beccc68435e39ddc4400",
-		"time": 1449588949
+		"time": 1449588949,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix",
+		"body": "#widl-BaseAudioContext-createPeriodicWave-PeriodicWave-Float32Array-real-Float32Array-imag\n(four occurrences) commented out"
 	},
 	{
 		"hash": "798ba38a354e1c11cc39f276bae74aa861359653",
-		"time": 1449588813
+		"time": 1449588813,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix equal power panning",
+		"body": ""
 	},
 	{
 		"hash": "b050a65923cedca901fffe3da10b01c71342aa17",
-		"time": 1449588597
+		"time": 1449588597,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix audioworker",
+		"body": ""
 	},
 	{
 		"hash": "1d7bada16ca6dfcb55b33e34418ac0c0de74f7b8",
-		"time": 1449588452
+		"time": 1449588452,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix",
+		"body": "Comment out three occurrences of #audioprocess-spnode"
 	},
 	{
 		"hash": "aa3b6f4593c35e6215f5eadf4f6a6823da13dade",
-		"time": 1449588337
+		"time": 1449588337,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix feedback coefficients",
+		"body": "comment out broken link to\n#widl-BaseAudioContext-createIIRFilter-IIRFilterNode-Float32Array-feedforward-Float32Array-feedback"
 	},
 	{
 		"hash": "8cc56fe7d9f12b3f67e815abd34d4383f87c7ad9",
-		"time": 1449588189
+		"time": 1449588189,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix on audiocontext",
+		"body": "Comment out links to /widl-AudioContext-listener and\n/widl-AudioContext-spatialListener\nwhich should probably be fragments 9but still are not found)"
 	},
 	{
 		"hash": "1a94b1c0113f4aaa8228098bd228c5dfb83c14f1",
-		"time": 1449587172
+		"time": 1449587172,
+		"name": "Nantonos",
+		"email": "nantonos@epona.net",
+		"subject": "Linkfix origin",
+		"body": ""
 	},
 	{
 		"hash": "92b2d2a85adac544a53f79800a96cd9eb7d12192",
-		"time": 1449525462
+		"time": 1449525462,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 447-define-osc-carefully",
+		"body": "Update text appropriately.\n\n# Conflicts:\n#\tindex.html"
 	},
 	{
 		"hash": "f112a47708136f44008a106b218080dd71fb3215",
-		"time": 1449448192
+		"time": 1449448192,
+		"name": "tripu",
+		"email": "t@tripu.info",
+		"subject": "Load MathJax from w3.org/scripts instead of CDN",
+		"body": ""
 	},
 	{
 		"hash": "b4bd6548e0b1fc023a59cd693ab317991cc564df",
-		"time": 1449299693
+		"time": 1449299693,
+		"name": "Chris Lilley",
+		"email": "nantonos@epona.net",
+		"subject": "update date of last /TR publication",
+		"body": ""
 	},
 	{
 		"hash": "9af33620b9b4b9b1e8b1d48a8a49473ee15e1c3a",
-		"time": 1449299610
+		"time": 1449299610,
+		"name": "Chris Lilley",
+		"email": "nantonos@epona.net",
+		"subject": "add editor IDs ready for automatic publishing",
+		"body": ""
 	},
 	{
 		"hash": "c952797763b87e75274db28a678657b96e9291ab",
-		"time": 1449249064
+		"time": 1449249064,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use double quotes for IDL strings",
+		"body": "Fix #668 by using \"interactive\" instead of 'interactive'."
 	},
 	{
 		"hash": "0463185cb110a0b9efee0199945cd02329f884b7",
-		"time": 1449179204
+		"time": 1449179204,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Merge branch 'gh-pages' into 443-lifecycle-clarity",
+		"body": ""
 	},
 	{
 		"hash": "4fc3076c42b56e4e2caa8a1fcc85d9981e1ec95e",
-		"time": 1449178514
+		"time": 1449178514,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Merge branch 'gh-pages' into 348-buffering-for-power",
+		"body": ""
 	},
 	{
 		"hash": "7010c87a628be03b5ce5470a39d599e28d59fc95",
-		"time": 1449164133
+		"time": 1449164133,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #632 from rtoy/631-createIIRFilter-doubles",
+		"body": "createIIRFilter takes double coefficients"
 	},
 	{
 		"hash": "2684bf73c9411d250f346400b010ef0b7fcd631d",
-		"time": 1449161660
+		"time": 1449161660,
+		"name": "Joe Berkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge pull request #634 from WebAudio/52-panner-node-channel-limitations",
+		"body": "Fix #52 by addressing PannerNode and StereoPannerNode limitations explicitly in spec"
 	},
 	{
 		"hash": "ba06f714a02844b20112fb283becca6b09ae0464",
-		"time": 1449160195
+		"time": 1449160195,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #629 from WebAudio/86-analyzer-node-issues",
+		"body": "Fix #86 by clarifying channel down-mixing."
 	},
 	{
 		"hash": "9a0654e68a78b6ea3e27bf868fecb3344636daa7",
-		"time": 1449151302
+		"time": 1449151302,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Tidy",
+		"body": ""
 	},
 	{
 		"hash": "c926b55b15760f9ac6546e12d4e9642ceb95eea3",
-		"time": 1449094062
+		"time": 1449094062,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Tidy up.",
+		"body": ""
 	},
 	{
 		"hash": "79ccf1a6b0a4888dd3651239a9e7d31bba3cbeea",
-		"time": 1449093932
+		"time": 1449093932,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Swap main informative text on channel limitations into StereoPannerNode, reference from within PannerNode.",
+		"body": ""
 	},
 	{
 		"hash": "75183663831fade80be9acc61243dcadf95ac150",
-		"time": 1449093730
+		"time": 1449093730,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge branch 'gh-pages' into 52-panner-node-channel-limitations",
+		"body": ""
 	},
 	{
 		"hash": "78037f682944f7fd2b127715f0097bbaf6d6e8e2",
-		"time": 1449093519
+		"time": 1449093519,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Reference fact of down mixing in getByte(Float)TimeDomainData definitions.",
+		"body": ""
 	},
 	{
 		"hash": "6bdb30b0db82342e20034f7fe953d8cc46249060",
-		"time": 1449093498
+		"time": 1449093498,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Reinstate channelCount declaration for AnalyserNode",
+		"body": ""
 	},
 	{
 		"hash": "be8cbd3eebd71b8365a6cf44f4674f5c73d1e518",
-		"time": 1449092842
+		"time": 1449092842,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge branch 'gh-pages' into 86-analyzer-node-issues",
+		"body": ""
 	},
 	{
 		"hash": "2ff3cfc88e7501c9acb478796b54d847b07c0841",
-		"time": 1449092719
+		"time": 1449092719,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Remove unused variable.",
+		"body": ""
 	},
 	{
 		"hash": "7665e1739dc588160a4bb05ded9480d39b9b1b25",
-		"time": 1449092458
+		"time": 1449092458,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge branch 'gh-pages' into 260-use-js-for-code-examples",
+		"body": "Conflicts:\n\tindex.html"
 	},
 	{
 		"hash": "ba6f02b142cc25747cf4f75be7b63b987f54e51e",
-		"time": 1447664088
+		"time": 1447664088,
+		"name": "Chinmay Pendharkar",
+		"email": "notthetup@gmail.com",
+		"subject": "changed href for Parameter Automation methods to confirm to the new function signature (return AudioPrams)",
+		"body": ""
 	},
 	{
 		"hash": "403853d5613fde80c7e9f91244eabac21312f79d",
-		"time": 1447440708
+		"time": 1447440708,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "fix typo",
+		"body": ""
 	},
 	{
 		"hash": "6f627167e87d769546321b3e3a0d2c3558b26762",
-		"time": 1447438727
+		"time": 1447438727,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "removing \"easy chaining\" statement",
+		"body": ""
 	},
 	{
 		"hash": "c29b07bcd3b619cef2458cec40121a5530a18686",
-		"time": 1447437890
+		"time": 1447437890,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "Merge remote-tracking branch 'upstream/gh-pages' into 650-support-method-chaining",
+		"body": ""
 	},
 	{
 		"hash": "359d98313a001a021c4ffb20c38ca8c0272f1079",
-		"time": 1447436271
+		"time": 1447436271,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix bad link to StereoPanner",
+		"body": "Replace \"StereoPanner\" with the correct \"StereoPannerNode\""
 	},
 	{
 		"hash": "a1d914951ab74bb80684f030967f1927698877ee",
-		"time": 1447373570
+		"time": 1447373570,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #625 from WebAudio/85-clarify-latency-expectation",
+		"body": "Fix #85 by clarifying AudioContext.currentTime and various events' pl…"
 	},
 	{
 		"hash": "ee8e208975b0f900219f49f6f5a084ebe6906b49",
-		"time": 1447371701
+		"time": 1447371701,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Clarify wording of currentTime advancement.",
+		"body": ""
 	},
 	{
 		"hash": "5b471677a0fb8924a6fcc4b09d731bee3e75a56a",
-		"time": 1447369561
+		"time": 1447369561,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Clarify definition of currentTime further.",
+		"body": ""
 	},
 	{
 		"hash": "1c102582469c99bf8cf96aadbdb3177e1ec70fc9",
-		"time": 1447367676
+		"time": 1447367676,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Have OfflineAudioContext inherit from BaseAudioContext, not AudioContext",
+		"body": ""
 	},
 	{
 		"hash": "150791e6b4c264aa1b1e30a4b12bf2d400d2bf57",
-		"time": 1447367074
+		"time": 1447367074,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge branch 'gh-pages' into 85-clarify-latency-expectation",
+		"body": "Conflicts:\n\tindex.html"
 	},
 	{
 		"hash": "ee63f42682f1addaba8d2794b3956bf7b9cbdc94",
-		"time": 1447364822
+		"time": 1447364822,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix up merge mess with AudioListener deprecation. Fix AudioContext type name mistake.",
+		"body": ""
 	},
 	{
 		"hash": "1dc1044d1e49cf5c8ddc0675473807c87f49af24",
-		"time": 1447360500
+		"time": 1447360500,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Tidy up",
+		"body": ""
 	},
 	{
 		"hash": "0907468540a8276ffe00bb795bdbc6f0960e5fe5",
-		"time": 1447360362
+		"time": 1447360362,
+		"name": "User",
+		"email": "user@ubuntu.localdomain",
+		"subject": "Merge branch 'gh-pages' into 308-remove-methods-offline-ctx",
+		"body": ""
 	},
 	{
 		"hash": "0e264ec174e2bf0588d0908de96d3b1ed9eb2a37",
-		"time": 1447360298
+		"time": 1447360298,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix dangling conflicts.",
+		"body": ""
 	},
 	{
 		"hash": "69306f7c0933c80b5036b9f1b04dc6d3d4f9f331",
-		"time": 1447359917
+		"time": 1447359917,
+		"name": "User",
+		"email": "user@ubuntu.localdomain",
+		"subject": "Merge branch 'gh-pages' into 308-remove-methods-offline-ctx",
+		"body": "Conflicts:\n\tindex.html"
 	},
 	{
 		"hash": "a2fc42c80b5eaf69cb8784b539f4b42b66623837",
-		"time": 1447346190
+		"time": 1447346190,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #635 from WebAudio/110-NaN-Inf",
+		"body": "Fix #110 by adding explicit section on Audio Signal Values."
 	},
 	{
 		"hash": "328d421a31b16ef17a880105ad1ae2c1dd68c1c0",
-		"time": 1447339700
+		"time": 1447339700,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "tidy up",
+		"body": ""
 	},
 	{
 		"hash": "6a599fc08cd764cc55476921c7b9c12240411e48",
-		"time": 1447339551
+		"time": 1447339551,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge branch 'gh-pages' into 85-clarify-latency-expectation",
+		"body": "Conflicts:\n\tindex.html"
 	},
 	{
 		"hash": "977cc8283a3c2bbcf4ffcc43509fe023a6cc0632",
-		"time": 1447338310
+		"time": 1447338310,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Make notation and language describing signal range consistent with other usage.",
+		"body": ""
 	},
 	{
 		"hash": "a44517ec621b4b49d8214172bcd95cd312b69c78",
-		"time": 1447338060
+		"time": 1447338060,
+		"name": "User",
+		"email": "user@ubuntu.localdomain",
+		"subject": "Merge branch 'gh-pages' into 110-NaN-Inf",
+		"body": ""
 	},
 	{
 		"hash": "3ede3df35af44afc0259a7126a2e2691a84feefc",
-		"time": 1447337821
+		"time": 1447337821,
+		"name": "Joe Berkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge pull request #636 from WebAudio/125-remove-convolution-doc",
+		"body": "Fix #125: remove redundant convolution doc."
 	},
 	{
 		"hash": "d1296f5b0bd66cd31627aaca23486d08876d0c72",
-		"time": 1447263054
+		"time": 1447263054,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "Merge remote-tracking branch 'upstream/gh-pages' into 650-support-method-chaining",
+		"body": ""
 	},
 	{
 		"hash": "bfa4fa044a009d719423bf857fa4fb07fb52f489",
-		"time": 1447262930
+		"time": 1447262930,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "addressed feedback from rtoy",
+		"body": ""
 	},
 	{
 		"hash": "a8c6aedc9bdf619bef72f093c1e1b9de55b6b34e",
-		"time": 1447261278
+		"time": 1447261278,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #643 from WebAudio/34-audio-element-prose2",
+		"body": "Fix #34 by adding ref to video element, on new tidied branch"
 	},
 	{
 		"hash": "eb9397f3e9bbb5354eb26c39bd24394d58feff5b",
-		"time": 1447097606
+		"time": 1447097606,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix up problems in preceding merge commit.",
+		"body": ""
 	},
 	{
 		"hash": "0a430db6926feb3ae34bda4f7549178095fcd1b7",
-		"time": 1447097265
+		"time": 1447097265,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge branch 'gh-pages' into 560-clarify-loop-treatment",
+		"body": "# Conflicts:\n#\tindex.html"
 	},
 	{
 		"hash": "fcaf1ff5bb13b63679bb60203ca9a489a3dc788c",
-		"time": 1446917737
+		"time": 1446917737,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Add change from <code> to <a> per @padenot",
+		"body": ""
 	},
 	{
 		"hash": "f6bef1afeb6ba4c4bd7cae006242eda90aafc273",
-		"time": 1446761838
+		"time": 1446761838,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Specify initial event for linear and exponential ramp.",
+		"body": "If there is no event preceding a linearRampToValueAtTime or\nexponentialRampToValueAtTime, specify that these behave as if a\nsetValueAtTime were inserted at the context currentTime with the\ncurrent attribute value at the time of the call.\n\nFix #130."
 	},
 	{
 		"hash": "4bca885edfcd26dbb85ac681b0ffffe4a22efea4",
-		"time": 1446679297
+		"time": 1446679297,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use correct formula for setValueCurveAtTime",
+		"body": "Fix #657 by changing N to N-1.\nAlso slightly adjusted the formula to use larger floor symbols."
 	},
 	{
 		"hash": "86e253ad25cb8ee91c5931ff2e89650bfe77e145",
-		"time": 1446571656
+		"time": 1446571656,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Change wording/naming of bufferingHint to playbackCategory",
+		"body": ""
 	},
 	{
 		"hash": "1bc95e233e1bc24945207754af98df310b60c5bd",
-		"time": 1446260672
+		"time": 1446260672,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Respond to hoch+rtoy comments, SHOULD be ok now :)",
+		"body": ""
 	},
 	{
 		"hash": "027253d1d64bdc69f0103eb7875fdfc8567496a1",
-		"time": 1446221902
+		"time": 1446221902,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Clean up text about the invalid cases where v0 or v1 have opposite signs or one is 0.",
+		"body": ""
 	},
 	{
 		"hash": "1d1c3d2f38ab3aa8b14c92ad24e365de3fe433b2",
-		"time": 1446221646
+		"time": 1446221646,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Add <code> around exception name.",
+		"body": ""
 	},
 	{
 		"hash": "7e77f56754e0916304ddeab5f0798f5e45cf012e",
-		"time": 1446221063
+		"time": 1446221063,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 612-exponential-ramp-0-behavior",
+		"body": ""
 	},
 	{
 		"hash": "96a521f2808b8a637d400433c842d9c1989b2180",
-		"time": 1446197400
+		"time": 1446197400,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Respond to @padenot comments",
+		"body": ""
 	},
 	{
 		"hash": "94351da828bc584c9eed2b20076fbb9b87b52e2d",
-		"time": 1446179238
+		"time": 1446179238,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix #348 add AudioContext constructor dictionary with buffer hint",
+		"body": ""
 	},
 	{
 		"hash": "938cf2bf8f81a4febb0228eae03c9d0af5103cbc",
-		"time": 1445919129
+		"time": 1445919129,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "connect() typo, and tidy cleanup.",
+		"body": ""
 	},
 	{
 		"hash": "013e6ad482af195e8844c083a365171d11871c59",
-		"time": 1445912834
+		"time": 1445912834,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Rearrange description of \"currentTime\"",
+		"body": "Fixes #381."
 	},
 	{
 		"hash": "078b15f29fd7cd4ccb357a88d2133354c9fc73f6",
-		"time": 1445912421
+		"time": 1445912421,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "loop modification mixup.",
+		"body": "Fixes #281."
 	},
 	{
 		"hash": "2677a0f777fc180dc30d21fddec072eb255b679d",
-		"time": 1445912097
+		"time": 1445912097,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Remove references to Web Workers.",
+		"body": "Fixes #532."
 	},
 	{
 		"hash": "44ebce6044882da08c41f30a835b3564c922a407",
-		"time": 1445907716
+		"time": 1445907716,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Return destination node from connect()",
+		"body": "Fixes #258."
 	},
 	{
 		"hash": "0a0111a03051ae4857e17b5937744e69f53429ca",
-		"time": 1445907114
+		"time": 1445907114,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Clamp loopStart, loopEnd and offset.",
+		"body": "Fixes #363."
 	},
 	{
 		"hash": "92300ffb66e9cf38adafb31372f15b7b400ceb5f",
-		"time": 1445762610
+		"time": 1445762610,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Tidy tidy tidy. Trailing space?  Really?",
+		"body": ""
 	},
 	{
 		"hash": "6522b3c0f9b5618a2c5e27c4adadfa38cc90692b",
-		"time": 1445759771
+		"time": 1445759771,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Tidy Tidy",
+		"body": ""
 	},
 	{
 		"hash": "9bb26f5679e3dc8ef9ae9a10c44580e4bb3a816a",
-		"time": 1445759199
+		"time": 1445759199,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Tidy!",
+		"body": ""
 	},
 	{
 		"hash": "d3d0a727f2e2bacb2e63f1a5b453d258a2523c3c",
-		"time": 1445757586
+		"time": 1445757586,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix #443: clarify garbage collection lifecycle for decodeAudioData and OfflineAudioContext startRendering",
+		"body": ""
 	},
 	{
 		"hash": "ca2247c41d7b80b8fcb5a5a3f738ea6ad821d35d",
-		"time": 1445750063
+		"time": 1445750063,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #560 clarify loop behavior and time units, also playback start offset, as independent of ABSN playback rate.",
+		"body": ""
 	},
 	{
 		"hash": "c8601bb371be95b73d4e3eae2035a16a3a004063",
-		"time": 1445727408
+		"time": 1445727408,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "OK, tidy fix?",
+		"body": ""
 	},
 	{
 		"hash": "b863c6e58bd11b0ec08f6e8abb66a6fe098c9238",
-		"time": 1445725758
+		"time": 1445725758,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix #34 by adding ref to video element, on new tidied branch",
+		"body": ""
 	},
 	{
 		"hash": "f013bad6aa6892e6ec2c7fb945f4ec18d1e9b714",
-		"time": 1445517109
+		"time": 1445517109,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Don't fire \"complete\" directly.",
+		"body": "It needs to be fired from a queued task.\n\nThis fixes #448."
 	},
 	{
 		"hash": "82dc3f8d03e8735150f9720f3866b7bf17057487",
-		"time": 1445276253
+		"time": 1445276253,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix issues caught by tidy.",
+		"body": "Wrap long lines."
 	},
 	{
 		"hash": "35c298a1e4985b11c7fd5fd4aa7fdcf9dddd5e88",
-		"time": 1445275919
+		"time": 1445275919,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix issues caught by tidy.",
+		"body": "Write sequence&lt;double> as sequence&lt;double&gt;"
 	},
 	{
 		"hash": "b231e999da334837cc8c38388f58ee488421d738",
-		"time": 1445275726
+		"time": 1445275726,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 631-createIIRFilter-doubles",
+		"body": ""
 	},
 	{
 		"hash": "cf39c83e7265695ecc394923387210b37e812933",
-		"time": 1445275662
+		"time": 1445275662,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix bad HTML",
+		"body": "Must write sequence<double> as sequence&lt;double> otherwise <double>\nlooks like an (unknown) tag."
 	},
 	{
 		"hash": "ddeeebfd2bfe876a85c9e976b3a71c9c5609cdd8",
-		"time": 1445256500
+		"time": 1445256500,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Tidy the spec after the spatial panner merge",
+		"body": ""
 	},
 	{
 		"hash": "ca97f0134d1707d883af181021200e46e02269d9",
-		"time": 1445037123
+		"time": 1445037123,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Typo.",
+		"body": ""
 	},
 	{
 		"hash": "56d16d9e8478c5c7a89b163d46f6963992a7e7df",
-		"time": 1445036985
+		"time": 1445036985,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "SpatialPanner try 2",
+		"body": ""
 	},
 	{
 		"hash": "2ca8e37171403db79946d1a0a4dce387b951e65e",
-		"time": 1445033613
+		"time": 1445033613,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #308 by refactoring most of AudioContext into BaseAudioContext. AudioContext and OfflineAudioContext now inherit from BaseAudioContext.",
+		"body": ""
 	},
 	{
 		"hash": "ca0cad2f5da7504803cd623f0a9c254ae9c965a5",
-		"time": 1445031626
+		"time": 1445031626,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fir #260 by using JavaScript for all examples.",
+		"body": ""
 	},
 	{
 		"hash": "96ed52bf842c6c4a213b10f99732d6e22ee0d2c6",
-		"time": 1445025154
+		"time": 1445025154,
+		"name": "User",
+		"email": "user@ubuntu.localdomain",
+		"subject": "Fix tidy errors",
+		"body": ""
 	},
 	{
 		"hash": "c0d589d56451668cf9dd09c26e404e5faa65126b",
-		"time": 1445023258
+		"time": 1445023258,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #110: remove redundant convolution doc. Moved normative section on ConvolverNode channel configurations into ConvolverNode section where it belongs.",
+		"body": ""
 	},
 	{
 		"hash": "42d90f88a470839edaeaf685c8b97f08725326fe",
-		"time": 1445020111
+		"time": 1445020111,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #110 by adding explicit section on Audio Signal Values.",
+		"body": ""
 	},
 	{
 		"hash": "8108693d6ed1118f4e9767ac4298559aecbbeea3",
-		"time": 1445019104
+		"time": 1445019104,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #52 by addressing PannerNode and StereoPannerNode limitations explicitly in spec.",
+		"body": ""
 	},
 	{
 		"hash": "9b683199034294f13804b0720102f57878f4131b",
-		"time": 1445010153
+		"time": 1445010153,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Tidy the spec before enabling travis",
+		"body": ""
 	},
 	{
 		"hash": "08a48dd87729f2ce5cef656b331c5ce62fec5d93",
-		"time": 1445010112
+		"time": 1445010112,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Add <pre> around maths",
+		"body": ""
 	},
 	{
 		"hash": "55632c20e38e6a197b8b64dfc6454e4c2b2c339e",
-		"time": 1444946636
+		"time": 1444946636,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "createIIRFilter takes double coefficients",
+		"body": "The coefficients for createIIRFilter are explicitly doubles and not\nfloats now.\n\nWe also fix a minor issue that was accepted in\nWebAudio/web-audio-api#323 where a sequence<float> was allowed instead\nof Float32Array to make it easier for the developer to specify\ncoefficients.\n\nNote that for some reason respec replaces sequence<double> with just\nsequence in the document.  Is this a bug in respec?\n\nFix WebAudio/web-audio-api#631"
 	},
 	{
 		"hash": "e47307415e28d590f642d9d8babf4d4a5af42e46",
-		"time": 1444941070
+		"time": 1444941070,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Further clarify the definition of AudioContext.currentTime in terms of last-processed block, not next-processed block.",
+		"body": ""
 	},
 	{
 		"hash": "401b06436bda6b0bad4b9c199369c5561a9651ea",
-		"time": 1444918192
+		"time": 1444918192,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Update the local respec version, and use the hosted version",
+		"body": ""
 	},
 	{
 		"hash": "8f908eaed876ffc6f60a63503f3933c488780ee9",
-		"time": 1444915505
+		"time": 1444915505,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #626 from WebAudio/288-audiobuffersourcenode-once",
+		"body": "AudioBufferSourceNode.buffer should only be set once, this fixes #288"
 	},
 	{
 		"hash": "a3a4df537c9f509dbea6fc3c70b09606a2a36c1c",
-		"time": 1444914111
+		"time": 1444914111,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #622 from WebAudio/619-fix-formulas",
+		"body": "Hack around wrapping in tidy HTML to keep nicely formatted formulas"
 	},
 	{
 		"hash": "dabb1dacbbe376fe3c424d2c64564147043417bb",
-		"time": 1444840490
+		"time": 1444840490,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #86 by clarifying channel down-mixing.",
+		"body": ""
 	},
 	{
 		"hash": "8556fddf278ffdbc4189b8094d0aa433bc715fc0",
-		"time": 1444828508
+		"time": 1444828508,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "AudioBufferSourceNode.buffer should only be set once, this fixes #288",
+		"body": ""
 	},
 	{
 		"hash": "364ad8a288c3fe6cf9a47b2ff164fd221f394ddb",
-		"time": 1444826790
+		"time": 1444826790,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix typo \"a\" -> \"an\"",
+		"body": ""
 	},
 	{
 		"hash": "1962e58d4a6e0d17596352b54a7e33214597bb4e",
-		"time": 1444814526
+		"time": 1444814526,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #621 from rtoy/569-spec-osc-coef",
+		"body": "Specify PeriodicWave coefficients to generate Oscillator waveforms"
 	},
 	{
 		"hash": "91f68682de66b71446b7bebb949677c58e0458b5",
-		"time": 1444814421
+		"time": 1444814421,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Address review comments",
+		"body": ""
 	},
 	{
 		"hash": "7f48c6eabd8b04335aad5959129dd71831d1aff9",
-		"time": 1444774859
+		"time": 1444774859,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #85 by clarifying AudioContext.currentTime and various events' playbackTime.",
+		"body": ""
 	},
 	{
 		"hash": "37a239dade35b720c73890f92e13a311099b6b16",
-		"time": 1444766206
+		"time": 1444766206,
+		"name": "Joe Berkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge pull request #608 from WebAudio/65-wave-shaper-curve-mod",
+		"body": "Fix #65 by clarifying copy-on-write behavior of WaveShaperNode.curve."
 	},
 	{
 		"hash": "0e407794b27678c88fa874c5bf3319ed1d60d3c8",
-		"time": 1444754774
+		"time": 1444754774,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #615 from WebAudio/60-getFrequencyResponse",
+		"body": "Better spec BiquadFilterNode.getFrequencyResponse\r\n\r\nFix #60"
 	},
 	{
 		"hash": "bd9e992ac0dd954a32037d909aa36d2497245ed3",
-		"time": 1444754622
+		"time": 1444754622,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Addl link for PeriodicWave.",
+		"body": ""
 	},
 	{
 		"hash": "b9b924d16086b199fee10c99192ae0c9e2554f74",
-		"time": 1444746589
+		"time": 1444746589,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Hack around wrapping in tidy HTML to keep nicely formatted formulas",
+		"body": "This wraps formulas in `pre` tags that are ignored by tidy, and we enabled their parsing in MathJax.\nThis also tidies the document."
 	},
 	{
 		"hash": "1cb75dfe9dc7a6dbe5d0476f7ac11ae244ce250f",
-		"time": 1444681958
+		"time": 1444681958,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Specify exponential ramp behavior when previous value is 0",
+		"body": "Clarify what happens if the previous event value is 0.  We also\nexplicitly allow v0 and v1 to both be negative (the formula is\nwell-defined in this case).\n\nIf an error is thrown, the previous value is propagated.\n\nFixes WebAudio/web-audio-api#612."
 	},
 	{
 		"hash": "138649f42b993d0457d65a431f8e75a8743c342d",
-		"time": 1444680951
+		"time": 1444680951,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Specify PeriodicWave coefficients to generate basic Oscillator waveforms.",
+		"body": "Include formulas appropriate for PeriodicWave objects to create the\nbasic builtin Oscillator waveforms.\n\nFixes WebAudio/web-audio-api#569."
 	},
 	{
 		"hash": "f7db0d97a4fb8f3a303eb1d533862e56fecf188d",
-		"time": 1444669014
+		"time": 1444669014,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use relative link.",
+		"body": ""
 	},
 	{
 		"hash": "20ada01c7ba1a391390234f539d8d3fabc44f0ae",
-		"time": 1444668826
+		"time": 1444668826,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 571-describe-get-byte-data",
+		"body": ""
 	},
 	{
 		"hash": "2728c1ba791ebb405c6434dd31369c9e4b9b0416",
-		"time": 1444665594
+		"time": 1444665594,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Address review comments",
+		"body": ""
 	},
 	{
 		"hash": "c0264c1f4741f42bc32e1400ba0d9d74858162c3",
-		"time": 1444414357
+		"time": 1444414357,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Wrap lines to make them shorter. (Why didn't tidy do that?)",
+		"body": ""
 	},
 	{
 		"hash": "2669c9fc8399cb69deb4e52c27d8e07187f54d88",
-		"time": 1444413963
+		"time": 1444413963,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "setTargetAtTime timeConstant must be positive",
+		"body": "Fix WebAudio/web-audio-api#616"
 	},
 	{
 		"hash": "4a75491ad1501676d27bb395b160a32d72c50642",
-		"time": 1444412891
+		"time": 1444412891,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Describe how byte values are computed for getByteTimeDomainData and getByteFrequencyData.",
+		"body": "Fixes WebAudio/web-audio-api#571."
 	},
 	{
 		"hash": "1af2e2d439e20f3e00fafd3613bbb58c153ec56f",
-		"time": 1444395970
+		"time": 1444395970,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Better spec BiquadFilterNode.getFrequencyResponse",
+		"body": "This fixes issue #60."
 	},
 	{
 		"hash": "44d964068ece6afc47e91d92426c37ea5ad1d825",
-		"time": 1444384207
+		"time": 1444384207,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #610 from rtoy/326/328-panner-distance-limits",
+		"body": "Update distance formulas to clamp the distance appropriately."
 	},
 	{
 		"hash": "71878c9e9367d19bbf3ba6148130550133d2a136",
-		"time": 1444346336
+		"time": 1444346336,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Add note about using setTargetAtTime for exponential ramp to 0.",
+		"body": "Also state in the formula that V0 and V1 must be both positive.\n\nFixes WebAudio/web-audio-api#486."
 	},
 	{
 		"hash": "31b9f642fd98a1888382df0da1a602f94f1bc8dc",
-		"time": 1444343625
+		"time": 1444343625,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Update distance formulas to clamp the distance appropriately.",
+		"body": "The distance formulas include appropriate clamping of the distances to\nlie between d_ref and d_max (or infinity) as appropriate.\n\nFixes WebAudio/web-audio-api#326 and WebAudio/web-audio-api#328."
 	},
 	{
 		"hash": "1c07de1b9f8f75226f215d156f94be7f334ce5a2",
-		"time": 1444333403
+		"time": 1444333403,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Further changes to address #67 and #68.",
+		"body": ""
 	},
 	{
 		"hash": "1d9b25e8938293e8bdd340b3ef626c8040053a04",
-		"time": 1444333009
+		"time": 1444333009,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #65 by clarifying copy-on-write behavior of WaveShaperNode.curve.",
+		"body": ""
 	},
 	{
 		"hash": "11463dfbe504f7943d23d9875fd34374d4d5cadf",
-		"time": 1444331818
+		"time": 1444331818,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #43 by clarifying effect of disconnecting a node from an AudioParam on the parameter value. Also separately document the actions of the various flavors of AudioNode.disconnect().",
+		"body": ""
 	},
 	{
 		"hash": "74c7d165830dcec072876eba0017e4d5e39152a9",
-		"time": 1444219076
+		"time": 1444219076,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Tidy the sources",
+		"body": ""
 	},
 	{
 		"hash": "249996acc4f9d2dc5d222e2602352a06cdfce389",
-		"time": 1444219016
+		"time": 1444219016,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Clean markup so that tidy does not complain",
+		"body": ""
 	},
 	{
 		"hash": "f92bd4628e83d0b0f5884a24dc9f5b9c05c28d81",
-		"time": 1444196631
+		"time": 1444196631,
+		"name": "Mark Buer",
+		"email": "mark.buer@booktrack.com",
+		"subject": "Fixes typo.",
+		"body": ""
 	},
 	{
 		"hash": "c192c6dda475bcf0065770262694a1c1909b0197",
-		"time": 1443810545
+		"time": 1443810545,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix typos, improve readability of diagram.",
+		"body": ""
 	},
 	{
 		"hash": "c696c096ef2dc63546992d9aa672f8143e6d3414",
-		"time": 1443720005
+		"time": 1443720005,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #40 Add detail of connecting audio node to AudioParam.",
+		"body": ""
 	},
 	{
 		"hash": "66801bd42e6e03f9052965043c00acc15d23bcdb",
-		"time": 1443719885
+		"time": 1443719885,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@dolby.com",
+		"subject": "Merge pull request #597 from WebAudio/314-OfflineAudioBuffer-sample-rate",
+		"body": "Fix #314 - sample rate in createBuffer, OfflineAudioContext"
 	},
 	{
 		"hash": "22a3cc29d0b7fcb553a282fb54507dde91f38f81",
-		"time": 1443221227
+		"time": 1443221227,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix some links and capitalizations",
+		"body": "o The link linearRamp automation method in section \"AudioParam\n  Interface\" was incorrect.\no The name of the endTime parameter for exponentialRampToValue was not\n  correctly cased (endtime -> endTime).\no Use correct link for the value attribute in section \"AudioParam\n  Transitions\" and setTargetAtTime link.\no Remove undefined link for timeConstant that caused ReSpec to\n  complain."
 	},
 	{
 		"hash": "68cc257a74dd065deedfabbcea86711a40dfb09d",
-		"time": 1443114193
+		"time": 1443114193,
+		"name": "Joe Berkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge pull request #583 from WebAudio/128-clarify-param-value-setter",
+		"body": "Fix #128: clarify effect of setting the value attribute with respect …"
 	},
 	{
 		"hash": "e1fe9fce3480ee12fd4501da99814aa022b21211",
-		"time": 1443099637
+		"time": 1443099637,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #600 from WebAudio/57-mimesniff",
+		"body": "Link to the mimesniff spec in `decodeAudioData`"
 	},
 	{
 		"hash": "d87edde79910947024e5dfe906c72b3b443428d1",
-		"time": 1443099614
+		"time": 1443099614,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #393 from WebAudio/76-remove-dezippering",
+		"body": "Remove dezippering from the spec"
 	},
 	{
 		"hash": "a1c9511169b7e651d24e4a403c9cbca005dd07d7",
-		"time": 1443014257
+		"time": 1443014257,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Add correct style for notes to comment on disconnected nodes",
+		"body": ""
 	},
 	{
 		"hash": "d40f632ecd2b3bf6730eca476204b17791b395e6",
-		"time": 1442999751
+		"time": 1442999751,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "typo",
+		"body": ""
 	},
 	{
 		"hash": "ec9ac97156a5c3adf5edc289e7ab90c8addeba3b",
-		"time": 1442999125
+		"time": 1442999125,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Link to the mimesniff spec in `decodeAudioData`",
+		"body": "This fixes #57"
 	},
 	{
 		"hash": "fae59322265091a080dd15553fbb9e7f1c6ee3f5",
-		"time": 1442998876
+		"time": 1442998876,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #586 from rtoy/5-audioparam-set-target-at-time-example",
+		"body": "Fix #5: Add setTargetAtTime curve to example"
 	},
 	{
 		"hash": "0d8fe479649a89d0ee7f89b4511d19a1e3a7f491",
-		"time": 1442998701
+		"time": 1442998701,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #594 from WebAudio/25-delaynode-input-count-change",
+		"body": "Clarify DelayNode behavior under changing channel count."
 	},
 	{
 		"hash": "129c4923b3bd6e49cc5aec1f30ddd03c39933ed5",
-		"time": 1442998593
+		"time": 1442998593,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #590 from WebAudio/497/computed-playbackrate-and-pitch",
+		"body": "Clarify that computedPlaybackRate must be implemented by resampling the audio."
 	},
 	{
 		"hash": "8ad0c7020529d636f181e1e1bafcdbc6a40f1c03",
-		"time": 1442998542
+		"time": 1442998542,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #599 from rtoy/598-audio-cookbook-reference",
+		"body": "#598: Adjust reference to Audio EQ Cookbook"
 	},
 	{
 		"hash": "a13360089a4ca13fdad4f1b1bf44be90b4e6004b",
-		"time": 1442998316
+		"time": 1442998316,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Remove dezippering.",
+		"body": "This fixes #76."
 	},
 	{
 		"hash": "a77a57c9c777277798f6d8805be9faa40d49bf02",
-		"time": 1442997782
+		"time": 1442997782,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #591 from WebAudio/565/type-index-copyfromtochannel",
+		"body": "Use `unsigned long` for index type in copyFromChannel and copyToChannel."
 	},
 	{
 		"hash": "d35e331ae05afaad3fc83ae60a4b25ae86be5867",
-		"time": 1442997576
+		"time": 1442997576,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #588 from WebAudio/567-copyToChannel-clarification",
+		"body": "Clarify the meaning of the operation \"acquire the content\"."
 	},
 	{
 		"hash": "55df8cfbadb97215596d9be35c83c1173c520e7d",
-		"time": 1442996638
+		"time": 1442996638,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #500 from WebAudio/460-suspend-currentTime",
+		"body": "Clarify that currentTime does not increase when the context is not \"running\""
 	},
 	{
 		"hash": "60f882a608276b5bfc98ff4725d6de8bf5aea73e",
-		"time": 1442996593
+		"time": 1442996593,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #596 from WebAudio/32-link-usecases",
+		"body": "Add reference(s) to use cases in intro + near end"
 	},
 	{
 		"hash": "1bb6def4176138615c400b1ef8aff27d636c1cf8",
-		"time": 1442332139
+		"time": 1442332139,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #598: Adjust reference to Audio EQ Cookbook",
+		"body": "Instead of saying the biquad formulas from the cookbook, say they're\ninspired by the cookbook because the many of formulas are different\nfrom the ones in the cookbook."
 	},
 	{
 		"hash": "21a866fb4352968373b81cbda3b8d40000e0d9c0",
-		"time": 1442266513
+		"time": 1442266513,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix #314 - remove text that should stay in createBuffer not OfflineAudioContext, fix grammar (a NotSupported... vs an NotSupported...)",
+		"body": ""
 	},
 	{
 		"hash": "1d7fb4d634d5e3f07014ca796e9fc18538d302c3",
-		"time": 1442255547
+		"time": 1442255547,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix #314, refer to createBuffer for valid value ranges for OfflineAudioContext constructor",
+		"body": ""
 	},
 	{
 		"hash": "1660c89e0408981b64cb45f0be14e83b1be0fbbb",
-		"time": 1442198494
+		"time": 1442198494,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix sample rate in createBuffer, OfflineAudioContext",
+		"body": ""
 	},
 	{
 		"hash": "110054734ae87c240304a46098beb674b25669be",
-		"time": 1441998099
+		"time": 1441998099,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@dolby.com",
+		"subject": "Merge pull request #579 from WebAudio/385-Throw-typeerror-for-out-of-range",
+		"body": "Fix #385, TypeError for out of range values"
 	},
 	{
 		"hash": "d81ffd6f5a337db7847b2fd79ea6db413e1435bf",
-		"time": 1441993774
+		"time": 1441993774,
+		"name": "Joe Berkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge pull request #592 from WebAudio/8-behavior-of-unconnected-nodes",
+		"body": "Clarify uninterrupted operations of unconnected nodes"
 	},
 	{
 		"hash": "4d82495f1bbfbfe7501808ee0eb8068cfd32974e",
-		"time": 1441993701
+		"time": 1441993701,
+		"name": "Joe Berkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Merge pull request #593 from WebAudio/17-invalid-createScriptProcessor-args",
+		"body": "Clarify error thrown for invalid createScriptProcessor() arguments."
 	},
 	{
 		"hash": "b797317b1676ca5e886e54b84b07a4daee0d676b",
-		"time": 1441991415
+		"time": 1441991415,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix typo 'parametter' -> 'parameter'",
+		"body": ""
 	},
 	{
 		"hash": "1f9c1cd0f44a2779750ac72d8a9b34cfc1fbf1cf",
-		"time": 1441988239
+		"time": 1441988239,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Add note on resource usage of disconnected nodes",
+		"body": ""
 	},
 	{
 		"hash": "c81171fa141671a7c6347b588c47c3bcd3c386b0",
-		"time": 1441925161
+		"time": 1441925161,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Add reference(s) to use cases in intro + near end",
+		"body": ""
 	},
 	{
 		"hash": "dee594be263d7571c5bc74f262c00266efca3190",
-		"time": 1441920549
+		"time": 1441920549,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Add comment on where the graph for audioparam automation example comes from.",
+		"body": ""
 	},
 	{
 		"hash": "3d48dc1178234d6fc76f22644304b04dd99bbb28",
-		"time": 1441905086
+		"time": 1441905086,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Clarify DelayNode behavior under changing channel count.",
+		"body": ""
 	},
 	{
 		"hash": "6a37ceedbbdea17180ae07dea7dacd4e10687140",
-		"time": 1441904287
+		"time": 1441904287,
+		"name": "rtoy",
+		"email": "toy.raymond@gmail.com",
+		"subject": "Merge pull request #556 from rtoy/323-define-iir-filter",
+		"body": "Fix #323: Add IIRFilterNode"
 	},
 	{
 		"hash": "b028046578c9556964048fc2df96e26007e991f9",
-		"time": 1441904053
+		"time": 1441904053,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Clarify error thrown for invalid createScriptProcessor() arguments.",
+		"body": ""
 	},
 	{
 		"hash": "952154acfdcbfbe441f43e6c2005ea92bf33606c",
-		"time": 1441903275
+		"time": 1441903275,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Use `unsigned long` for index type in copyFromChannel and copyToChannel.",
+		"body": "This fixes #565"
 	},
 	{
 		"hash": "1359abe134e304c14912a99fee0ce0961f510999",
-		"time": 1441903250
+		"time": 1441903250,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Clarify uninterrupted operations of unconnected nodes",
+		"body": ""
 	},
 	{
 		"hash": "0eb09db5499be281989d3a94c1ae57bc7cda340f",
-		"time": 1441903098
+		"time": 1441903098,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Clarify that computedPlaybackRate must be implemented by resampling the audio.",
+		"body": "This fixes #497."
 	},
 	{
 		"hash": "cd68607f28a5f3e1eacd60997f1b0a0a8d863657",
-		"time": 1441902628
+		"time": 1441902628,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Merge branch 'gh-pages' into 385-Throw-typeerror-for-out-of-range",
+		"body": "# Conflicts:\n#\tindex.html"
 	},
 	{
 		"hash": "5d2c203fde2d863b11c884267b45650def4023ba",
-		"time": 1441902189
+		"time": 1441902189,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Clarify the meaning of the operation \"acquire the content\".",
+		"body": "This fixes #567"
 	},
 	{
 		"hash": "ad41d954cde622fe453541cd129e1d0ddf42774f",
-		"time": 1441901403
+		"time": 1441901403,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #585 from rtoy/584-clarify-biquad-get-frequency-response-",
+		"body": "Describe constraints for getFrequencyResponse."
 	},
 	{
 		"hash": "47f2206b79ba0b9e5c41b9abb3ad6de1218d8309",
-		"time": 1441320318
+		"time": 1441320318,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #5: Add setTargetAtTime curve to example",
+		"body": "The graph of parameter automation is updated to include an example of\nsetTargetAtTime with the code update appropriately.  The graph also\nincludes some simple annotation of each part and also gives an example\nof how to have another automation follow a setTargetAtTime.  A\nsetValueAtTime is required to terminate the setTargetAtTime and give a\nstarting value for the following exponentialRampToValueAtTime."
 	},
 	{
 		"hash": "cf2dd4e52179b47b6c2db4e97c3bfcf44793984a",
-		"time": 1440711250
+		"time": 1440711250,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Describe constraints for getFrequencyResponse.",
+		"body": ""
 	},
 	{
 		"hash": "cc0aba16fa0c84f13fd86542469944646754483a",
-		"time": 1440710919
+		"time": 1440710919,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Describe constraints for getFrequencyResponse.",
+		"body": ""
 	},
 	{
 		"hash": "5070bcc5efe91ef5117005c20c7d189fb3708e11",
-		"time": 1440697029
+		"time": 1440697029,
+		"name": "joeberkovitz",
+		"email": "joe@noteflight.com",
+		"subject": "Fix #128: clarify effect of setting the value attribute with respect to equivalent parameter automation action.",
+		"body": ""
 	},
 	{
 		"hash": "0099005cbb714c81706b6d706f56dfcd9a39896d",
-		"time": 1440692823
+		"time": 1440692823,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #570 from rtoy/131-setvaluecurveattime-linear-interp",
+		"body": "Fix #131: specify linear interpolation for setValueCurveAtTime"
 	},
 	{
 		"hash": "60e3b280f74ff5a9c85042d127a6218a6b7663cf",
-		"time": 1440692816
+		"time": 1440692816,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #568 from rtoy/564-add-description-automation-parameters",
+		"body": "Fix #564: Add descriptions of the parameters for automation functions."
 	},
 	{
 		"hash": "32ade10b32772f63ce361d9be8a84f694e2a0659",
-		"time": 1440692792
+		"time": 1440692792,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #580 from WebAudio/536-cancelscheduledvalue",
+		"body": "Clarify cancelScheduledValues behavior for setTargetAtTime"
 	},
 	{
 		"hash": "b377dcb279f92c9c4f93705a3985e0a553e5330d",
-		"time": 1440692616
+		"time": 1440692616,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Clarify that currentTime does not increase when the context is not \"running\".",
+		"body": "This fixes issue #460"
 	},
 	{
 		"hash": "f752ca1db6933036aed302610997557dc3a4fa3a",
-		"time": 1440692422
+		"time": 1440692422,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix typo.",
+		"body": ""
 	},
 	{
 		"hash": "9ded4034328d628aa6ebd28cbc07c9078907932c",
-		"time": 1440658564
+		"time": 1440658564,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Clarify cancelScheduledValues behavior for setTargetAtTime",
+		"body": ""
 	},
 	{
 		"hash": "5010ee078bd114fab2b0c978f4995d50c1db0a14",
-		"time": 1440605506
+		"time": 1440605506,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use feedback and feedforward instead of a and b.",
+		"body": ""
 	},
 	{
 		"hash": "3c54ced0a8b77c4a21109bcdb30b1d20c15d6be1",
-		"time": 1440505083
+		"time": 1440505083,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix grammar - An TypeError --> A TypeError",
+		"body": ""
 	},
 	{
 		"hash": "ab8d1e1d5a68e43aad9647591ffc5b86eddbdfe9",
-		"time": 1440483236
+		"time": 1440483236,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Fix #385, TypeError for out of range values",
+		"body": ""
 	},
 	{
 		"hash": "bfa7dc21f23d08338251d9d010486469d1da2317",
-		"time": 1440464685
+		"time": 1440464685,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Clarify use of AudioBufferSourceNode and provide recommendation for non-memory assets",
+		"body": ""
 	},
 	{
 		"hash": "be374a50bf1d3fa7c48d2ebfcf51126bb69c06c7",
-		"time": 1440405027
+		"time": 1440405027,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "Update wording for AudioBufferSourceNode start (called only once) and stop (can be called multiple times).",
+		"body": ""
 	},
 	{
 		"hash": "95c65b70f34b5401e9ba4c09d9a5e736d19426d9",
-		"time": 1439594751
+		"time": 1439594751,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix 572 adding links to the appropriate entries.",
+		"body": ""
 	},
 	{
 		"hash": "53a6b4a9c18fdd69420fbf7026ba80115f851c6d",
-		"time": 1439479955
+		"time": 1439479955,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "o Some HTML improvements to show links. o Add text about invalid coefficient settings. o Add the difference equation to make it clearer what the coefficients   are.",
+		"body": ""
 	},
 	{
 		"hash": "89d66ef10d9e65722341f043740697164ededcf4",
-		"time": 1439322576
+		"time": 1439322576,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into 323-define-iir-filter",
+		"body": ""
 	},
 	{
 		"hash": "622e6e46128332262e5dadf0de2ff9de4ca62335",
-		"time": 1438194091
+		"time": 1438194091,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Remove interpolation formula and just say linear interpolation is used.",
+		"body": ""
 	},
 	{
 		"hash": "38b835339e19b80852dc7e0dc8889e764bfbccd1",
-		"time": 1438112067
+		"time": 1438112067,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #131: define setValueCurveAtTime to use linear interpolation",
+		"body": ""
 	},
 	{
 		"hash": "f079694b2157ba0cdadb398c3b2592d31cf749d8",
-		"time": 1437766707
+		"time": 1437766707,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #564: Add descriptions of the parameters for automation functions.",
+		"body": "This moves the description of the parameters for each automation\nfunction from the paragraphs to the description box in the parameter\nlist."
 	},
 	{
 		"hash": "c31a787402fa9a1994776c99cfa1176ff4e896e1",
-		"time": 1437554862
+		"time": 1437554862,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #555 from rtoy/nice-panner-equations",
+		"body": "Use mathematical notation for panner distance formulas"
 	},
 	{
 		"hash": "8b4960b0e0bafd4fde70a46b9df20a1424ca84cc",
-		"time": 1437554770
+		"time": 1437554770,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #554 from rtoy/416-analyser-in-db-units",
+		"body": "Fix #416: Specify the units for the frequency data"
 	},
 	{
 		"hash": "1af84f7ae70842448c5919b678514fa170e9ca74",
-		"time": 1437554711
+		"time": 1437554711,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "rebase",
+		"body": ""
 	},
 	{
 		"hash": "b70ef4d9b8ff81e30d8b0884640227a387e9561d",
-		"time": 1437553995
+		"time": 1437553995,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #549 from rtoy/nice-automation-formulas",
+		"body": "Display automation formulas mathematically"
 	},
 	{
 		"hash": "7782b88101d603757d52b8b0d6fbf94c785e828c",
-		"time": 1437553386
+		"time": 1437553386,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #545 from rtoy/91-periodicwave-normalization",
+		"body": "Add optional normalization parameter to createPeriodicWave"
 	},
 	{
 		"hash": "0d09d06c27dd3a76cfd8eb31b58334386f2c3954",
-		"time": 1437553200
+		"time": 1437553200,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #542 from rtoy/464-waveshapernode.curve-error",
+		"body": "InvalidStateError must be thrown if WaveShaper curve is too short."
 	},
 	{
 		"hash": "1d0d64396113ec231b1636cd358501b935f09934",
-		"time": 1437552746
+		"time": 1437552746,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #515 from rtoy/442-add-informative",
+		"body": "Fix issue 442:  Update Lifetime section to say it's informative."
 	},
 	{
 		"hash": "fa9ee24fc273c0d4287263e6b9684d270b0932b2",
-		"time": 1437502702
+		"time": 1437502702,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix typo: \"normalize\" -> \"disableNormalization\".",
+		"body": ""
 	},
 	{
 		"hash": "a04cdabe1e98f054137e9ec58141e1c479d446ae",
-		"time": 1437411506
+		"time": 1437411506,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use a dictionary to specify how PeriodicWave should be normalized (or not).",
+		"body": ""
 	},
 	{
 		"hash": "60bb8aa43913b39efdfcc532fc58620cd8266084",
-		"time": 1437080846
+		"time": 1437080846,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "Fixed more nits: inconsistent expression on rejected promise",
+		"body": ""
 	},
 	{
 		"hash": "209658dd2a28b72a2724a717ba212f3f7a67cc9e",
-		"time": 1437080013
+		"time": 1437080013,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "Fixed more nits with rtoy@",
+		"body": ""
 	},
 	{
 		"hash": "ecaf4918d191fafa549467b43a9e25c85b24f1f3",
-		"time": 1437078227
+		"time": 1437078227,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "applied PR feedback from rtoy@",
+		"body": ""
 	},
 	{
 		"hash": "9af693dfd9ff014b734df4813ac9daaf3ddfcabc",
-		"time": 1437077830
+		"time": 1437077830,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "upstream merge",
+		"body": ""
 	},
 	{
 		"hash": "af6ea08b906a1ca5e72275fe62fae8fa06b13f11",
-		"time": 1435878181
+		"time": 1435878181,
+		"name": "Bill Hofmann",
+		"email": "bill.hofmann@gmail.com",
+		"subject": "fix #509, change k-rate to a-rate.",
+		"body": ""
 	},
 	{
 		"hash": "4152b1a9f745f879e22ccfc1b7c7a7c38b9f6ff6",
-		"time": 1435600654
+		"time": 1435600654,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "Initial commit",
+		"body": ""
 	},
 	{
 		"hash": "790c604f827bb2309146c12cd8f090f539fa7e02",
-		"time": 1434909007
+		"time": 1434909007,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #559 from rtoy/357-fixed-channel-count-and-mode",
+		"body": "Cannot change channelCountMode and channelCount for ScriptProcessor"
 	},
 	{
 		"hash": "31129c8bd64791144f13ee158097f0f97e3fd031",
-		"time": 1434908985
+		"time": 1434908985,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #558 from rtoy/379-update-dom-exception-names",
+		"body": "Use current names for DOM exceptions"
 	},
 	{
 		"hash": "74d236768b5c5d69f9bb03ab9083a2d36e1ac760",
-		"time": 1434735375
+		"time": 1434735375,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Cannot change channelCountMode and channelCount for ScriptProcessor",
+		"body": "Fix #357.\n\nSpecify that changing either of these signals an InvalidStateError."
 	},
 	{
 		"hash": "1747b3c831b4a3683e23680eee3b22ae41687f0e",
-		"time": 1434734050
+		"time": 1434734050,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use current names for DOM exceptions",
+		"body": "Fix #379.\n\nReplaced INVALID_STATE_ERR with InvalidStateError.\nA search for [A-Z]+_[A-Z]+_[A-Z] didn't find anything else."
 	},
 	{
 		"hash": "bdc9160ebae140c2484e295687f6a4cb87a8c1cc",
-		"time": 1434733746
+		"time": 1434733746,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Throw InvalidStateError when setting oscillator type to 'custom'.",
+		"body": "Fix #311."
 	},
 	{
 		"hash": "a0de6dfe9bfd695cec18e80066868b27dd82c844",
-		"time": 1434729151
+		"time": 1434729151,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use mathematical notation for panner distance formulas",
+		"body": ""
 	},
 	{
 		"hash": "cd1e805e4d2e76cfd9ead5f021fdeaeee73f5199",
-		"time": 1434675012
+		"time": 1434675012,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Oops.  Remove the fix for #547.",
+		"body": ""
 	},
 	{
 		"hash": "50aa7374ba0ac20f0587797192885334ebb25957",
-		"time": 1434674736
+		"time": 1434674736,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #416: Specify the units for the frequency data",
+		"body": "Specify that the output of getFloatFrequencyData and\ngetByteFrequencyData are in dB.  This also updates the description for\nthe FFT Windowing and smoothing to include a section on converted to\ndB. The smoothing section is also replaced with mathematical notation\ninstead of code."
 	},
 	{
 		"hash": "aaa2f162bf1bd8aa7190f83d2641b52eb7069677",
-		"time": 1434669427
+		"time": 1434669427,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #547: Define index for setValueCurveAtTime",
+		"body": "The indexing into the values array was not well-defined.  Specify that\nthe floating-point index is rounded to the nearest integer to index\ninto the array.  No interpolation is done."
 	},
 	{
 		"hash": "bf2b3622940f7c384afb9afed98ad2af37af7f45",
-		"time": 1434618782
+		"time": 1434618782,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #551 from rtoy/470-define-analyzer-fft",
+		"body": "Define FFT for AnalyserNode"
 	},
 	{
 		"hash": "c10c6cf3ec78cb994de4a135ee275555d55f6d71",
-		"time": 1434618455
+		"time": 1434618455,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #550 from rtoy/480-channel-count-not-supported-error",
+		"body": "Fix #480: channelCount throws NotSupportedError for invalid values."
 	},
 	{
 		"hash": "3b452b1de953fbee41a7e30657e21dfb7b7110ff",
-		"time": 1434583915
+		"time": 1434583915,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #323: Add IIRFilterNode",
+		"body": "This adds a new IIRFilterNode that implements a general IIR filter.\nThe filter coefficients are fixed and cannot be changed.  The maximum\nnumber of coefficients is 20."
 	},
 	{
 		"hash": "7dd5e3e1e282d2a2dac68685c565967d70c0fa6e",
-		"time": 1434579815
+		"time": 1434579815,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #447: Define oscillator carefully.",
+		"body": "Define the oscillators for the builtin types to produce the same\nresults as if a PeriodicWave with the appropriate Fourier coefficients\nwere used to create the oscillator."
 	},
 	{
 		"hash": "421fa2d864c8665a3fd0109a59a8294b2e5f434e",
-		"time": 1434576520
+		"time": 1434576520,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Define FFT for AnalyserNode",
+		"body": "Fix #470.\n\nThe section for the Blackman window is also updated to use\nmathematical notation."
 	},
 	{
 		"hash": "a48f48b7a53b6fd9a0acecd1009aa52364b139ec",
-		"time": 1434563586
+		"time": 1434563586,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #480: channelCount throws NotSupportedError for invalid values.",
+		"body": ""
 	},
 	{
 		"hash": "cfacbc0b4db94404eef0bead07f12dd5f1df56f2",
-		"time": 1434555925
+		"time": 1434555925,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Clean up some more.",
+		"body": ""
 	},
 	{
 		"hash": "b3891b490e53bf3e4a0f49c1ea9284f0eb2b67a9",
-		"time": 1434488828
+		"time": 1434488828,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Display nice formulas for the automation equations.",
+		"body": ""
 	},
 	{
 		"hash": "d9ea2fc2e54683296ec29e378246ce8ba7753fcb",
-		"time": 1434387990
+		"time": 1434387990,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Display formulas for the basic oscillator waves nicely.",
+		"body": ""
 	},
 	{
 		"hash": "b8f859c39e40b3f5dcee8bc72964e01f6315a3b6",
-		"time": 1434385026
+		"time": 1434385026,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix #91: Add optional normalization parameter to createPeriodicWave",
+		"body": "o Add optional normalization parameter to createPeriodicWave.\no Define how normalization is done.\no Define the waveform generation better."
 	},
 	{
 		"hash": "b1c600dc67e8ce326c1c3101d1a13820b352beab",
-		"time": 1434130787
+		"time": 1434130787,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Add normalization parameter and describe better.",
+		"body": "This fixes #91 by adding the optional normalization parameter to\ncreatePeriodicWave.  We also describe the basic waveform generation\nand the normalization process."
 	},
 	{
 		"hash": "a1d9512ab727ce0cecc656f1e63a577e8bce5ca0",
-		"time": 1434127434
+		"time": 1434127434,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #540 from rtoy/428-432-biquad-filters",
+		"body": "Use correct formulas for biquad filters"
 	},
 	{
 		"hash": "6bbd887ce48b5d87b151cd1bd3b1c148d987b91f",
-		"time": 1433882917
+		"time": 1433882917,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "InvalidStateError must be thrown if WaveShaper curve is too short.",
+		"body": "Fixes #464."
 	},
 	{
 		"hash": "0c6d6893688f3bbf7ccfff694c119ace78e19d88",
-		"time": 1433872391
+		"time": 1433872391,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Update the lowpass and highpass filters to use the real implementation.",
+		"body": ""
 	},
 	{
 		"hash": "8110a1de5733cbd7bd978c009ff2a59dd7903e71",
-		"time": 1433868339
+		"time": 1433868339,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Use correct formulas for the bandpass, notch, peaking, lowshelf, and highshelf filters.",
+		"body": "Fix #428, fix #429, fix #430, fix #431, fix #432."
 	},
 	{
 		"hash": "a9207f55ce21d93fb7c968a7acad802e659b7106",
-		"time": 1433866067
+		"time": 1433866067,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Remove A_1. It's not used anywhere.",
+		"body": ""
 	},
 	{
 		"hash": "74e65bd53862daf8ae30923354985aea5edc8eb4",
-		"time": 1433864935
+		"time": 1433864935,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix a few typos.  Verified that the equations are the same as before.",
+		"body": ""
 	},
 	{
 		"hash": "b6b75fe3ec2b5adb92fcdbe8ce7f35e90f011a1a",
-		"time": 1433864365
+		"time": 1433864365,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Convert the remaining formulas to TeX syntax.  It's now much easier to read and modify the equations.",
+		"body": ""
 	},
 	{
 		"hash": "cab49561e836735338da4726b913ec86a54a5b09",
-		"time": 1433861406
+		"time": 1433861406,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Change Mathjax to use Tex-AMS syntax. Update the initial part of the biquad filter section to use TeX syntax.",
+		"body": ""
 	},
 	{
 		"hash": "64c8970389d33ae2337d5a0db452f703c9b98225",
-		"time": 1433435299
+		"time": 1433435299,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #538 from rtoy/386-increase-periodic-wave-limit",
+		"body": "Fix issue #386."
 	},
 	{
 		"hash": "9eab3d2a93872476ea95fd17df938eaffec5ab01",
-		"time": 1433361802
+		"time": 1433361802,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix issue #386.",
+		"body": "Instead of limiting the max array size to 2048, change the spec to say\nthat arrays of at least 8192 elements must be supported.  No error is\nthrown if larger sizes are specified."
 	},
 	{
 		"hash": "8c5895a60d02cdaff20fcbad3734d3b506c11dc4",
-		"time": 1433352337
+		"time": 1433352337,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Merge branch 'gh-pages' into define-outer-cone-gain-more",
+		"body": "Conflicts:\n\tindex.html"
 	},
 	{
 		"hash": "e75dd7d70b10ba233895744ea899d9447db676f7",
-		"time": 1433352020
+		"time": 1433352020,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Invalid coneOuterGain must throw InvalidStateError. Remove code; it's given somewhere else.",
+		"body": ""
 	},
 	{
 		"hash": "4a38ccc208bea1c7e9fed313118d23c6f2ff7ea1",
-		"time": 1433351666
+		"time": 1433351666,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix issue 504.",
+		"body": "Describe the coneOuterGain units (linear) and valid range.\nInclude JS code that computes the cone gain."
 	},
 	{
 		"hash": "f608f6c2c27f46c1f6865e997b8673e055caf619",
-		"time": 1433174903
+		"time": 1433174903,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Further hyphenation fixes (#471)",
+		"body": ""
 	},
 	{
 		"hash": "3392038eb9b207ae23f30f97baae3aab20da01f6",
-		"time": 1433174826
+		"time": 1433174826,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fix hyphenated instances of \"equal-power\" (part of #471)",
+		"body": ""
 	},
 	{
 		"hash": "d9286b46c4feff2bf6f4b2df3f5e414d9abc4a41",
-		"time": 1433174753
+		"time": 1433174753,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fixes #471",
+		"body": ""
 	},
 	{
 		"hash": "b474cbc6862f6883d7f80f1b3868cb8071b84006",
-		"time": 1431673559
+		"time": 1431673559,
+		"name": "mark-buer",
+		"email": "mark.buer+github@gmail.com",
+		"subject": "Fixes dead links to createBuffer & decodeAudioData",
+		"body": ""
 	},
 	{
 		"hash": "9ae62ecddc9f6b637a24809cf347ce16a03b7121",
-		"time": 1431338229
+		"time": 1431338229,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #530 from ouhouhsami/patch-1",
+		"body": "Merci !"
 	},
 	{
 		"hash": "2a43a73d7457c117144de4f4a728a1399c8d01e1",
-		"time": 1431338090
+		"time": 1431338090,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Unbreak the spec (#529)",
+		"body": "This fixes all the respec errors that crept in lately, and fixes the processing\nso the rendering is properly done.\n\nThis only contains editorial changes, no spec changes."
 	},
 	{
 		"hash": "15218ac64f5e3de52e3328ec64da15eb5b87a712",
-		"time": 1431336511
+		"time": 1431336511,
+		"name": "Samuel Goldszmidt",
+		"email": "samuel.goldszmidt@gmail.com",
+		"subject": "Update index.html",
+		"body": "Same thing for other AudioNodes"
 	},
 	{
 		"hash": "2e7c74c07e2168004b87941f07f044dad3c5649a",
-		"time": 1431333931
+		"time": 1431333931,
+		"name": "Samuel Goldszmidt",
+		"email": "samuel.goldszmidt@gmail.com",
+		"subject": "Update index.html",
+		"body": "Precise GainNode is an AudioNode. This may seem obvious but it's better to have this declared like other AudioNode."
 	},
 	{
 		"hash": "bfc054a452d2470eda6a638808324e661d0e64d9",
-		"time": 1430346519
+		"time": 1430346519,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Tweaks based on review feedback.",
+		"body": ""
 	},
 	{
 		"hash": "d0aed37b296c5924c2625845598314af3cf6f7e5",
-		"time": 1430308055
+		"time": 1430308055,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #511 from cwilso/gh-pages",
+		"body": "New factory-based AudioWorkers, with examples."
 	},
 	{
 		"hash": "89cf0db6442360f338d2413f9ac624e3d4ddd349",
-		"time": 1430158286
+		"time": 1430158286,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix issue 442:  Update Lifetime section to say it's informative.",
+		"body": ""
 	},
 	{
 		"hash": "20f1e475b27563947ade6ea5c5e4677b095528a9",
-		"time": 1429202210
+		"time": 1429202210,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Typo",
+		"body": ""
 	},
 	{
 		"hash": "d9af3eed52a821b50e3d0507b5a9733c2042cf75",
-		"time": 1429202166
+		"time": 1429202166,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "onaudioprocess restoration/nodecreate addition",
+		"body": "Revive the onaudioprocess event I inadvertently deleted a couple\ncommits ago, and add the proper node create event."
 	},
 	{
 		"hash": "9bb8940ec36bf6ee2777c19f88cbbd9c43c1a46a",
-		"time": 1429199586
+		"time": 1429199586,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fix up merger example",
+		"body": ""
 	},
 	{
 		"hash": "54e825bff7b9ef2868a782f302d0fd9bdc1464c9",
-		"time": 1429198687
+		"time": 1429198687,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Rewrote vuMeter example",
+		"body": ""
 	},
 	{
 		"hash": "22d59412ef28b859ac3c3eb8a91c82dadcec46df",
-		"time": 1428052968
+		"time": 1428052968,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix dead link to mixing rules",
+		"body": ""
 	},
 	{
 		"hash": "30768ce9b9f404cfb4f7468bd20aae8b80ed045b",
-		"time": 1427906436
+		"time": 1427906436,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Resolutions on proposal from WG call.",
+		"body": ""
 	},
 	{
 		"hash": "93da6965299d105d51958cf87688490371aae859",
-		"time": 1427903308
+		"time": 1427903308,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "NodeProcessor postMessage",
+		"body": ""
 	},
 	{
 		"hash": "8b1aeca99c87a97f0b240d00fc8097f36edf9078",
-		"time": 1427845284
+		"time": 1427845284,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Further updates.",
+		"body": ""
 	},
 	{
 		"hash": "3d0a4acacec84ffd0a9ddc361a824dc082c4b385",
-		"time": 1427836216
+		"time": 1427836216,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Resolve merge conflicts.",
+		"body": ""
 	},
 	{
 		"hash": "6c26b11b631f6d071bcdb1efe8a4f73a8b63e6c6",
-		"time": 1427835749
+		"time": 1427835749,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Updates",
+		"body": ""
 	},
 	{
 		"hash": "dc1a61b72497e5b9cd888896c76da1908484540a",
-		"time": 1427748177
+		"time": 1427748177,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "Merge remote-tracking branch 'upstream/gh-pages' into gh-pages",
+		"body": ""
 	},
 	{
 		"hash": "7f49c93e907e5723005fcd599743137b7e20b6eb",
-		"time": 1427748038
+		"time": 1427748038,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "6.3 panning algorithm section cleaned up",
+		"body": ""
 	},
 	{
 		"hash": "f819f7dc06c90aec6727bf4aac685c63e56b0400",
-		"time": 1427741581
+		"time": 1427741581,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "fixed typos and clean-ups for StereoPannerNode",
+		"body": ""
 	},
 	{
 		"hash": "5166bbe4a19dd15220be88726e660a78c8fb3fc3",
-		"time": 1427398746
+		"time": 1427398746,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #494 from WebAudio/origin/101-define-numberOf-Input-Output-Channels",
+		"body": "Clarify the numberOf{In,Out}puts description."
 	},
 	{
 		"hash": "974331d8f9ce70cb4e7b832d9cd6abb55ddde37d",
-		"time": 1427398719
+		"time": 1427398719,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #495 from WebAudio/356-angles-modulo-360",
+		"body": "Value for the cone* members must be used modulo 360"
 	},
 	{
 		"hash": "c0977cb8c6bb62c80e13f486292d14eff68ab9d3",
-		"time": 1427398651
+		"time": 1427398651,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #499 from WebAudio/487-remove-hw-scalability",
+		"body": "Love it, love it love it."
 	},
 	{
 		"hash": "1f96c315ea1ff32bafed63b01e11926945e3c689",
-		"time": 1427206028
+		"time": 1427206028,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Remove section on hardware scalability",
+		"body": ""
 	},
 	{
 		"hash": "c0e2900032497f604c48c17d8f597153ed793437",
-		"time": 1427205822
+		"time": 1427205822,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Promises for suspend/resume/close should be parametrized on <void>",
+		"body": "This is the new syntax for promises that don't pass in a value, and fixes #488."
 	},
 	{
 		"hash": "c91ef05b3535bdf692780320038484b60a1567be",
-		"time": 1426728513
+		"time": 1426728513,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "AudioWorker rework.",
+		"body": ""
 	},
 	{
 		"hash": "7807755d9b8e5dd3d41f45e5956cb9701280389c",
-		"time": 1426727332
+		"time": 1426727332,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "TOC changes",
+		"body": ""
 	},
 	{
 		"hash": "7b05aef6a51955252d46a204842424bb92c04d32",
-		"time": 1426716691
+		"time": 1426716691,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Round 1 of factory-based AudioWorker",
+		"body": ""
 	},
 	{
 		"hash": "1cc4795593fffd8b02e8a360c59218473d456201",
-		"time": 1426677552
+		"time": 1426677552,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix typos",
+		"body": ""
 	},
 	{
 		"hash": "27821e704b95a91bb6d276b25cecacb0115d8417",
-		"time": 1426618425
+		"time": 1426618425,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #396 from WebAudio/351-audionode-different-contexts",
+		"body": "LGTM"
 	},
 	{
 		"hash": "ade040e7f8b28211decd463ac3d5a4191a04ec3b",
-		"time": 1426595338
+		"time": 1426595338,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Address review comments",
+		"body": ""
 	},
 	{
 		"hash": "b4e6cd0fe065ec418227c57d661eab9b50f8367e",
-		"time": 1426595121
+		"time": 1426595121,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Angles for the PannerNode are modulo 360deg.",
+		"body": "Fixes 356."
 	},
 	{
 		"hash": "7c58f310bdabdd5163dd41eec67a70a3986128da",
-		"time": 1426592098
+		"time": 1426592098,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "AudioNodes can't connect to AudioNodes from another context.",
+		"body": "This fixes #351."
 	},
 	{
 		"hash": "23f99606782fc95dbdf912c3dd86fb3f4623875d",
-		"time": 1426591596
+		"time": 1426591596,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Review comments",
+		"body": ""
 	},
 	{
 		"hash": "d0bf3d4cb7e52ab54398870a411e25e24a49b579",
-		"time": 1426591418
+		"time": 1426591418,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Clarify the numberOf{In,Out}puts description.",
+		"body": "This fixes #101."
 	},
 	{
 		"hash": "a3737796987280b2ebe67428a65c87f90e04b60a",
-		"time": 1425933305
+		"time": 1425933305,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "Changed affiliation",
+		"body": ""
 	},
 	{
 		"hash": "590687b37fa1023f60764cc46aa1f817946c4c7c",
-		"time": 1425917446
+		"time": 1425917446,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "Added missing names to the WG memeber list",
+		"body": ""
 	},
 	{
 		"hash": "e336ee4386c549d1b19fb2ec1c79186477ad53d7",
-		"time": 1425677070
+		"time": 1425677070,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "update",
+		"body": ""
 	},
 	{
 		"hash": "bfa56893be2307a2bc0c531bf3e3fff1b39a7190",
-		"time": 1425669431
+		"time": 1425669431,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "update",
+		"body": ""
 	},
 	{
 		"hash": "b635d46170274929f8ee4ffbdcf76cd3d69fd5ef",
-		"time": 1425665334
+		"time": 1425665334,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "update",
+		"body": ""
 	},
 	{
 		"hash": "97266e3f1944bbc67b6bb17e76bf8ce413b91aa5",
-		"time": 1425660899
+		"time": 1425660899,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "Merge remote-tracking branch 'upstream/gh-pages' into gh-pages",
+		"body": ""
 	},
 	{
 		"hash": "13eab63ca2a40e732b91096271c9087fb4f3db19",
-		"time": 1425660891
+		"time": 1425660891,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "304-channel-merger",
+		"body": ""
 	},
 	{
 		"hash": "e8275a2f01f5c2e1a26b24380934e6d77f09b104",
-		"time": 1425644153
+		"time": 1425644153,
+		"name": "Mathias Bynens",
+		"email": "mathias@qiwi.be",
+		"subject": "Use HTTPS URLs where possible",
+		"body": "This also fixes the mixed content issues on https://webaudio.github.io/web-audio-api/."
 	},
 	{
 		"hash": "ff4502e9f33b5ec30d86766d098b3b2ff874288d",
-		"time": 1425398549
+		"time": 1425398549,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #467 from WebAudio/panner-clamp",
+		"body": "Clamp the gain of the `distanceModel` in [0; 1]"
 	},
 	{
 		"hash": "642a9ca79288250e28a423973d2440635d981c4b",
-		"time": 1425398520
+		"time": 1425398520,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #483 from chrislo/crl-clarify-dc-offset",
+		"body": "Clarify real array usage in createPeriodicWave"
 	},
 	{
 		"hash": "f41a86d720978685f8aabdeb8cc82c7c487ccb86",
-		"time": 1425398474
+		"time": 1425398474,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #479 from hoch/gh-pages",
+		"body": "#6 Support selective disconnection"
 	},
 	{
 		"hash": "846d057996d5a9aa13e93ac51f2937e1def75cbc",
-		"time": 1424282146
+		"time": 1424282146,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "update",
+		"body": ""
 	},
 	{
 		"hash": "e66bec1604dcdba738622b0214be94f2a20f11ab",
-		"time": 1424212494
+		"time": 1424212494,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Address issue 477, making the max array size 2048, not 4096.",
+		"body": ""
 	},
 	{
 		"hash": "a4f6baecee5bb4c250c4ab76f97d937cff3b7eff",
-		"time": 1423746659
+		"time": 1423746659,
+		"name": "Chris Lowis",
+		"email": "chris.lowis@gmail.com",
+		"subject": "Clarify real array usage in createPeriodicWave",
+		"body": "Addresses #478. Implementations must ignore any value set for the first\nelement of the real array when creating a periodic wave."
 	},
 	{
 		"hash": "80f3c96f709832a9c290be8f0b46308d27159332",
-		"time": 1423597497
+		"time": 1423597497,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "change in IDL",
+		"body": ""
 	},
 	{
 		"hash": "ef3a6c4f9dacf22bc8e5f3608a4ea91907cee00b",
-		"time": 1423247018
+		"time": 1423247018,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "update",
+		"body": ""
 	},
 	{
 		"hash": "157dabae2a9d384a839ee83d8fe8a101de899a9a",
-		"time": 1423246196
+		"time": 1423246196,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"subject": "#6 Support selective disconnection",
+		"body": ""
 	},
 	{
 		"hash": "0c2d78226c5277cfcc8aee51b2e6d88bed540a27",
-		"time": 1423155027
+		"time": 1423155027,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Factory-based addition to worker nodes.",
+		"body": ""
 	},
 	{
 		"hash": "e21bd69b9b80cd47391ac633d5136e278a189ddd",
-		"time": 1421346914
+		"time": 1421346914,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Add note about FFT cost.",
+		"body": ""
 	},
 	{
 		"hash": "1b3773f95eac51011d41fa51088fda7b0d6eb9c5",
-		"time": 1421337564
+		"time": 1421337564,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Range notation should use a colon and not a semicolon.",
+		"body": ""
 	},
 	{
 		"hash": "9ad67caf8103a0af0be162a5048e853391e5548e",
-		"time": 1421321322
+		"time": 1421321322,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Panning markup clean-up.",
+		"body": ""
 	},
 	{
 		"hash": "a5164b18e633d67567a2cc387de49b44247fe7c9",
-		"time": 1421321223
+		"time": 1421321223,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Spec that the distance effect gain cannot be negative/apply a gain > 1.",
+		"body": "https://bugzilla.mozilla.org/show_bug.cgi?id=1002513 for test case: the gain\nwould become negative because of the distance, and the phase would be flipped,\nwhich, I believe, is not the intention here."
 	},
 	{
 		"hash": "24248d63faacb707ed2e5792927065e796d6c268",
-		"time": 1421172328
+		"time": 1421172328,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix issue #375:  Update spec to say 32K FFTs are allowed for AnalyserNode.",
+		"body": ""
 	},
 	{
 		"hash": "aa075bfd515c3d586a0fc34a6ec2cc7bcb0426c9",
-		"time": 1420542688
+		"time": 1420542688,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Trivial markup fix in AudioWorker.",
+		"body": ""
 	},
 	{
 		"hash": "ec7941258962252b5f1f36f018ad4974a11ae130",
-		"time": 1418920754
+		"time": 1418920754,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "sequence => Array",
+		"body": ""
 	},
 	{
 		"hash": "a6be0654529ed98aa9ff23770ee1d6518ce72591",
-		"time": 1418768893
+		"time": 1418768893,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fixes #461",
+		"body": "Inadvertent ReSpec refactoring issue."
 	},
 	{
 		"hash": "a26d8593b72fc626cd8922c3f4b76b40f725908c",
-		"time": 1418428736
+		"time": 1418428736,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Initial Multi-IO AudioWorker.",
+		"body": "Note this does not include a change to have a single factory-style\ninitiation."
 	},
 	{
 		"hash": "82b3a7f51753a2804cf1e661c7c31c371fb29a77",
-		"time": 1418045053
+		"time": 1418045053,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Change the default panningModel of the PannerNode to \"equal-power\"",
+		"body": "This fixes #368."
 	},
 	{
 		"hash": "201ed628acf82298688705f45c16e2649ec8495e",
-		"time": 1417481864
+		"time": 1417481864,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "channelCountMode for the AnalyserNode should be \"max\"",
+		"body": "So it respects the paragraph above: \"The audio stream will be passed un-processed from input to output\".\n\nThis fixes #450."
 	},
 	{
 		"hash": "0ed0e0d290ccf8eeed56f3d147175426a9541290",
-		"time": 1417481683
+		"time": 1417481683,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Revert previous patch, I meant to open a PR",
+		"body": ""
 	},
 	{
 		"hash": "5210abf7280c6e2d571b2731b5c7137554f4c275",
-		"time": 1417481603
+		"time": 1417481603,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "channelCountMode for the AnalyserNode",
+		"body": "So it respects the paragraph above: \"The audio stream will be passed un-processed from input to output.\"\r\n\r\nThis fixes #450."
 	},
 	{
 		"hash": "7f628b07fcfab8cffbf9e94dae8274fb9cf4147e",
-		"time": 1416417111
+		"time": 1416417111,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix algorithm issue for stereo->stereo",
+		"body": ""
 	},
 	{
 		"hash": "966dc38980020fcc380423c963a8649c102d4cc1",
-		"time": 1416390771
+		"time": 1416390771,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix typos added when fixing typos",
+		"body": ""
 	},
 	{
 		"hash": "cc6413c0263ae6e981845cf76a1efa89e27a60e6",
-		"time": 1416329683
+		"time": 1416329683,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix typos",
+		"body": ""
 	},
 	{
 		"hash": "c7b0fd37e914dbb9ed668c4e624df9b247535c40",
-		"time": 1416329050
+		"time": 1416329050,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Make StereoPannerNode a-rate and spec the algorithm",
+		"body": "It was somewhat obvious, but it's clearer to also have the formulas for [-1, +1]\n\nThis fixes #439."
 	},
 	{
 		"hash": "31f3ccd35cdd9855529b0b30670f6dc152e5f62e",
-		"time": 1416007952
+		"time": 1416007952,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #438 from hoch/gh-pages",
+		"body": "Fix typo"
 	},
 	{
 		"hash": "39f372f2c1c666c6a507cf0e99d86e1296dc852a",
-		"time": 1416007402
+		"time": 1416007402,
+		"name": "Hongchan Choi",
+		"email": "hongchan.choi@gmail.com",
+		"subject": "Fix typo",
+		"body": ""
 	},
 	{
 		"hash": "c6e24581a906cd48bbf4672571de2881a5216c02",
-		"time": 1415905024
+		"time": 1415905024,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #434 from rtoy/rtoy-onstatechange-transitions",
+		"body": "Fix typo and state that any change to a different state fires the onstatechange event"
 	},
 	{
 		"hash": "527db444a3d7f2058ab37d924a1fb360c84eb65b",
-		"time": 1415903694
+		"time": 1415903694,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix typo and state that any change to a different state fires the onstatechange event.",
+		"body": ""
 	},
 	{
 		"hash": "533e0f8f35e0f780a33b1cf84d5595d7fda68898",
-		"time": 1415765858
+		"time": 1415765858,
+		"name": "kubosho_",
+		"email": "ta2@o2p.jp",
+		"subject": "Fix typo",
+		"body": "- modular rounting -> modular routing\n- to the node .  This -> to the node. This"
 	},
 	{
 		"hash": "6acf1e08405e6564a06ef277f495c29308170ae7",
-		"time": 1415756331
+		"time": 1415756331,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fixes #424.",
+		"body": ""
 	},
 	{
 		"hash": "cfbd7ed8cbf4181b4d1fb4eab25b6b3cd5faba77",
-		"time": 1415720543
+		"time": 1415720543,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #408 from WebAudio/109-channel-layout",
+		"body": "Define channel layouts a bit more."
 	},
 	{
 		"hash": "58cf7a9415842bcb726357140283c78c3c512bc3",
-		"time": 1415379746
+		"time": 1415379746,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #420 from WebAudio/372-StereoPanner",
+		"body": "Part 1 of #372: Add StereoPannerNode"
 	},
 	{
 		"hash": "cf073b5201b49d430eaa6ebd205aa7ba5a30959f",
-		"time": 1415379677
+		"time": 1415379677,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Address review feedback.",
+		"body": ""
 	},
 	{
 		"hash": "d469e03417f0411de548ba30571d9e6ef09d2583",
-		"time": 1415379523
+		"time": 1415379523,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #403 from WebAudio/256-no-instrospection",
+		"body": "Explain lack of serialization or introspection"
 	},
 	{
 		"hash": "e835b356662c7bcf61e9c4a6b3e9ee102f8fc3db",
-		"time": 1415379489
+		"time": 1415379489,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #402 from WebAudio/19-offlineaudiocontext-arguments",
+		"body": "Define what the ctor's argument of OfflineAudioContext do."
 	},
 	{
 		"hash": "449cde448660320c65a30a1a48ef9baac41f104a",
-		"time": 1415379452
+		"time": 1415379452,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #401 from WebAudio/329-oscillator-no-duratio",
+		"body": "Clarify that OscillatorNode.start only has one parameter"
 	},
 	{
 		"hash": "21aa3e2fe4a2e63dce045e0d8783b2a2f741df6b",
-		"time": 1415379408
+		"time": 1415379408,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #395 from WebAudio/366-no-intermediate-clipping",
+		"body": "Clarify that no clipping is applied to intermediate nodes"
 	},
 	{
 		"hash": "4c79b59f5a164cddfcf7d2e6bba168d0202e3cc4",
-		"time": 1415379324
+		"time": 1415379324,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge fixes",
+		"body": ""
 	},
 	{
 		"hash": "75b39e1ec45e639cfc37c0d235e30a28c192e75c",
-		"time": 1415297791
+		"time": 1415297791,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Changed name of parameter to \"pan\" due to feedback",
+		"body": ""
 	},
 	{
 		"hash": "e5c387d90a2dfd22d36d94756bd3d7a515afd2a2",
-		"time": 1415229670
+		"time": 1415229670,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Stereo panner proposal",
+		"body": ""
 	},
 	{
 		"hash": "e1837cf061119d280783f9b11bc7fdf97e6339e7",
-		"time": 1415194946
+		"time": 1415194946,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Mention that other channel layouts may be supported in future version of this spec.",
+		"body": ""
 	},
 	{
 		"hash": "4b2630426ff39d61952fe3f21b31ab171b6c9978",
-		"time": 1415194680
+		"time": 1415194680,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix typo",
+		"body": ""
 	},
 	{
 		"hash": "03cc6db60998c32e54d2870f27b49a3c7990a7ae",
-		"time": 1415194431
+		"time": 1415194431,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix typo",
+		"body": ""
 	},
 	{
 		"hash": "8757908f47eccafa9bbc82fd3f75ee1bad63d21a",
-		"time": 1415194388
+		"time": 1415194388,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Explain lack of serialization or introspection",
+		"body": "This fixes #256."
 	},
 	{
 		"hash": "bba8f0e04a67be0f222162f204f798055013ef99",
-		"time": 1415194009
+		"time": 1415194009,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Address review comments",
+		"body": ""
 	},
 	{
 		"hash": "ac0ed91953468e7ae2755fbf088227b4e146c7ba",
-		"time": 1415193866
+		"time": 1415193866,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Clarify that OscillatorNode.start only has one parameter",
+		"body": "This fixes #329."
 	},
 	{
 		"hash": "60ad9a8ae97136add7806db24dcd376ddd6657e7",
-		"time": 1415193193
+		"time": 1415193193,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix typos + comma",
+		"body": ""
 	},
 	{
 		"hash": "44c2a601f2d1055da73f09350e6197c3d1bef87a",
-		"time": 1415134577
+		"time": 1415134577,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #412 from WebAudio/74-add-webidl-reference",
+		"body": "Add WebIDL normative reference"
 	},
 	{
 		"hash": "0c1b43043d0888973ff6be95603024cf0473321d",
-		"time": 1415134556
+		"time": 1415134556,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #411 from WebAudio/64-biquad-detune",
+		"body": "Add a detune attribute for the BiquadFilterNode"
 	},
 	{
 		"hash": "c30a9dba2dc22ff341a64f0173a6dd3e33207986",
-		"time": 1415134189
+		"time": 1415134189,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #409 from WebAudio/107-fix-warnings-and-links",
+		"body": "Fix ReSpec warnings and errors"
 	},
 	{
 		"hash": "673e6ef267299e260c0ab29af4bae2aad5a59dce",
-		"time": 1415134076
+		"time": 1415134076,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fix gain param error.",
+		"body": ""
 	},
 	{
 		"hash": "3335e32759c1ec4bf547ec39cd4133039bedeaf7",
-		"time": 1415133841
+		"time": 1415133841,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #407 from WebAudio/121-float-double-inconsistency",
+		"body": "Use doubles for time, float otherwise."
 	},
 	{
 		"hash": "aa85273f4ed2c8d3d06cc650ee6b5b3aef7adc8d",
-		"time": 1415133784
+		"time": 1415133784,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #406 from WebAudio/123-spec-gain",
+		"body": "Spec GainNode."
 	},
 	{
 		"hash": "48a85f673189a321ddb2cb04e92e89f1ddd0b85a",
-		"time": 1415133723
+		"time": 1415133723,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #405 from WebAudio/136-oscillator-switch-phase-conservation",
+		"body": "Spec that OscillatorNode phase should be conserved when `type` is set."
 	},
 	{
 		"hash": "61065f4a430e68197957006764422be1b929e8ab",
-		"time": 1415133701
+		"time": 1415133701,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #404 from WebAudio/243-reduction-float",
+		"body": "Make DynamicsCompressorNode.reduction a readonly float"
 	},
 	{
 		"hash": "0ab8361d91f92919973b8d5620fc9f6315a37412",
-		"time": 1415133451
+		"time": 1415133451,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #400 from WebAudio/332-audiobuffersourcenode-start-round",
+		"body": "Spec that subsample scheduling with AudioBufferSourceNode is impossible."
 	},
 	{
 		"hash": "63a170ce344c889490bc1f65ba375b4b7e3865b8",
-		"time": 1415133414
+		"time": 1415133414,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #399 from WebAudio/333-audiobuffersourcenode-detune",
+		"body": "Make playbackRate a k-rate and add a detune attribute"
 	},
 	{
 		"hash": "2c811c87d1fe40d44ce356e4479589581bedcab5",
-		"time": 1415133335
+		"time": 1415133335,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #398 from WebAudio/343-disconnect-param",
+		"body": "Add a class to the AudioNode.disconnect parameters"
 	},
 	{
 		"hash": "4e0f8e0cd879b6c2a8964f98cbc56739d911c1e2",
-		"time": 1415126131
+		"time": 1415126131,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #388 from WebAudio/waveshaper-length",
+		"body": "WaveShaperNode curve lower limit and clarification"
 	},
 	{
 		"hash": "40e9b27ea0d0e0fa4a26e800a171792a9fc897b9",
-		"time": 1415126093
+		"time": 1415126093,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #384 from padenot/gh-pages",
+		"body": "Specify the filter type to be used for the BiquadFilterNode"
 	},
 	{
 		"hash": "52b134cd651746ab0e79e30dba2ebb33680d4cc8",
-		"time": 1415126076
+		"time": 1415126076,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #374 from cwilso/gh-pages",
+		"body": "Suspend/resume/close/state added to AudioContext"
 	},
 	{
 		"hash": "5baee715c190751dcfc058a491a3ca44178acfd5",
-		"time": 1415126049
+		"time": 1415126049,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Added exception for node creation when released.",
+		"body": ""
 	},
 	{
 		"hash": "bed011c5e3544c71435abbda199dbcb236e44346",
-		"time": 1415111656
+		"time": 1415111656,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Add WebIDL normative reference",
+		"body": "This fixes #74"
 	},
 	{
 		"hash": "163ace53ef885dcea4b0ce5a5f5bff7158f35e5f",
-		"time": 1415111359
+		"time": 1415111359,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Define what the ctor's argument of OfflineAudioContext do.",
+		"body": "This fixes #19."
 	},
 	{
 		"hash": "b986210f3ce5fd7eaa19992079168b8467a176a4",
-		"time": 1415110921
+		"time": 1415110921,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #392 from WebAudio/98-js-synthesis-processing",
+		"body": "Remove section Javascript Synthesis and Processing"
 	},
 	{
 		"hash": "53656efc251abd3551309922aebe6454b05109e7",
-		"time": 1415109387
+		"time": 1415109387,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #390 from WebAudio/377-clarify-smoothing",
+		"body": "Clarify smoothing of FFT data in AnalyserNode"
 	},
 	{
 		"hash": "15d1482105ec806bde678be34a71696b6364bc7a",
-		"time": 1415108433
+		"time": 1415108433,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Clarify smoothing of FFT data in AnalyserNode",
+		"body": "This fixes #377."
 	},
 	{
 		"hash": "a0c46b53ee92b766f89c89d35be0bdfe450f0d64",
-		"time": 1415096749
+		"time": 1415096749,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Address review comments.",
+		"body": ""
 	},
 	{
 		"hash": "6e05760f559065bf6e79777fca618a7d9f1f172b",
-		"time": 1415034974
+		"time": 1415034974,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #387 from WebAudio/scalability-non-normative",
+		"body": "Mark the section \"Hardware Scalability\" as non-normative."
 	},
 	{
 		"hash": "03d93db31a8001731968ea8d683b46130d337a0d",
-		"time": 1415034336
+		"time": 1415034336,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #389 from WebAudio/delay-cycle-clamp",
+		"body": "If a DelayNode is in a cycle, delayTime is clamped to a minimum of 128 f..."
 	},
 	{
 		"hash": "875e422a659b88929a3d2cbaa977c13534a44149",
-		"time": 1415007229
+		"time": 1415007229,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Clarify that no clipping is applied to intermediate nodes",
+		"body": "This fixes #366."
 	},
 	{
 		"hash": "b0f178f6b6797b6dd09f9e4801fb781c43e4cfde",
-		"time": 1415006581
+		"time": 1415006581,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Use DOM4 exception instead of legacy names",
+		"body": "Patch generated mostly with the following script, assuming GNU sed:\n\n    #!/bin/sh\n    FILE=index.html\n\n    sed -i 's/INDEX_SIZE_ERR/IndexSizeError/' $FILE\n    sed -i 's/HIERARCHY_REQUEST_ERR/HierarchyRequestError/' $FILE\n    sed -i 's/WRONG_DOCUMENT_ERR/WrongDocumentError/' $FILE\n    sed -i 's/INVALID_CHARACTER_ERR/InvalidCharacterError/' $FILE\n    sed -i 's/NO_MODIFICATION_ALLOWED_ERR/NoModificationAllowedError/' $FILE\n    sed -i 's/NOT_FOUND_ERR/NotFoundError/' $FILE\n    sed -i 's/NOT_SUPPORTED_ERR/NotSupportedError/' $FILE\n    sed -i 's/INUSE_ATTRIBUTE_ERR/InUseAttributeError/' $FILE\n    sed -i 's/INVALID_STATE_ERR/InvalidStateError/' $FILE\n    sed -i 's/SYNTAX_ERR/SyntaxError/' $FILE\n    sed -i 's/INVALID_MODIFICATION_ERR/InvalidModificationError/' $FILE\n    sed -i 's/NAMESPACE_ERR/NamespaceError/' $FILE\n    sed -i 's/INVALID_ACCESS_ERR/InvalidAccessError/' $FILE\n    sed -i 's/TYPE_MISMATCH_ERR/TypeMismatchError/' $FILE\n    sed -i 's/SECURITY_ERR/SecurityError/' $FILE\n    sed -i 's/NETWORK_ERR/NetworkError/' $FILE\n    sed -i 's/ABORT_ERR/AbortError/' $FILE\n    sed -i 's/URL_MISMATCH_ERR/URLMismatchError/' $FILE\n    sed -i 's/QUOTA_EXCEEDED_ERR/QuotaExceededError/' $FILE\n    sed -i 's/TIMEOUT_ERR/TimeoutError/' $FILE\n    sed -i 's/INVALID_NODE_TYPE_ERR/InvalidNodeTypeError/' $FILE\n    sed -i 's/DATA_CLONE_ERR/DataCloneError/' $FILE\n    sed -i 's/INVALID_POINTER_ERR/InvalidPointerId/' $FILE"
 	},
 	{
 		"hash": "9516d577904c02c2ed0d1adeda38604a57030559",
-		"time": 1415004937
+		"time": 1415004937,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Spec that subsample scheduling with AudioBufferSourceNode is impossible.",
+		"body": "This fixes #332."
 	},
 	{
 		"hash": "8ecff23e3f90d6283960d859cce94d5c42fd1909",
-		"time": 1415004428
+		"time": 1415004428,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "make playbackRate a k-rate and add a detune attribute",
+		"body": "This fixes #333."
 	},
 	{
 		"hash": "79c38b3ec7047b2de3d425614517f82507793981",
-		"time": 1415003756
+		"time": 1415003756,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Add a class to the AudioNode.disconnect parameters",
+		"body": "This fixes #343."
 	},
 	{
 		"hash": "4c720ddaba203954206530803001a99d25f9471f",
-		"time": 1415001474
+		"time": 1415001474,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Remove section Javascript Synthesis and Processing",
+		"body": "This fixes #98."
 	},
 	{
 		"hash": "242aa47d68a400a3ca9bb39675ae8d81ec47f2b0",
-		"time": 1415000073
+		"time": 1415000073,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Fix ReSpec warnings and errors",
+		"body": "Fixes #107"
 	},
 	{
 		"hash": "03513c403b0343a7caa155bffe46447960a7a70c",
-		"time": 1414997006
+		"time": 1414997006,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Define channel layouts a bit more.",
+		"body": "Fixes #109."
 	},
 	{
 		"hash": "a6c929dbe47046084a2235768f648ea51a784c7e",
-		"time": 1414996538
+		"time": 1414996538,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Use doubles for time, float otherwise.",
+		"body": "Fixes #121."
 	},
 	{
 		"hash": "25d7d7686cc661181f1e59a7456f9beacc6ec9ba",
-		"time": 1414996018
+		"time": 1414996018,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Spec GainNode.",
+		"body": "Fixes #123."
 	},
 	{
 		"hash": "71b7aea0f876c2fdae254d72195e5d4b57d432d4",
-		"time": 1414994879
+		"time": 1414994879,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Spec that OscillatorNode phase should be conserved when `type` is set.",
+		"body": "Fixes #136."
 	},
 	{
 		"hash": "f43b4c3669aede600411271eacc8d9436b887a6b",
-		"time": 1414994753
+		"time": 1414994753,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Make DynamicsCompressorNode.reduction a float",
+		"body": ""
 	},
 	{
 		"hash": "5901d20a26e69c4b7915e1daaec4f0d3adc8b75b",
-		"time": 1414787903
+		"time": 1414787903,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Mark the section \"Hardware Scalability\" as non-normative.",
+		"body": "There are still weird text in this section, I might do a followup to clean it."
 	},
 	{
 		"hash": "cd6c83124c359a32027dd4948c7e0130abfeceb4",
-		"time": 1414787855
+		"time": 1414787855,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "If a DelayNode is in a cycle, delayTime is clamped to a minimum of 128 frames.",
+		"body": ""
 	},
 	{
 		"hash": "79db6b7730d798428f5d449af4d6a82bd7f9271a",
-		"time": 1414787736
+		"time": 1414787736,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "WaveShaperNode curve lower limit and clarification",
+		"body": "Fixes issue #90"
 	},
 	{
 		"hash": "d4ad3444e5ee783d9ea0252737dd31194cde1fbc",
-		"time": 1414712097
+		"time": 1414712097,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Spec detune (default value + meaning) for the BiquadFilterNode",
+		"body": "This fixes #64 and #51."
 	},
 	{
 		"hash": "a595573fa8546310e39bd35b798357b4c9a62caa",
-		"time": 1414690979
+		"time": 1414690979,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Fixes #93.",
+		"body": ""
 	},
 	{
 		"hash": "a03cee5ff55e413ef9ee3a2d3e6bea1af3347e74",
-		"time": 1414688649
+		"time": 1414688649,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Fixes #82.",
+		"body": ""
 	},
 	{
 		"hash": "2ce8b48879c8bee1fb3d3bc4d1eb0a916a98dc16",
-		"time": 1414618808
+		"time": 1414618808,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Distinguish between the two A terms, fix ascii formulas",
+		"body": ""
 	},
 	{
 		"hash": "af8b592500845723196d89d3207debd2e47043ea",
-		"time": 1414614357
+		"time": 1414614357,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Specifiy which alpha term to use for each filter type",
+		"body": ""
 	},
 	{
 		"hash": "201fba14e3b0c931b47934cb847daf0f1e85027e",
-		"time": 1414610508
+		"time": 1414610508,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Fix bad markup for MathML equations",
+		"body": ""
 	},
 	{
 		"hash": "ee4f325c2c49278684b9219f0f42a6b1d472e008",
-		"time": 1414609662
+		"time": 1414609662,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Fix bad MathJax script so that it works in browser that don't have MathML",
+		"body": ""
 	},
 	{
 		"hash": "e8cc7b3fcdd62bd062dc0f67c4055970873567ee",
-		"time": 1414606858
+		"time": 1414606858,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Address rtoy's comments",
+		"body": "- Add tranfer function, remove algorithm\n- Add MathJax.js in the repo\n- Cleanup markup indentation"
 	},
 	{
 		"hash": "38d3b202eef07be4c4e6a8cafe1d03543031fc08",
-		"time": 1414174655
+		"time": 1414174655,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fixes issue #380.",
+		"body": ""
 	},
 	{
 		"hash": "16a629092aa2210abdf98302ec84b22227efe538",
-		"time": 1414164258
+		"time": 1414164258,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Put the Audio-EQ-Cookbook formulas in the spec",
+		"body": ""
 	},
 	{
 		"hash": "1baf44739c589c0b8a1e5e0a95c34e86433d14f2",
-		"time": 1414150317
+		"time": 1414150317,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "s/AudioPannerNode/PannerNode/ + links",
+		"body": ""
 	},
 	{
 		"hash": "0e4c395a90a4178cae940ba312aba43a7ee7209a",
-		"time": 1413995512
+		"time": 1413995512,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Tweaks to informative code examples",
+		"body": "Reported by @root66 on ##webaudio on freenode."
 	},
 	{
 		"hash": "3bbb53dea850c35a3b9a5302145894cea2b17f1e",
-		"time": 1413912600
+		"time": 1413912600,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Fix typo in formula for Blackman Window.",
+		"body": "aSize is undefined. It should be buffer.length."
 	},
 	{
 		"hash": "23053c10033686616d5e6dca025d839ee1583b3a",
-		"time": 1413834098
+		"time": 1413834098,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "State description for OfflineAudioContexts.",
+		"body": ""
 	},
 	{
 		"hash": "5fd829e34690aad95f6700e2369d9c183f26e03c",
-		"time": 1413830730
+		"time": 1413830730,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Further refinements.",
+		"body": ""
 	},
 	{
 		"hash": "19f0b3b1c7192182688ade3c2333f5402d507058",
-		"time": 1413829318
+		"time": 1413829318,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Tweaks based on comments.",
+		"body": ""
 	},
 	{
 		"hash": "508ce12475eb6aed31399a76c88fe3701031a8cb",
-		"time": 1413823330
+		"time": 1413823330,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Suspend/resume/close/state.  Fixes #317 and #361",
+		"body": ""
 	},
 	{
 		"hash": "61879782575a2a093136557a8e91266ec958462e",
-		"time": 1412800912
+		"time": 1412800912,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Oops.  Typo.",
+		"body": ""
 	},
 	{
 		"hash": "ffd3aaa3d2679927ac541cba2cdcb772cc22132c",
-		"time": 1412800784
+		"time": 1412800784,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge branch 'rtoy-negative-time-errors' of https://github.com/rtoy/web-audio-api into rtoy-rtoy-negative-time-errors",
+		"body": "Conflicts:\n\tindex.html"
 	},
 	{
 		"hash": "dda89879d11737a11fa2a583b8ffced4ad8431b4",
-		"time": 1412791857
+		"time": 1412791857,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Change INVALID_STATE_ERR to INVALID_ACCESS_ERR.",
+		"body": ""
 	},
 	{
 		"hash": "10b6db22f2b40c4d03683b5f8e27140c77e2a8a0",
-		"time": 1412721625
+		"time": 1412721625,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #364 from rtoy/rtoy-remove-dup-sentence-looping",
+		"body": "Remove duplicated sentence in AudioBufferSource looping section"
 	},
 	{
 		"hash": "cc833849cd30e382e1bd23d63a8c9f91c5700130",
-		"time": 1412717212
+		"time": 1412717212,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Correct typo.",
+		"body": ""
 	},
 	{
 		"hash": "6147360055d7aa5cc082f2803171949e4c1ebcc7",
-		"time": 1412717047
+		"time": 1412717047,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Errors must be thrown for negative or non-finite values for the time and/or duration.",
+		"body": ""
 	},
 	{
 		"hash": "03faf52737eec02369c660d9a02d1bd0515b1a48",
-		"time": 1412715733
+		"time": 1412715733,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"subject": "Remove duplicated sentence.",
+		"body": ""
 	},
 	{
 		"hash": "fb4390f2c3f2683b0fb1bbec5b57a722be6acd09",
-		"time": 1412630945
+		"time": 1412630945,
+		"name": "Arthur Barstow",
+		"email": "art.barstow@gmail.com",
+		"subject": "Use ED rather than WD stylesheet",
+		"body": "For the Editor's Draft, I think it would help set expectations if you used the ED stylesheet rather than the TR/WD stylesheet. Just askin'."
 	},
 	{
 		"hash": "a6222c721d2c94a3ae025abc6d0d60c9ffa0dd80",
-		"time": 1411752260
+		"time": 1411752260,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fixes #355.",
+		"body": "Inputs to Panner and Convolver Nodes must be mono or stereo."
 	},
 	{
 		"hash": "af66731d74410f3d308af4979cb1de276199d6d0",
-		"time": 1410430585
+		"time": 1410430585,
+		"name": "Chris Wilson",
+		"email": "cwilso@google.com",
+		"subject": "Explanatory text for Worker threads.",
+		"body": ""
 	},
 	{
 		"hash": "82f740a6bf0d48b7e19010d02e577c1579403e36",
-		"time": 1409334361
+		"time": 1409334361,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Misc Respec warning cleanup",
+		"body": ""
 	},
 	{
 		"hash": "d36d9ccfe07ba8e381126b4e2e3e3fa8770be47f",
-		"time": 1409333704
+		"time": 1409333704,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge branch 'rtoy-cone-angle-units' of https://github.com/rtoy/web-audio-api into rtoy-rtoy-cone-angle-units",
+		"body": "Conflicts:\n\tindex.html"
 	},
 	{
 		"hash": "3148297b0bfc59e95e4c2152cbc5e75b5cd2f5a2",
-		"time": 1409332852
+		"time": 1409332852,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #350 from cwilso/gh-pages",
+		"body": "Audio Workers"
 	},
 	{
 		"hash": "6b9a1c0b9627c9b87dee12c35c00b42c845a9773",
-		"time": 1409332782
+		"time": 1409332782,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #309 from padenot/window-analyzer",
+		"body": "Clarify the processing applied before and after the FFT in AnalyserNode"
 	},
 	{
 		"hash": "222c8affa8e297c5ba5d9eadea7df3b5725fc536",
-		"time": 1409261106
+		"time": 1409261106,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Reverting onaudioprocess description for SPs.",
+		"body": ""
 	},
 	{
 		"hash": "e947e03b86724aea253cd539f4a920fcf335c396",
-		"time": 1409260955
+		"time": 1409260955,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Extraneous parameters object removal",
+		"body": ""
 	},
 	{
 		"hash": "4d4fc33d60a10fda61c68169b16a3bbc154aaeb4",
-		"time": 1409260730
+		"time": 1409260730,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "AudioWorkers: examples, Float32Arrays, worker collapsing",
+		"body": ""
 	},
 	{
 		"hash": "87a8ffa635e3ea75c41f9114d240cbfd7ac46f50",
-		"time": 1409001974
+		"time": 1409001974,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "formatting.",
+		"body": ""
 	},
 	{
 		"hash": "b9fddbdead6c49b319ed11244c05184c30e76e2c",
-		"time": 1409001852
+		"time": 1409001852,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Moved parameters to sub-object.",
+		"body": ""
 	},
 	{
 		"hash": "4c09c73f7d2c9060148bb4729c8b808bb246a966",
-		"time": 1408738539
+		"time": 1408738539,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Added Parameters to AudioWorkers",
+		"body": "(and some minor cleanup)"
 	},
 	{
 		"hash": "5a5b9b96f5608796835f8209b83c230d7091a739",
-		"time": 1408735542
+		"time": 1408735542,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Add descriptive AudioWorker text.",
+		"body": ""
 	},
 	{
 		"hash": "8504f3bf57a19427056c4fe8f251d7e5a0c22dec",
-		"time": 1407866860
+		"time": 1407866860,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "First draft of AudioWorker.",
+		"body": ""
 	},
 	{
 		"hash": "d434f520f4fe2398bb3fa8e924e7d614bfdd311c",
-		"time": 1403837978
+		"time": 1403837978,
+		"name": "Si Robertson",
+		"email": "retromodular@gmail.com",
+		"subject": "Update index.html",
+		"body": "Removed the stray \"<\" character. It was preventing \":AudioNode\" from being rendered."
 	},
 	{
 		"hash": "d291ef951815ca077b8ffaa57f17e147b61c23c1",
-		"time": 1403054467
+		"time": 1403054467,
+		"name": "Kevin Barabash",
+		"email": "kevinb7@gmail.com",
+		"subject": "added 'optional' modifier to WebIDL for OscillatorNode",
+		"body": ""
 	},
 	{
 		"hash": "562bbcbe4bc05a2eeb44f452c357098e26c0f223",
-		"time": 1401734700
+		"time": 1401734700,
+		"name": "Raymond Toy",
+		"email": "rtoy@google.com",
+		"subject": "Indicate that cone angles are in degrees.",
+		"body": ""
 	},
 	{
 		"hash": "88153990185dc29234a8b0a751fc8285a8234066",
-		"time": 1399914382
+		"time": 1399914382,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #320 from padenot/remove-un-neuter",
+		"body": "Remove the non-existant concept of un-neutering from the spec"
 	},
 	{
 		"hash": "9d2f1f05e1ac62ffc264a83dbbb420841d8c80e5",
-		"time": 1399912517
+		"time": 1399912517,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Simply divide instead of dividing by the inverse.",
+		"body": ""
 	},
 	{
 		"hash": "03eae988144760b6c44ef291466b3af14247a5ad",
-		"time": 1399912194
+		"time": 1399912194,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Throw if the channel count of the Convolver impulse is incorrect.",
+		"body": "Rebased #306 against current master."
 	},
 	{
 		"hash": "cc96cf6e428ac046547f1acde57aad6864e3c6a9",
-		"time": 1399910981
+		"time": 1399910981,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Remove the non-existant concept of un-neutering from the spec",
+		"body": ""
 	},
 	{
 		"hash": "26b78f1c0ddbfed516be07686a2af06700d337c9",
-		"time": 1399316053
+		"time": 1399316053,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #316 from domenic/start-rendering-with-promises",
+		"body": "OfflineAudioContext.prototype.startRendering returns a promise"
 	},
 	{
 		"hash": "756155aff0f21edb10a42daa683b242866a80f3c",
-		"time": 1398938826
+		"time": 1398938826,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Remove broken link to #ExampleApplications",
+		"body": "This section does not exist anymore."
 	},
 	{
 		"hash": "c59a3b1a16dbf967815675f3d4206d6cc316edb7",
-		"time": 1398639145
+		"time": 1398639145,
+		"name": "Domenic Denicola",
+		"email": "domenic@domenicdenicola.com",
+		"subject": "OfflineAudioContext.prototype.startRendering returns a promise",
+		"body": "The steps are now more clearly sequenced and outlined, which helps make things explicit: e.g. the same `AudioBuffer` instance is used for both the event and the promise, and the details of how the buffer gets filled and initialized are no longer spread out across the method definition, the event definition, and the introductory paragraph."
 	},
 	{
 		"hash": "f99795b93077b62aaee16aa4fc0e21cbd20bd427",
-		"time": 1398444699
+		"time": 1398444699,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fix Lifetime in AudioContext numbering.",
+		"body": ""
 	},
 	{
 		"hash": "34e49712e8146532fcf55946c0e85ce9e8af3ce4",
-		"time": 1398230252
+		"time": 1398230252,
+		"name": "Domenic Denicola",
+		"email": "domenic@domenicdenicola.com",
+		"subject": "Remove trailing whitespace.",
+		"body": ""
 	},
 	{
 		"hash": "2508def6b24835e67d937b5e7d9422c2487b4ac0",
-		"time": 1398230178
+		"time": 1398230178,
+		"name": "Domenic Denicola",
+		"email": "domenic@domenicdenicola.com",
+		"subject": "Rewrite decodeAudioData to return a promise.",
+		"body": "It still takes the callbacks, although they are now optional and noted as legacy."
 	},
 	{
 		"hash": "cfe9b93452237fd5403e0a798a77c2a2f3da4cb8",
-		"time": 1396616872
+		"time": 1396616872,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Clarify the processing applied before and after the FFT in AnalyserNode",
+		"body": ""
 	},
 	{
 		"hash": "0e4797d9c55aa0b6542407f4bd5d50c67e3f5aac",
-		"time": 1396370740
+		"time": 1396370740,
+		"name": "Raymond Toy",
+		"email": "rtoy@google.com",
+		"subject": "Upcase MUST.",
+		"body": ""
 	},
 	{
 		"hash": "d6e77c502c5534dc1720ffb8667311cb5bbc2023",
-		"time": 1396304180
+		"time": 1396304180,
+		"name": "Raymond Toy",
+		"email": "rtoy@google.com",
+		"subject": "Note that an error must be thrown if the buffer does not have 1, 2, or 4 channels.",
+		"body": ""
 	},
 	{
 		"hash": "dcfd599078707a04fc017575ec34447a8eece388",
-		"time": 1395080931
+		"time": 1395080931,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #294 from cwilso/getFloatTimeDomainData",
+		"body": "Added getFloatTimeDomainData() method to AnalyserNode"
 	},
 	{
 		"hash": "e6edb5078ad7b3829404d94de0626eb8871e04e8",
-		"time": 1395080922
+		"time": 1395080922,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #292 from cwilso/removal",
+		"body": "Removal of Example Apps and Recording Impulse Responses"
 	},
 	{
 		"hash": "a01b604ad91a438f8dcf830d148565b7f31e94c4",
-		"time": 1394610852
+		"time": 1394610852,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Make OscillatorNode.{start, end} like AudioBufferSourceNode's",
+		"body": "OscillatorNode.{start, end} argument is now optional, and default to zero, so it\nis similar to AudioBufferSourceNode methods."
 	},
 	{
 		"hash": "a1fdfd5181a7129a11ac26cc9c3eac9fb9c6578c",
-		"time": 1393872285
+		"time": 1393872285,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Minor correction of Respec reordering.",
+		"body": ""
 	},
 	{
 		"hash": "9e8e6da3d328a4d5fa7512f707ec9da663760d29",
-		"time": 1393276346
+		"time": 1393276346,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "length -> duration in loop description",
+		"body": "Fixes issue #280."
 	},
 	{
 		"hash": "31b817d9a3b7ab1b0f42a2634f35c239e08b3c52",
-		"time": 1393275353
+		"time": 1393275353,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fix issue #277",
+		"body": "Remove mention of \"playback of buffer\" from OscillatorNode."
 	},
 	{
 		"hash": "8696f31312d614393165f849d89d143cb15f2ed1",
-		"time": 1393269187
+		"time": 1393269187,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #291 from cwilso/gh-pages",
+		"body": "Stop time changes (fixes #15)."
 	},
 	{
 		"hash": "4009dd355ab664f80736c34ee5f8bbcba1478808",
-		"time": 1393268632
+		"time": 1393268632,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Added getFloatTimeDomainData() method to AnalyserNode",
+		"body": "As per issue #278, https://github.com/WebAudio/web-audio-api/issues/278."
 	},
 	{
 		"hash": "2b307414a399135f1686b1337298d970ef99190c",
-		"time": 1393015775
+		"time": 1393015775,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "ReSpec-ize the new section on oscillator types, and fix markup.",
+		"body": ""
 	},
 	{
 		"hash": "0c13f99f28114d94eeba3571e754955cd860942e",
-		"time": 1393006623
+		"time": 1393006623,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Resolve merge conflicts",
+		"body": ""
 	},
 	{
 		"hash": "4e650b7b985901e158c75c5798c7d88dd37aec0e",
-		"time": 1392852963
+		"time": 1392852963,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Removal of Example Applications and Recording Impulse Responses sections.",
+		"body": "As per http://www.w3.org/2011/audio/track/actions/80.  After reading\ncarefully, there is nothing in these sections that is not either\nconfusing disconnected (IR) or duplicative with the scenarios laid out\nin a separate document (Example Apps)."
 	},
 	{
 		"hash": "c21d0eeeda296d30703788f353a4179d3e3a3d56",
-		"time": 1392850604
+		"time": 1392850604,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Revert \"Remove Example Applications and Recording Impulse Responses sections.\"",
+		"body": "This reverts commit f82682f2901fe5938d41fb158653e443212677ad."
 	},
 	{
 		"hash": "f82682f2901fe5938d41fb158653e443212677ad",
-		"time": 1392850506
+		"time": 1392850506,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Remove Example Applications and Recording Impulse Responses sections.",
+		"body": "Per http://www.w3.org/2011/audio/track/actions/80:  These sections are\nof questionable value, and raise licensing concerns."
 	},
 	{
 		"hash": "6f5276f4912b73020f6e8d516d13e2958d58c412",
-		"time": 1392847607
+		"time": 1392847607,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Stop time changes (fixes #15).",
+		"body": ""
 	},
 	{
 		"hash": "2051db19ff978004f0d1c201bc5ca317ab02b698",
-		"time": 1392830445
+		"time": 1392830445,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fixed typos in cross-origin checkin.",
+		"body": ""
 	},
 	{
 		"hash": "3f9b990347e2662754b325471eeb996a1c6dd8ea",
-		"time": 1392830348
+		"time": 1392830348,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Merge pull request #290 from padenot/cross-origin",
+		"body": "Fix for issue #282"
 	},
 	{
 		"hash": "5deadb3e5454aa74b4b58481830ef96eb12b9b6e",
-		"time": 1392820052
+		"time": 1392820052,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Rename a last occurence of copyChannelDataTo to the new name, copyFromChannel",
+		"body": ""
 	},
 	{
 		"hash": "aa6b7ab3847e35361037f25968937c1a58cc2ecb",
-		"time": 1392818607
+		"time": 1392818607,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Markup cleanup for the MediaElementAudioSourceNode section",
+		"body": ""
 	},
 	{
 		"hash": "d6fb63653a7964eb2d6842090361e7b64d0c7097",
-		"time": 1392818590
+		"time": 1392818590,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Resolution for #282 - Cross-origin MediaElementAudioSourceNode",
+		"body": ""
 	},
 	{
 		"hash": "4e4abd6e7cfb6806f02bbc7ebf4c2d18d6975d5a",
-		"time": 1392807085
+		"time": 1392807085,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Make a-rate and k-rate properly link to their definition.",
+		"body": ""
 	},
 	{
 		"hash": "ac15990656442a366e83c03bf9165f60882032d4",
-		"time": 1392806861
+		"time": 1392806861,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix for Visible Data Races (Issue #254)",
+		"body": ""
 	},
 	{
 		"hash": "fe11923d1b20cb4767ab39329be2faf38f18612a",
-		"time": 1392759226
+		"time": 1392759226,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "remove redundant link tag.",
+		"body": ""
 	},
 	{
 		"hash": "4994d6d7c135fded1850159863bc00f19a0bc4a3",
-		"time": 1392749646
+		"time": 1392749646,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Fix three broken internal links",
+		"body": ""
 	},
 	{
 		"hash": "8e26f364dcc36b93f89bb84459fd52c4e49bb303",
-		"time": 1392745051
+		"time": 1392745051,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "The html now validates using the html5 conformance checker",
+		"body": ""
 	},
 	{
 		"hash": "6a2ee004d83402a3902faf0b848f4542198b5525",
-		"time": 1392646863
+		"time": 1392646863,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"subject": "Refactor the specification to use ReSpec",
+		"body": ""
 	},
 	{
 		"hash": "70f46a8d827cb2884866f565518128c8cfae4ae8",
-		"time": 1387489222
+		"time": 1387489222,
+		"name": "Raymond Toy",
+		"email": "rtoy@google.com",
+		"subject": "Clean up according to review:",
+		"body": "o Replace < with appropriate HTML entities.\no Add some text to say these are idealized waveforms\no Add link to Oscillator Types section from Oscillator Node Interface\n  section."
 	},
 	{
 		"hash": "cfead4d92c683a0bb984022f3a16a57cea002594",
-		"time": 1383869859
+		"time": 1383869859,
+		"name": "Raymond Toy",
+		"email": "rtoy@google.com",
+		"subject": "Define oscillator phases for the predefined types.",
+		"body": ""
 	},
 	{
 		"hash": "36a1500fa337dd6d79f38c43f12303ecde5ef798",
-		"time": 1382630323
+		"time": 1382630323,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Merge pull request #245 from padenot/114",
+		"body": "Issue #114 - Spec argument range of createBuffer."
 	},
 	{
 		"hash": "c04f23541cd4895738b813dc62f9be3d636c4784",
-		"time": 1382366134
+		"time": 1382366134,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Revert branch pushed to gh-pages by mistakes.",
+		"body": "This reverts a bunch of commits."
 	},
 	{
 		"hash": "79d121f33ddfdf0376af908d301b92d79ddd3adc",
-		"time": 1382365500
+		"time": 1382365500,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Move previous editors into their own section",
+		"body": ""
 	},
 	{
 		"hash": "1e5114f0c56021df5098611791b5e27e12654289",
-		"time": 1382365260
+		"time": 1382365260,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Add repo and bug tracker to the front matter",
+		"body": ""
 	},
 	{
 		"hash": "dbb01c73e1dcba6b2a00a236523b4a34603cc2b4",
-		"time": 1381855369
+		"time": 1381855369,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Make the references normative",
+		"body": ""
 	},
 	{
 		"hash": "193a2aa79967973010cb0b202be7e8e77e430ef7",
-		"time": 1381855214
+		"time": 1381855214,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "cleanup non-normative sections",
+		"body": ""
 	},
 	{
 		"hash": "1722b61af9fced67e02b9decb465d45f68c1a42e",
-		"time": 1381854792
+		"time": 1381854792,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "some crossref, intro cleanup",
+		"body": ""
 	},
 	{
 		"hash": "333677562566ad1e2471042f1a7e278e1dd99ee7",
-		"time": 1381760693
+		"time": 1381760693,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "rebase",
+		"body": ""
 	},
 	{
 		"hash": "f94fcd7f424d57c4dc2ded71c8e936c90752518b",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "cross-ref",
+		"body": ""
 	},
 	{
 		"hash": "6cae96eac5ee86ff89786b67a78060e9442fc6de",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "crossref and stuff",
+		"body": ""
 	},
 	{
 		"hash": "9273de6ac4081c607211fc1c20c85bd56049aace",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "some more nodes converted again",
+		"body": ""
 	},
 	{
 		"hash": "e85a24e359b77638a8bb3a322ce103db16a27237",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "converted more nodes to respec",
+		"body": ""
 	},
 	{
 		"hash": "6826537c0ebb71883520bf6678080b361e079ca1",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "changed > to &gt; and removed last section numbers",
+		"body": ""
 	},
 	{
 		"hash": "f9b67a462b15f222668b9e6cab5e3a215a3fe932",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "ported audiocontext over to respec",
+		"body": ""
 	},
 	{
 		"hash": "32edd5542f09a7722bea51d3076a06bf5ce6d720",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "highlight more coe",
+		"body": ""
 	},
 	{
 		"hash": "df51cf4dcc661861f5e7ee41c51388dd16cdec09",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Use respec to track normative and informative references",
+		"body": ""
 	},
 	{
 		"hash": "0e8925d48f4d5e8c2332482c6235c296cbfaa745",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "cleanup markup around tool list",
+		"body": ""
 	},
 	{
 		"hash": "36b146a2d7a650771bc6e6cc050d74f741e24eff",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "remove <br>",
+		"body": ""
 	},
 	{
 		"hash": "29778e8cbe447fb67c7219a65b2e0831fc3885a5",
-		"time": 1381752797
+		"time": 1381752797,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "add captions and use <figure>",
+		"body": ""
 	},
 	{
 		"hash": "1abc2302df492fb1b38fc6976c2891bd48fa6675",
-		"time": 1381752793
+		"time": 1381752793,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "first pass at cleaning the markup",
+		"body": ""
 	},
 	{
 		"hash": "0db596891cbf727cd89bef1912c2cd24f115e557",
-		"time": 1381752310
+		"time": 1381752310,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Issue 114 - Spec argument range of createBuffer.",
+		"body": "Those can only be non-null positive and inside their eventual nominal range.\nINDEX_SIZE_ERR is thrown."
 	},
 	{
 		"hash": "2d43fdc1ee93747efb7f5f467f392b92ce03c617",
-		"time": 1380923872
+		"time": 1380923872,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Re-adding Chris Rogers to editors.",
+		"body": ""
 	},
 	{
 		"hash": "5be9581ddf08f8ba652d5658d0f907308204d3a0",
-		"time": 1380885491
+		"time": 1380885491,
+		"name": "Olivier Thereaux",
+		"email": "ot@zoy.org",
+		"subject": "minor tweaks to pass w3c publication checker",
+		"body": ""
 	},
 	{
 		"hash": "1a61e3132c9a6157f3b67a317ca45c9231784bb3",
-		"time": 1380884254
+		"time": 1380884254,
+		"name": "Olivier Thereaux",
+		"email": "ot@zoy.org",
+		"subject": "more markup fixes and consolidation",
+		"body": ""
 	},
 	{
 		"hash": "d3c21c99ccdc958f7d91b3964d6293f648e47631",
-		"time": 1380883685
+		"time": 1380883685,
+		"name": "Olivier Thereaux",
+		"email": "ot@zoy.org",
+		"subject": "markup validation",
+		"body": ""
 	},
 	{
 		"hash": "e9674842129e2a824351591f9c8e68996eef946b",
-		"time": 1380882789
+		"time": 1380882789,
+		"name": "Olivier Thereaux",
+		"email": "ot@zoy.org",
+		"subject": "merging the two separate change logs into changelog.html, updating with changes up to Oct 4th, 2013",
+		"body": ""
 	},
 	{
 		"hash": "3f5945118d02d733f74b6623c21b01c04c5b30c5",
-		"time": 1380881613
+		"time": 1380881613,
+		"name": "Olivier Thereaux",
+		"email": "ot@zoy.org",
+		"subject": "copyright year change",
+		"body": ""
 	},
 	{
 		"hash": "acfd1746a081eae9554095adad607ee704bd1be1",
-		"time": 1380881385
+		"time": 1380881385,
+		"name": "Olivier Thereaux",
+		"email": "ot@zoy.org",
+		"subject": "Updated Editors and Acknowledgments",
+		"body": "* Updated editor list\r\n* Updated acks with current WG membership list and a list of past WG members\r\n* Added WG as \"authors\""
 	},
 	{
 		"hash": "283c4be0b1c7c26cbb0b744fe3fd1fe94f0d9623",
-		"time": 1380879749
+		"time": 1380879749,
+		"name": "Olivier Thereaux",
+		"email": "ot@zoy.org",
+		"subject": "Update previous version",
+		"body": ""
 	},
 	{
 		"hash": "49ea61e165cc0ae1a3a0fd1c26813ca2e8299113",
-		"time": 1380879592
+		"time": 1380879592,
+		"name": "Olivier Thereaux",
+		"email": "ot@zoy.org",
+		"subject": "Update link to latest Editor's Draft",
+		"body": ""
 	},
 	{
 		"hash": "b3f3c7c1a9cd16306484a345d805b86f6bcbe7ef",
-		"time": 1380569511
+		"time": 1380569511,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Issue 114 - Spec argument range of createBuffer.",
+		"body": "Those can only be non-null positive and inside their eventual nominal range.\nINDEX_SIZE_ERR is thrown."
 	},
 	{
 		"hash": "7c7a870abb7a23f3904d34b6135dfdd213c339f3",
-		"time": 1379083858
+		"time": 1379083858,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Fixed reported mistype in quad up-mix.",
+		"body": ""
 	},
 	{
 		"hash": "69d32caf5cf51ca73ebcf75e556f62ffd7580059",
-		"time": 1378486845
+		"time": 1378486845,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Rename specification.html to index.html and update the link to the convolution.html document.",
+		"body": ""
 	},
 	{
 		"hash": "b39314a86c90eee1328f5f515a51bc1d20241530",
-		"time": 1378486645
+		"time": 1378486645,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "To prepare for mercurial import",
+		"body": ""
 	},
 	{
 		"hash": "56abf068cdc645b8b6cd4c19939c0e60b12e3eed",
-		"time": 1378482196
+		"time": 1378482196,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Reword the text where exceptions are thrown.",
+		"body": "The goal was to make it consistent and more RFC2119-y."
 	},
 	{
 		"hash": "50ad9b6ec655d21ad80554e90263a008b08d4683",
-		"time": 1378482053
+		"time": 1378482053,
+		"name": "Paul ADENOT",
+		"email": "paul@paul.cx",
+		"subject": "Bug 17325 - Specify which exception to throw.",
+		"body": ""
 	},
 	{
 		"hash": "772732d31e3e962d60812b48fd93943fb7b13c16",
-		"time": 1378223231
+		"time": 1378223231,
+		"name": "Chris Wilson",
+		"email": "cwilso@gmail.com",
+		"subject": "Added current snap of spec.",
+		"body": ""
 	}
 ]
