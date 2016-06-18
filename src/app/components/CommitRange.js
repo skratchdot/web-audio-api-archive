@@ -1,8 +1,8 @@
 import { Col, Row } from 'react-bootstrap';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectedIndexSelector } from '../selectors/index';
-import { setSelectedCommit } from '../actions/selectedCommit';
+import { selectedIndexSelector } from '~/src/app/selectors/index';
+import { setSelectedCommit } from '~/src/app/actions/selectedCommit';
 
 class CommitRange extends Component {
   render() {

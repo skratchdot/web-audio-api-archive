@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CommitRange from '../components/CommitRange';
+import CommitRange from '~/src/app/components/CommitRange';
 import { Jumbotron } from 'react-bootstrap';
 import { connect } from 'react-redux';
 
