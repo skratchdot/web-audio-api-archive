@@ -25,9 +25,14 @@ Install the module with: `npm install web-audio-api-archive`
 __Coming Soon__
 
 
+https://github.com/WebAudio/web-audio-api/blob/d6430b09639a20e7e699eb839a174d1c86a16a2a/index.html
+https://cdn.rawgit.com/WebAudio/web-audio-api/d6430b09639a20e7e699eb839a174d1c86a16a2a/index.html
+
 ## Links
 
 - [Homepage](https://github.com/skratchdot/web-audio-api-archive/)
+- [Web Audio API - Latest Spec](https://webaudio.github.io/web-audio-api/)
+- [Web Audio API - Source Code](https://github.com/webaudio/web-audio-api/)
 
 
 ## License
