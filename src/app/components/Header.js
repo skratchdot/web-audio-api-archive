@@ -1,47 +1,87 @@
-import { Col, Nav, Row } from 'react-bootstrap';
+import {
+  ActionBugReport, ActionHome, ActionInfo, ImageRemoveRedEye, NavigationMoreVert
+} from 'material-ui/svg-icons';
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import AppBar from 'material-ui/AppBar';
+import Divider from 'material-ui/Divider';
+import GithubIcon from '~/src/app/components/icons/GithubIcon';
+import IconButton from 'material-ui/IconButton';
+import IconMenu from 'material-ui/IconMenu';
+import MenuItem from 'material-ui/MenuItem';
+import RawgitIcon from '~/src/app/components/icons/RawgitIcon';
+import WaybackIcon from '~/src/app/components/icons/WaybackIcon';
 import { connect } from 'react-redux';
 import packageInfo from '~/package.json';
+import { push } from 'react-router-redux';
+import { selectedIndexSelector } from '~/src/app/selectors/index';
+
+const githubUrl = 'https://github.com/skratchdot/web-audio-api-archive/';
+const issuesUrl = 'https://github.com/skratchdot/web-audio-api-archive/issues';
+const leave = (url) => {
+  return () => document.location.href = url;
+};
 
 class Header extends Component {
-  isLinkActive(pathname) {
-    return this.context.router.isActive(pathname) ? 'active' : '';
-  }
   render() {
+    const { dispatch, selectedIndex } = this.props;
+    const goto = (path) => {
+      return () => dispatch(push(`/${packageInfo.name}${path}`));
+    };
     return (
       <header>
-        <Row className="header">
-          <Col md={6}>
-            <Link to={`/${packageInfo.name}`}>
-              <h1 className="title">
-                web-audio-api-archive
-                &nbsp;
-                <small>version {packageInfo.version}</small>
-              </h1>
-            </Link>
-          </Col>
-          <Col md={6}>
-            <Nav bsStyle="pills">
-              <li key="home" className={
-                  this.isLinkActive(`/${packageInfo.name}`) +
-                  this.isLinkActive(`/${packageInfo.name}/home`)}>
-                <Link to={`/${packageInfo.name}`}>Home</Link>
-              </li>
-              <li key="about"
-                className={this.isLinkActive(`/${packageInfo.name}/about`)}>
-                <Link to={`/${packageInfo.name}/about`}>About</Link>
-              </li>
-              <li key="view"
-                className={this.isLinkActive(`/${packageInfo.name}/view`)}>
-                <Link to={`/${packageInfo.name}/view`}>View</Link>
-              </li>
-            </Nav>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12}><div className="main-seperator"></div></Col>
-        </Row>
+        <AppBar
+          titleStyle={{ lineHeight: null, fontSize: null }}
+          title={
+            <div>
+              <div style={{ float: 'left' }}>
+                <div style={{ fontSize: 15, lineHeight: '15px', marginTop: 6 }}>
+                  Web Audio API
+                </div>
+                <div style={{ fontSize: 24, lineHeight: '25px' }}>
+                  <strong>ARCHIVE</strong>
+                </div>
+              </div>
+              <div style={{ float: 'right' }}>
+                commit #{selectedIndex + 1} selected
+              </div>
+            </div>
+          }
+          showMenuIconButton={false}
+          iconElementRight={
+            <IconMenu
+              iconButtonElement={
+                <IconButton>
+                  <NavigationMoreVert />
+                </IconButton>
+              }
+              targetOrigin={{ horizontal: 'right', vertical: 'top' }}
+              anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
+            >
+              <MenuItem primaryText="Homepage"
+                leftIcon={<ActionHome />}
+                onTouchTap={goto('/')} />
+              <MenuItem primaryText="About"
+                leftIcon={<ActionInfo />}
+                onTouchTap={goto('/about')} />
+              <MenuItem primaryText="View: Snapshot"
+                leftIcon={<ImageRemoveRedEye />}
+                onTouchTap={goto('/view')} />
+              <MenuItem primaryText="View: Rawgit.com"
+                leftIcon={<RawgitIcon />}
+                onTouchTap={goto('/view/rawgit')} />
+              <MenuItem primaryText="View: Wayback Machine"
+                leftIcon={<WaybackIcon />}
+                onTouchTap={goto('/view/wayback')} />
+              <Divider />
+              <MenuItem primaryText="Source Code"
+                leftIcon={<GithubIcon />}
+                onTouchTap={leave(githubUrl)} />
+              <MenuItem primaryText="Report Bug"
+                leftIcon={<ActionBugReport />}
+                onTouchTap={leave(issuesUrl)} />
+            </IconMenu>
+          }
+        />
       </header>
     );
   }
@@ -51,4 +91,9 @@ Header.contextTypes = {
   router: React.PropTypes.object
 };
 
-export default connect()(Header);
+
+export default connect((state) => {
+  return {
+    selectedIndex: selectedIndexSelector(state)
+  };
+})(Header);

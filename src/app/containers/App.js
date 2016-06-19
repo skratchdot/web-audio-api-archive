@@ -1,29 +1,48 @@
 import React, { Component } from 'react';
+import { red500, red700 } from 'material-ui/styles/colors';
 import DevTools from '~/src/app/containers/DevTools';
 import Footer from '~/src/app/components/Footer';
-import GithubCorner from 'react-github-corner';
-import { Grid } from 'react-bootstrap';
 import Header from '~/src/app/components/Header';
-import pathGet from 'object-path-get';
-import stringToCssName from '~/src/app/helpers/stringToCssName';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { VBox } from 'react-layout-components';
+import { connect } from 'react-redux';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import { setHeight } from '~/src/app/helpers/index';
+
+const muiTheme = getMuiTheme({
+  palette: {
+    primary1Color: red500,
+    primary2Color: red700,
+    pickerHeaderColor: red500
+  },
+  appBar: {
+    height: 50
+  }
+});
 
 class App extends Component {
   render() {
-    const path = pathGet(this, 'this.children.props.route.path', '');
-    const pageParams = pathGet(this, 'props.params', {});
-    const githubUrl = 'https://github.com/skratchdot/web-audio-api-archive';
     return (
-      <div className={`page-${stringToCssName(path)}`}>
-        <Grid>
-          <Header pageParams={pageParams} />
-          {this.props.children}
-          <Footer />
-          <GithubCorner href={githubUrl} />
-        </Grid>
-        <DevTools />
-      </div>
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <VBox fit>
+          <VBox flexGrow={0} style={setHeight(50)}>
+            <Header />
+          </VBox>
+          <VBox fit flexGrow={1} style={{
+            width: '100%',
+            height: '100%',
+            overflow: 'auto'
+          }}>
+            {this.props.children}
+          </VBox>
+          <VBox flexGrow={0} style={setHeight(30)}>
+            <Footer />
+          </VBox>
+          <DevTools />
+        </VBox>
+      </MuiThemeProvider>
     );
   }
 }
 
-export default App;
+export default connect()(App);
