@@ -7,6 +7,7 @@ import Divider from 'material-ui/Divider';
 import GithubIcon from '~/src/app/components/icons/GithubIcon';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
+import { Link } from 'react-router';
 import MenuItem from 'material-ui/MenuItem';
 import RawgitIcon from '~/src/app/components/icons/RawgitIcon';
 import WaybackIcon from '~/src/app/components/icons/WaybackIcon';
@@ -27,6 +28,10 @@ class Header extends Component {
     const goto = (path) => {
       return () => dispatch(push(`/${packageInfo.name}${path}`));
     };
+    const linkStyle = {
+      textDecoration: 'none',
+      color: 'white'
+    };
     return (
       <header>
         <AppBar
@@ -34,15 +39,21 @@ class Header extends Component {
           title={
             <div>
               <div style={{ float: 'left' }}>
-                <div style={{ fontSize: 15, lineHeight: '15px', marginTop: 6 }}>
-                  Web Audio API
-                </div>
-                <div style={{ fontSize: 24, lineHeight: '25px' }}>
-                  <strong>ARCHIVE</strong>
-                </div>
+                <Link to={`/${packageInfo.name}`} style={linkStyle}>
+                  <div style={{
+                    fontSize: 15, lineHeight: '15px', marginTop: 6
+                  }}>
+                    Web Audio API
+                  </div>
+                  <div style={{ fontSize: 24, lineHeight: '25px' }}>
+                    <strong>ARCHIVE</strong>
+                  </div>
+                </Link>
               </div>
               <div style={{ float: 'right' }}>
-                commit #{selectedIndex + 1} selected
+                <Link to={`/${packageInfo.name}`} style={linkStyle}>
+                  commit #{selectedIndex + 1} selected
+                </Link>
               </div>
             </div>
           }
