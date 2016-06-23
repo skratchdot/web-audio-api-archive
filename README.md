@@ -12,21 +12,6 @@ spec using 3rd Party tools like
 [The Internet Archive's Wayback Machine](https://archive.org/web/web.php).
 
 
-## Getting Started
-
-Install the module with: `npm install web-audio-api-archive`
-
-
-## Documentation
-
-__Coming Soon__
-
-
-https://github.com/WebAudio/web-audio-api/blob/d6430b09639a20e7e699eb839a174d1c86a16a2a/index.html
-https://cdn.rawgit.com/WebAudio/web-audio-api/d6430b09639a20e7e699eb839a174d1c86a16a2a/index.html
-
-web.archive.org/web/20161005053001/http://webaudio.github.io/web-audio-api/
-
 ## Problems
 
 - Local Copies: embed external

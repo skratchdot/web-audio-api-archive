@@ -1,3 +1,7 @@
 [submodule "web-audio-api"]
 	path = web-audio-api
 	url = git@github.com:WebAudio/web-audio-api.git
+[submodule "build/prod"]
+	path = build/prod
+	url = git@github.com:skratchdot/web-audio-api-archive.git
+	branch = gh-pages
