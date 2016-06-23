@@ -12,21 +12,22 @@ spec using 3rd Party tools like
 [The Internet Archive's Wayback Machine](https://archive.org/web/web.php).
 
 
-## Problems
-
-- Local Copies: embed external
-
-- view local copy
-- view on wayback machine
-- view on rawgit.com
-
-
 ## Links
 
 - [Web Audio API Archive: Website](http://projects.skratchdot.com/web-audio-api-archive/)
 - [Web Audio API Archive: Source Code](https://github.com/skratchdot/web-audio-api-archive/)
 - [Web Audio API: Latest Spec](https://webaudio.github.io/web-audio-api/)
 - [Web Audio API: Source Code](https://github.com/webaudio/web-audio-api/)
+
+
+## TODO
+
+- Make the site responsive
+- Allow archives to be viewed in iframe or in new window
+- Add a stats page
+- Add a timeline browser
+- Implement local archive pages
+- Add commit list using react-virtual
 
 
 ## License
