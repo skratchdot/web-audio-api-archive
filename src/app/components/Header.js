@@ -1,5 +1,5 @@
 import {
-  ActionBugReport, ActionHome, ActionInfo, ImageRemoveRedEye, NavigationMoreVert
+  ActionBugReport, NavigationMoreVert
 } from 'material-ui/svg-icons';
 import React, { Component } from 'react';
 import {
@@ -10,11 +10,12 @@ import Divider from 'material-ui/Divider';
 import GithubIcon from '~/src/app/components/icons/GithubIcon';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
+import Immutable from 'immutable';
 import { Link } from 'react-router';
 import MenuItem from 'material-ui/MenuItem';
-import RawgitIcon from '~/src/app/components/icons/RawgitIcon';
-import WaybackIcon from '~/src/app/components/icons/WaybackIcon';
+import Subheader from 'material-ui/Subheader';
 import { connect } from 'react-redux';
+import { getRouteList } from '~/src/app/routes';
 import packageInfo from '~/package.json';
 import { push } from 'react-router-redux';
 import { selectedIndexSelector } from '~/src/app/selectors/index';
@@ -27,10 +28,24 @@ const leave = (url) => {
 
 class Header extends Component {
   render() {
-    const { dispatch, commits, name, selectedIndex, timeHuman } = this.props;
-    const goto = (path) => {
-      return () => dispatch(push(`/${packageInfo.name}${path}`));
-    };
+    const {
+      dispatch, commits, name, selectedIndex, timeHuman
+    } = this.props;
+    const { router } = this.context;
+    const { isActive } = router;
+    const routes = getRouteList();
+    const activeRoute = routes.find((r) => isActive(r.get('path') || '', true));
+    let icon;
+    let title;
+    if (activeRoute) {
+      title = activeRoute.get('title');
+      icon = React.cloneElement(activeRoute.get('icon'), {
+        color: 'white',
+        style: {
+          height: 50
+        }
+      });
+    }
     const linkStyle = {
       textDecoration: 'none',
       color: 'white'
@@ -52,6 +67,18 @@ class Header extends Component {
                     <strong>ARCHIVE</strong>
                   </div>
                 </Link>
+              </div>
+              <div style={{ float: 'left', margin: '0px 15px' }}>
+                {icon}
+              </div>
+              <div style={{ float: 'left' }}>
+                <h1 style={{
+                  lineHeight: '50px',
+                  fontSize: '15px',
+                  margin: 0
+                }}>
+                  {title}
+                </h1>
               </div>
               <div style={{ float: 'right' }}>
                 <Link to={`/${packageInfo.name}`} style={{
@@ -79,22 +106,15 @@ class Header extends Component {
               targetOrigin={{ horizontal: 'right', vertical: 'top' }}
               anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
             >
-              <MenuItem primaryText="Homepage"
-                leftIcon={<ActionHome />}
-                onTouchTap={goto('/')} />
-              <MenuItem primaryText="About"
-                leftIcon={<ActionInfo />}
-                onTouchTap={goto('/about')} />
-              <MenuItem primaryText="View: Snapshot"
-                leftIcon={<ImageRemoveRedEye />}
-                onTouchTap={goto('/view')} />
-              <MenuItem primaryText="View: Rawgit.com"
-                leftIcon={<RawgitIcon />}
-                onTouchTap={goto('/view/rawgit')} />
-              <MenuItem primaryText="View: Wayback Machine"
-                leftIcon={<WaybackIcon />}
-                onTouchTap={goto('/view/wayback')} />
+              <Subheader>Navigation</Subheader>
+              {routes.filter((route) => route.get('key') !== 'notfound')
+                .map((route) => <MenuItem
+                  primaryText={route.get('title')}
+                  leftIcon={route.get('icon')}
+                  onTouchTap={() => dispatch(push(route.get('path')))}
+              />)}
               <Divider />
+              <Subheader>External Links</Subheader>
               <MenuItem primaryText="Source Code"
                 leftIcon={<GithubIcon />}
                 onTouchTap={leave(githubUrl)} />
@@ -113,9 +133,9 @@ Header.contextTypes = {
   router: React.PropTypes.object
 };
 
-
 export default connect((state) => {
   return {
+    routing: state.routing,
     commits: state.commits,
     selectedCommit: state.selectedCommmit,
     name: selectedName(state),

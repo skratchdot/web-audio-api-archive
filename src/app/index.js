@@ -2,9 +2,9 @@ import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import React from 'react';
 import configureStore from '~/src/app/store/configureStore';
+import { getRoutes } from '~/src/app/routes';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { render } from 'react-dom';
-import routes from '~/src/app/routes';
 import { setSelectedCommit } from '~/src/app/actions/selectedCommit';
 import { syncHistoryWithStore } from 'react-router-redux';
 
@@ -20,7 +20,7 @@ store.dispatch(setSelectedCommit(commits.last()));
 render(
   <Provider store={store}>
     <Router history={history}>
-      {routes}
+      {getRoutes()}
     </Router>
   </Provider>,
   document.getElementById('app')
