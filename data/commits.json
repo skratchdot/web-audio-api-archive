@@ -4,6 +4,7 @@
 		"time": 1465465600,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Have the OscillatorNode.frequency nominal range to be [-nyquist, +nyquist].",
 		"body": "This fixe issue #813."
 	},
@@ -12,6 +13,7 @@
 		"time": 1464962432,
 		"name": "Mikhail Pozdnyakov",
 		"email": "mikhail.pozdnyakov@intel.com",
+		"md5": "4ffb512f7312fbe30369fb8b78de59af",
 		"subject": "Fix #830 by converting 'outputTimeStamp' attribute to method",
 		"body": "Whereas 'AudioContext.outputTimeStamp' attribute is returning a new object every time it should be converted to a method."
 	},
@@ -20,6 +22,7 @@
 		"time": 1464618659,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix garbage introduced in previous commit.",
 		"body": ""
 	},
@@ -28,6 +31,7 @@
 		"time": 1464618222,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix MathJax",
 		"body": "https://lists.w3.org/Archives/Public/spec-prod/2016AprJun/0052.html tells us\nthat the behaviour has been inversed, we need to annotate the maths so that it\ndoes not get highlighted by hljs and then processed by MathJax that gets very\nconfused.\n\nAlso removed the deprecated \"highlight\" attribute from code examples and spec\nbloc."
 	},
@@ -36,6 +40,7 @@
 		"time": 1464366524,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #821: specify behavior of setValueCurveAtTime",
 		"body": "setValueCurveAtTime is modified so that an implicit call to\nsetValueAtTime is made at the end of the curve duration.  This makes\nany following automation events start from the end of the\nsetValueCurveAtTime event with the last value of the curve.\n\nWithout this, a linearRamp following setValueCurve would replace\nsetValueCurve.  This is not the desired behavior."
 	},
@@ -44,6 +49,7 @@
 		"time": 1464274533,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #827 from WebAudio/826-orientationX",
 		"body": "Issue #826, fix markup so that the right text for `orientationX` appears"
 	},
@@ -52,6 +58,7 @@
 		"time": 1464269287,
 		"name": "Mikhail Pozdnyakov",
 		"email": "mikhail.pozdnyakov@intel.com",
+		"md5": "4ffb512f7312fbe30369fb8b78de59af",
 		"subject": "Fix #817 by moving outputTimeStamp and outputLatency to context",
 		"body": ""
 	},
@@ -60,6 +67,7 @@
 		"time": 1464261710,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #812 from rtoy/797-widen-audiobuffer-playbackrate",
 		"body": "Fix #797: Widen nominal range of playbackRate"
 	},
@@ -68,6 +76,7 @@
 		"time": 1464261684,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #820 from rtoy/794-move-audio-context-options",
 		"body": "Fix #794: Move AudioContextOptions to AudioContext section"
 	},
@@ -76,6 +85,7 @@
 		"time": 1464261645,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #809 from rtoy/762-rename-audioparam-min/max",
 		"body": "Fix #762: Rename min/max attributes to minValue/maxValue"
 	},
@@ -84,6 +94,7 @@
 		"time": 1464261542,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Issue #826, fix markup so that the right text for `orientationX` appears.",
 		"body": ""
 	},
@@ -92,6 +103,7 @@
 		"time": 1463760716,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Remove setValueCurveAtTime change; it's not relevant.",
 		"body": ""
 	},
@@ -100,6 +112,7 @@
 		"time": 1463760427,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #794: Move AudioContextOptions to AudioContext section",
 		"body": "The definition of AudioContextOptions was in the BaseAudioContext\nsection.  But this dictionary is only applicable for AudioContexts.\nMove it to the AudioContext section."
 	},
@@ -108,6 +121,7 @@
 		"time": 1463756216,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #815: setValueCurve should throw on non-finite elements.",
 		"body": "If the curve contains non-finite values, setValueCurveAtTime must\nsignal a TypeError.  These values are illegal."
 	},
@@ -116,6 +130,7 @@
 		"time": 1463178846,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #797: Widen nominal range of playbackRate",
 		"body": "The playbackRate is widened to +/- infinity."
 	},
@@ -124,6 +139,7 @@
 		"time": 1463177073,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #810: Q is used in peaking filter.",
 		"body": "Correct typo in description of Q AudioParam."
 	},
@@ -132,6 +148,7 @@
 		"time": 1463092922,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Rebase and tidy.",
 		"body": ""
 	},
@@ -140,6 +157,7 @@
 		"time": 1463092893,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 762-rename-audioparam-min/max",
 		"body": ""
 	},
@@ -148,6 +166,7 @@
 		"time": 1463055507,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #721 from rtoy/695-revert-cone-angle-mod-360",
 		"body": "Revert change for cone angle mod 360."
 	},
@@ -156,6 +175,7 @@
 		"time": 1463055502,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #734 from rtoy/730-remove-panner-setvelocity",
 		"body": "Remove PannerNode's setVelocity"
 	},
@@ -164,6 +184,7 @@
 		"time": 1463055176,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #754 from pozdnyakov/12-dest-node-get-position",
 		"body": "Fix #12 by adding outputTimeStamp attribute to AudioDestinationNode"
 	},
@@ -172,6 +193,7 @@
 		"time": 1463055044,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #775 from rtoy/348-processing-latency",
 		"body": "Fix #348: Add latencyHint, replacing playbackCategory"
 	},
@@ -180,6 +202,7 @@
 		"time": 1463054996,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #800 from rtoy/798-fix-biquad-q-range",
 		"body": "Fix biquad q range"
 	},
@@ -188,6 +211,7 @@
 		"time": 1463054984,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #801 from rtoy/767-use-newer-license",
 		"body": "Fix #767: Use newer Software and Document License"
 	},
@@ -196,6 +220,7 @@
 		"time": 1463002289,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #762: Rename min/max attributes to minValue/maxValue",
 		"body": "The AudioParam nominal range attributes min/max are renamed to\nminValue and maxValue."
 	},
@@ -204,6 +229,7 @@
 		"time": 1463001990,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #766: Behavior of automations and nominal ranges",
 		"body": "Specify the behavior of automations with nominal ranges.  Automations\nare internally computed as there were no nominal ranges.  Only when\nthey are applied is the clamping done.  A simple example is given."
 	},
@@ -212,6 +238,7 @@
 		"time": 1462949710,
 		"name": "Mikhail Pozdnyakov",
 		"email": "mikhail.pozdnyakov@intel.com",
+		"md5": "4ffb512f7312fbe30369fb8b78de59af",
 		"subject": "Fix #12 by adding 'AudioDestinationNode.outputTimeStamp' and 'AudioDestinationNode.outputLatency'",
 		"body": "This patch introduces 'AudioDestinationNode.outputTimeStamp' and 'AudioDestinationNode.outputLatency' attributes, so that it's possible to estimate when the given context's stream position is audible."
 	},
@@ -220,6 +247,7 @@
 		"time": 1462905074,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy.",
 		"body": ""
 	},
@@ -228,6 +256,7 @@
 		"time": 1462904676,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use Unix end-of-line character (LF)",
 		"body": "Automatically converted Windows style to Unix style end-of-line\ncharacter.\n\nFix #804."
 	},
@@ -236,6 +265,7 @@
 		"time": 1462469808,
 		"name": "Chris Lilley",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "now make the actual small edits to the security section, from Wendy's review",
 		"body": ""
 	},
@@ -244,6 +274,7 @@
 		"time": 1462469581,
 		"name": "Chris Lilley",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "undo botched merge conflict edit",
 		"body": ""
 	},
@@ -252,6 +283,7 @@
 		"time": 1462467647,
 		"name": "Chris Lilley",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Merge branch 'gh-pages' of https://github.com/WebAudio/web-audio-api into gh-pages",
 		"body": ""
 	},
@@ -260,6 +292,7 @@
 		"time": 1462398799,
 		"name": "Chris Lilley",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "update to Security & Privacy",
 		"body": ""
 	},
@@ -268,6 +301,7 @@
 		"time": 1462228329,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #767: Use newer Software and Document License",
 		"body": "Specify the w3c software license."
 	},
@@ -276,6 +310,7 @@
 		"time": 1462227396,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy.",
 		"body": ""
 	},
@@ -284,6 +319,7 @@
 		"time": 1462227272,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 695-revert-cone-angle-mod-360",
 		"body": ""
 	},
@@ -292,6 +328,7 @@
 		"time": 1462226899,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 730-remove-panner-setvelocity",
 		"body": ""
 	},
@@ -300,6 +337,7 @@
 		"time": 1462221607,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy.",
 		"body": ""
 	},
@@ -308,6 +346,7 @@
 		"time": 1462221552,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 348-processing-latency",
 		"body": ""
 	},
@@ -316,6 +355,7 @@
 		"time": 1461702111,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 798-fix-biquad-q-range",
 		"body": ""
 	},
@@ -324,6 +364,7 @@
 		"time": 1461701826,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy.",
 		"body": ""
 	},
@@ -332,6 +373,7 @@
 		"time": 1461701668,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #798: Incorrect nominal range for Biquad Q",
 		"body": "The actual nominal range is (-infinity, +infinity) since Q is in dB\nand the valid range for the linear Q value is (0, infinity)."
 	},
@@ -340,6 +382,7 @@
 		"time": 1461458581,
 		"name": "Chris Lilley",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Merge branch 'gh-pages' of https://github.com/WebAudio/web-audio-api into gh-pages",
 		"body": ""
 	},
@@ -348,6 +391,7 @@
 		"time": 1461277580,
 		"name": "Chris Lilley",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "First draft of security section",
 		"body": "Merged security and privacy as the questionnaire merges them"
 	},
@@ -356,6 +400,7 @@
 		"time": 1461100271,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 348-processing-latency",
 		"body": ""
 	},
@@ -364,6 +409,7 @@
 		"time": 1460714401,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #659 from rtoy/130-add-initial-event",
 		"body": "Specify initial event for linear and exponential ramp."
 	},
@@ -372,6 +418,7 @@
 		"time": 1460714230,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Tidy after all the merges",
 		"body": ""
 	},
@@ -380,6 +427,7 @@
 		"time": 1460714177,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #706 from rtoy/rtoy-add-link-for-fetch-algo",
 		"body": "Update link for fetching algorithm."
 	},
@@ -388,6 +436,7 @@
 		"time": 1460714170,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #774 from rtoy/749-merge-spatial-panner-into-panner",
 		"body": "Fix #749: merge spatial panner into panner"
 	},
@@ -396,6 +445,7 @@
 		"time": 1460713919,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #792 from rtoy/760-biquad-gain-range",
 		"body": "Fix #760 by widening the range to (-inf,inf)"
 	},
@@ -404,6 +454,7 @@
 		"time": 1460713910,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #793 from rtoy/748-remove-base-audio-context-constructor",
 		"body": "Fix #748: remove base audio context constructor"
 	},
@@ -412,6 +463,7 @@
 		"time": 1460713900,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #795 from rtoy/771-some-filters-not-representable",
 		"body": "Fix #771 some filters not representable"
 	},
@@ -420,6 +472,7 @@
 		"time": 1460672970,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #762: Add missing nominal ranges for AudioParams.",
 		"body": "Add text to specify the nominal ranges as given in #762.  This should\ncomplete the set of nominal ranges so that AudioParam min/max\nattributes can be properly set for each AudioParam."
 	},
@@ -428,6 +481,7 @@
 		"time": 1460662926,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Replace processingLatency with baseLatency.",
 		"body": "Update links and other references appropriately."
 	},
@@ -436,6 +490,7 @@
 		"time": 1460567904,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make the spec a bit larger, waiting for new rspec markup.",
 		"body": ""
 	},
@@ -444,6 +499,7 @@
 		"time": 1460564284,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 771-some-filters-not-representable",
 		"body": ""
 	},
@@ -452,6 +508,7 @@
 		"time": 1460560266,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Tidy the document.",
 		"body": ""
 	},
@@ -460,6 +517,7 @@
 		"time": 1460560003,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #782 from marcoscaceres/gh-pages",
 		"body": "Feat (index.html): don't use Mathjax during spec-generation"
 	},
@@ -468,6 +526,7 @@
 		"time": 1460523138,
 		"name": "Marcos Caceres",
 		"email": "marcos+github@marcosc.com",
+		"md5": "e9e1c24a0e3ee1983987394435acbbfc",
 		"subject": "Fixed typo",
 		"body": ""
 	},
@@ -476,6 +535,7 @@
 		"time": 1460485104,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #771 by using Audio Cookbook formula",
 		"body": "Use the Audio Cookbook formula for the lowpass and highpass filters.\nHowever, the cookbook has Q in linear units.  This change makes Q in\ndB.  This preserves the old behavior which used Q in dB for the\nlowpass and highpass filters, so that automations have the same value.\n(See #769)\n\nThis also minimizes the difference in sound quality between these new\nfilters and the old ones."
 	},
@@ -484,6 +544,7 @@
 		"time": 1460406568,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Tidy.",
 		"body": ""
 	},
@@ -492,6 +553,7 @@
 		"time": 1460406545,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #748:  Remove constructor from BaseAudioContext",
 		"body": "Move the constructor from BaseAudioContext to AudioContext where it\nbelongs; BaseAudioContext is not constructible."
 	},
@@ -500,6 +562,7 @@
 		"time": 1460405251,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #760 by widening the range to (-inf,inf)",
 		"body": "Change the nominal range of the Biquad gain parameter to be any real\nvalue."
 	},
@@ -508,6 +571,7 @@
 		"time": 1460062737,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make it so that the lower bound for the required sample-rate is 8000",
 		"body": "Because 8192 is not very common for sample-rates."
 	},
@@ -516,6 +580,7 @@
 		"time": 1460045599,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #773 from rtoy/759-biquad-gain-is-db",
 		"body": "759 biquad gain is db"
 	},
@@ -524,6 +589,7 @@
 		"time": 1459913408,
 		"name": "Marcos Caceres",
 		"email": "marcos@marcosc.com",
+		"md5": "e04b7ef6b5d600ed3c35dbf487c14f3f",
 		"subject": "Feat (index.html): don't use Mathjax during spec-generation",
 		"body": ""
 	},
@@ -532,6 +598,7 @@
 		"time": 1459895876,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #781 from rtoy/update-editors",
 		"body": "Update editors"
 	},
@@ -540,6 +607,7 @@
 		"time": 1459895340,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #397 from WebAudio/349-destination-output",
 		"body": "Make the AudioDestinationNode have an output.\r\n\r\nFix #349."
 	},
@@ -548,6 +616,7 @@
 		"time": 1459893049,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Update editors",
 		"body": ""
 	},
@@ -556,6 +625,7 @@
 		"time": 1459186173,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy.",
 		"body": ""
 	},
@@ -564,6 +634,7 @@
 		"time": 1459186129,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #348: Add latencyHint",
 		"body": "This updates and replaces the current playbackCategory to a\nlatencyHint that accepts an AudioContextLatencyCategory (a renaming of\nAudioContextPlaybackCategory to reflect better the actual intent) or a\ndouble for finer control of the latency.\n\nAn additional attribute, processingLatency, is added to the\nBaseAudioContext to indicate what latency was actually used by the\ncontext."
 	},
@@ -572,6 +643,7 @@
 		"time": 1459183896,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy.",
 		"body": ""
 	},
@@ -580,6 +652,7 @@
 		"time": 1459183872,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Remove extra closing tag.",
 		"body": ""
 	},
@@ -588,6 +661,7 @@
 		"time": 1459183628,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #749: Merge SpatialPannerNode to PannerNode",
 		"body": "Merge the SpatialPannerNode into the PannerNode, undeprecating the\nPannerNode.  The SpatialListener is also merged into the\nAudioListener, which is undeprecated as well.\n\nThe setPosition and setOrientation methods for both the PannerNode and\nAudioListener are also deprecated because they can be done using the\ncorresponding AudioParams."
 	},
@@ -596,6 +670,7 @@
 		"time": 1458943941,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Tidy",
 		"body": ""
 	},
@@ -604,6 +679,7 @@
 		"time": 1458943926,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #759:  biquad gain is in dB",
 		"body": "Add text to say that the gain parameter is in dB.  Also mention which\nfilters actually use the gain.\n\nAlso took this opportunity to say that Q is not used for some filters."
 	},
@@ -612,6 +688,7 @@
 		"time": 1458314846,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #763:  detune is in cents.",
 		"body": "We were missing this description for AudioBufferSource detune."
 	},
@@ -620,6 +697,7 @@
 		"time": 1458162643,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #763:  detune is in cents.",
 		"body": "We were missing this description for AudioBufferSource detune."
 	},
@@ -628,6 +706,7 @@
 		"time": 1458123429,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #691 from rtoy/690-add-offline-context-length",
 		"body": "Add length attribute to OfflineAudioContext"
 	},
@@ -636,6 +715,7 @@
 		"time": 1457993090,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #755 from rtoy/673-add-min/max-attributes-for-audioparam",
 		"body": "Fix #673: Add min/max attribute to AudioParam"
 	},
@@ -644,6 +724,7 @@
 		"time": 1457992960,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy.",
 		"body": ""
 	},
@@ -652,6 +733,7 @@
 		"time": 1457971677,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #758 from rtoy/756-wrap-code",
 		"body": "Fix #756: wrap code and run beautifier"
 	},
@@ -660,6 +742,7 @@
 		"time": 1457968890,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix typo",
 		"body": ""
 	},
@@ -668,6 +751,7 @@
 		"time": 1457968827,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Revert part of the prose on 7ec4b676",
 		"body": ""
 	},
@@ -676,6 +760,7 @@
 		"time": 1457968827,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address the comments on bf130ff",
 		"body": ""
 	},
@@ -684,6 +769,7 @@
 		"time": 1457968827,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Tighten the prose around decodeAudioData, startRendering, and annotate more synchronous sections",
 		"body": ""
 	},
@@ -692,6 +778,7 @@
 		"time": 1457968827,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Remove old prose about state transitions.",
 		"body": ""
 	},
@@ -700,6 +787,7 @@
 		"time": 1457968826,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Annotate more synchronous sections",
 		"body": ""
 	},
@@ -708,6 +796,7 @@
 		"time": 1457968826,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address rtoy's comments.",
 		"body": ""
 	},
@@ -716,6 +805,7 @@
 		"time": 1457968826,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Tidy",
 		"body": ""
 	},
@@ -724,6 +814,7 @@
 		"time": 1457968826,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Typos and quote harmonization",
 		"body": ""
 	},
@@ -732,6 +823,7 @@
 		"time": 1457968826,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address comments.",
 		"body": ""
 	},
@@ -740,6 +832,7 @@
 		"time": 1457968793,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Spec the processing model for the Web Audio API",
 		"body": ""
 	},
@@ -748,6 +841,7 @@
 		"time": 1457722092,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run JS beautifier on the code too.",
 		"body": ""
 	},
@@ -756,6 +850,7 @@
 		"time": 1457719226,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #756: Wrap code so to fit within the page width.",
 		"body": ""
 	},
@@ -764,6 +859,7 @@
 		"time": 1457471120,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #673: Add min/max attribute to AudioParam",
 		"body": "Puts back the readonly min and max attributes for an AudioParam to\nmake introspection of the actual nominal range of the AudioParam\npossible.\n\nThis is a follow on of the discussion in #620."
 	},
@@ -772,6 +868,7 @@
 		"time": 1457455920,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #620 from WebAudio/391-nominal-range",
 		"body": "Spec nominal ranges, nyquist, and behavior when outside the range.\r\n\r\nFix #391"
 	},
@@ -780,6 +877,7 @@
 		"time": 1457455778,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #627 from WebAudio/469-nodes-latency",
 		"body": "Add a list of nodes and reason why they can add latency, in an inform…"
 	},
@@ -788,6 +886,7 @@
 		"time": 1457453541,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Tidy it up.",
 		"body": ""
 	},
@@ -796,6 +895,7 @@
 		"time": 1457453432,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make the nominal range of BiquadFilterNode.Q be (0, ∞).",
 		"body": ""
 	},
@@ -804,6 +904,7 @@
 		"time": 1457453290,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix typos",
 		"body": ""
 	},
@@ -812,6 +913,7 @@
 		"time": 1457453290,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "[0,Nyquist for the biquad",
 		"body": ""
 	},
@@ -820,6 +922,7 @@
 		"time": 1457453290,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make the section about computing the values for AudioParams clearer",
 		"body": ""
 	},
@@ -828,6 +931,7 @@
 		"time": 1457453290,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Intruduce compound parameters and note compound parameters as such",
 		"body": ""
 	},
@@ -836,6 +940,7 @@
 		"time": 1457453289,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address some comments",
 		"body": ""
 	},
@@ -844,6 +949,7 @@
 		"time": 1457453289,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Spec nominal ranges, nyquist, and behavior when outside the range.",
 		"body": "This fixes #391."
 	},
@@ -852,6 +958,7 @@
 		"time": 1457371195,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #751: Scalar PannerNode attributes are doubles",
 		"body": "The scalar attributes such as refDistance, maxDistance, rolloffFactor,\nand the cone angles for the PannerNode (and SpatialPannerNode) are\nchanged from float to double because Chrome, Firefox, and Safari\nactually implement them as doubles in both the IDL files and the\ninternal implementation."
 	},
@@ -860,6 +967,7 @@
 		"time": 1457366966,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Allow setting a null buffer multiple times.",
 		"body": ""
 	},
@@ -868,6 +976,7 @@
 		"time": 1457366215,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Spell out the algorithm to set AudioBufferSourceNode.buffer.",
 		"body": "This fixes #666."
 	},
@@ -876,6 +985,7 @@
 		"time": 1457100878,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Use a link for input summing.",
 		"body": ""
 	},
@@ -884,6 +994,7 @@
 		"time": 1457096667,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #752 from rtoy/747-audiobuffer-use-unsigned",
 		"body": "Use unsigned long for AudioBuffer length and numberOfChannels."
 	},
@@ -892,6 +1003,7 @@
 		"time": 1457096657,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #744 from rtoy/719-clarify-analyser-downmixing-more",
 		"body": "Clarify AnalyserNode dowmixing more."
 	},
@@ -900,6 +1012,7 @@
 		"time": 1457096586,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #746 from rtoy/745-use-sqrt-half",
 		"body": "Replace 0.7071 with sqrt(0.5)"
 	},
@@ -908,6 +1021,7 @@
 		"time": 1457041488,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use unsigned long for AudioBuffer length and numberOfChannels.",
 		"body": "Change type for length and numberOfChannels from long to unsigned\nlong.\n\nFix #747"
 	},
@@ -916,6 +1030,7 @@
 		"time": 1456960272,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Update to use Mathjax 2.6.1",
 		"body": "Fix #688"
 	},
@@ -924,6 +1039,7 @@
 		"time": 1456873323,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Replace 0.7071 with sqrt(0.5)",
 		"body": "Fix #745."
 	},
@@ -932,6 +1048,7 @@
 		"time": 1456869710,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Clarify AnalyserNode dowmixing more.",
 		"body": "Fix #719.\n\nExplicitly state the values of the channelCount, mode, and\ninterpretation to be used for downmixing in the AnalyserNode and state\nthat these are independent of the AnalyserNode itself."
 	},
@@ -940,6 +1057,7 @@
 		"time": 1456849882,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #742 from WebAudio/686-decodeAudioData-dead-code",
 		"body": "Validating the arguments is better performed by WebIDL.\r\n\r\nFix #686."
 	},
@@ -948,6 +1066,7 @@
 		"time": 1456839333,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Add a list of nodes and reason why they can add latency, in an informative section",
 		"body": ""
 	},
@@ -956,6 +1075,7 @@
 		"time": 1456838635,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #552 from rtoy/447-define-osc-carefully",
 		"body": "Fix #447: Define oscillator carefully."
 	},
@@ -964,6 +1084,7 @@
 		"time": 1456838253,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #733 from rtoy/719-clarify-analyser-downmixing",
 		"body": "Clarify downmixing of the AnalyserNode"
 	},
@@ -972,6 +1093,7 @@
 		"time": 1456838227,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #732 from rtoy/731-remove-doppler-text",
 		"body": "Remove section titled \"Doppler Shift\""
 	},
@@ -980,6 +1102,7 @@
 		"time": 1456838214,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #716 from rtoy/714-spatial-listener-on-audiocontext",
 		"body": "Add spatialListener attribute to AudioContext."
 	},
@@ -988,6 +1111,7 @@
 		"time": 1456838194,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #715 from rtoy/707-spec-setValueCurveAtTime-args",
 		"body": "Specify behavior of parameters of setValueCurveAtTime"
 	},
@@ -996,6 +1120,7 @@
 		"time": 1456429575,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use TeX formulas for SpatialPanner distance models",
 		"body": "Copy the formulas from PannerNode's distance models to the\nSpatialPanner.\n\nFix #735"
 	},
@@ -1004,6 +1129,7 @@
 		"time": 1456428938,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Remove PannerNode's setVelocity",
 		"body": "Since Doppler effects were removed sometime ago, setVelociy has no\neffect anyway, so it should be removed.\n\nFix #730"
 	},
@@ -1012,6 +1138,7 @@
 		"time": 1456428480,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Tidy.",
 		"body": ""
 	},
@@ -1020,6 +1147,7 @@
 		"time": 1456426627,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Clarify downmixing of the AnalyserNode",
 		"body": "Adds link to the downmixing section to clarify exactly how the\ndownmixing to mono is done.\n\nFix #719"
 	},
@@ -1028,6 +1156,7 @@
 		"time": 1456353818,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Remove section titled \"Doppler Shift\"",
 		"body": "Fix #731\n\nThe Doppler effect was removed in #372, so the section on Doppler\nshift should complete removed."
 	},
@@ -1036,6 +1165,7 @@
 		"time": 1456351274,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix issues according to review.",
 		"body": ""
 	},
@@ -1044,6 +1174,7 @@
 		"time": 1456350891,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #727 from rtoy/722-get-byte-data-floor",
 		"body": "Truncate float to integer for Analyser.getByte.*Data\r\n\r\nFix #722"
 	},
@@ -1052,6 +1183,7 @@
 		"time": 1456350504,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Appease tidy.",
 		"body": ""
 	},
@@ -1060,6 +1192,7 @@
 		"time": 1456334748,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make the AudioDestinationNode have an output",
 		"body": "This fixes #349."
 	},
@@ -1068,6 +1201,7 @@
 		"time": 1456321061,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #720 from rtoy/718-5.1-to-mono-formula",
 		"body": "Replace 0.7071 with sqrt(0.5)"
 	},
@@ -1076,6 +1210,7 @@
 		"time": 1455920627,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Scale the FFT by 1/N in the AnalyserNode",
 		"body": "Apply a scale factor to the FFT so that a 0 dbFS sine wave is 0 dBfs.\n\nChrome does this; I didn't check anywhere else, but it makes sense\nthat the FFT output should have the same amplitude as the input,\ninstead of leaving the FFT unscaled.\n\nFix 725."
 	},
@@ -1084,6 +1219,7 @@
 		"time": 1455830385,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Truncate float to integer for Analyser.getByte.*Data",
 		"body": "Explicitly say that the byte data is computed from the floating point\ndata by truncating the float to an integer.\n\nFix #722"
 	},
@@ -1092,6 +1228,7 @@
 		"time": 1455318940,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Revert change for cone angle mod 360.",
 		"body": "Fix #695 by reverting the change and also specifying that angles\noutside the interval [0, 360] invokes undefined behavior."
 	},
@@ -1100,6 +1237,7 @@
 		"time": 1455317745,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Replace 0.7071 with sqrt(0.5)",
 		"body": "Fix issue #718.  I think the intent is use sqrt(0.5) and not 0.7071."
 	},
@@ -1108,6 +1246,7 @@
 		"time": 1455122132,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Add spatialListener attribute to AudioContext.",
 		"body": "Fix #714 by adding spatialListener attribute."
 	},
@@ -1116,6 +1255,7 @@
 		"time": 1455061897,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 707-spec-setValueCurveAtTime-args",
 		"body": ""
 	},
@@ -1124,6 +1264,7 @@
 		"time": 1455061853,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Specify behavior of setValueCurveAtTime parameters.",
 		"body": "If the curve has fewer than 2 points and error is thrown.  If the\nduration is not strictly positive (and finite), an error is also\nthrown."
 	},
@@ -1132,6 +1273,7 @@
 		"time": 1454621304,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "fixed comment",
 		"body": ""
 	},
@@ -1140,6 +1282,7 @@
 		"time": 1454345666,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "remove incorrect description",
 		"body": ""
 	},
@@ -1148,6 +1291,7 @@
 		"time": 1454112413,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "fix 2",
 		"body": ""
 	},
@@ -1156,6 +1300,7 @@
 		"time": 1454111678,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "fix #708",
 		"body": ""
 	},
@@ -1164,6 +1309,7 @@
 		"time": 1453396267,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Update link for fetching algorithm.",
 		"body": "Removes a warning from respec about a linkless <a> element."
 	},
@@ -1172,6 +1318,7 @@
 		"time": 1452202853,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy because it's new text.",
 		"body": ""
 	},
@@ -1180,6 +1327,7 @@
 		"time": 1452202614,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Add length attribute to OfflineAudioContext",
 		"body": "Fixes #690"
 	},
@@ -1188,6 +1336,7 @@
 		"time": 1451918779,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Validating the arguments is better performed by WebIDL.",
 		"body": "This fixes #686."
 	},
@@ -1196,6 +1345,7 @@
 		"time": 1450560659,
 		"name": "plehegar",
 		"email": "plh@w3.org",
+		"md5": "9910666fe2f7cca4c4567165eefef556",
 		"subject": "Don't fail if spec-generator doesn't include MathJax",
 		"body": ""
 	},
@@ -1204,6 +1354,7 @@
 		"time": 1449786863,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix #444 documentation on ordering of onstatechange and oncomplete",
 		"body": ""
 	},
@@ -1212,6 +1363,7 @@
 		"time": 1449785239,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix tidy issues.",
 		"body": ""
 	},
@@ -1220,6 +1372,7 @@
 		"time": 1449785021,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix respec warnings.",
 		"body": "Use correct links for\n o createIIRFIlter (commented out in aa3b6f45).\n o AudioContext.listener (commented out in 8cc56fe7).\n o createPeriodicWave (commented out in 31c4806).\n\nLink for fetch algorithm is still broken."
 	},
@@ -1228,6 +1381,7 @@
 		"time": 1449693112,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #624 from rtoy/612-exponential-ramp-0-behavior",
 		"body": "Specify exponential ramp behavior when previous value is 0"
 	},
@@ -1236,6 +1390,7 @@
 		"time": 1449621033,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix after tidy merge",
 		"body": ""
 	},
@@ -1244,6 +1399,7 @@
 		"time": 1449615489,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy again 2.",
 		"body": ""
 	},
@@ -1252,6 +1408,7 @@
 		"time": 1449615339,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Run tidy again.",
 		"body": ""
 	},
@@ -1260,6 +1417,7 @@
 		"time": 1449614703,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix up complaints from tidy.",
 		"body": ""
 	},
@@ -1268,6 +1426,7 @@
 		"time": 1449590128,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix redirected workers spec",
 		"body": ""
 	},
@@ -1276,6 +1435,7 @@
 		"time": 1449590015,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix cors-enabled fetch",
 		"body": "infrastructure.html#cors-enabled-fetch no longer exists in the HTML 5.1\ndraft (nor in Fetch); commented out for now"
 	},
@@ -1284,6 +1444,7 @@
 		"time": 1449589530,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix to convolution appendix",
 		"body": ""
 	},
@@ -1292,6 +1453,7 @@
 		"time": 1449589278,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix",
 		"body": "typo #widl-BiquadFilterNode-freuqnecy"
 	},
@@ -1300,6 +1462,7 @@
 		"time": 1449589198,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix audioworker number of input channels",
 		"body": "Comment out #AudioWorker-numberOfInputChannels"
 	},
@@ -1308,6 +1471,7 @@
 		"time": 1449588949,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix",
 		"body": "#widl-BaseAudioContext-createPeriodicWave-PeriodicWave-Float32Array-real-Float32Array-imag\n(four occurrences) commented out"
 	},
@@ -1316,6 +1480,7 @@
 		"time": 1449588813,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix equal power panning",
 		"body": ""
 	},
@@ -1324,6 +1489,7 @@
 		"time": 1449588597,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix audioworker",
 		"body": ""
 	},
@@ -1332,6 +1498,7 @@
 		"time": 1449588452,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix",
 		"body": "Comment out three occurrences of #audioprocess-spnode"
 	},
@@ -1340,6 +1507,7 @@
 		"time": 1449588337,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix feedback coefficients",
 		"body": "comment out broken link to\n#widl-BaseAudioContext-createIIRFilter-IIRFilterNode-Float32Array-feedforward-Float32Array-feedback"
 	},
@@ -1348,6 +1516,7 @@
 		"time": 1449588189,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix on audiocontext",
 		"body": "Comment out links to /widl-AudioContext-listener and\n/widl-AudioContext-spatialListener\nwhich should probably be fragments 9but still are not found)"
 	},
@@ -1356,6 +1525,7 @@
 		"time": 1449587172,
 		"name": "Nantonos",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "Linkfix origin",
 		"body": ""
 	},
@@ -1364,6 +1534,7 @@
 		"time": 1449525462,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 447-define-osc-carefully",
 		"body": "Update text appropriately.\n\n# Conflicts:\n#\tindex.html"
 	},
@@ -1372,6 +1543,7 @@
 		"time": 1449448192,
 		"name": "tripu",
 		"email": "t@tripu.info",
+		"md5": "41d5e93b63bd2e2cb38f61baccb33eaf",
 		"subject": "Load MathJax from w3.org/scripts instead of CDN",
 		"body": ""
 	},
@@ -1380,6 +1552,7 @@
 		"time": 1449299693,
 		"name": "Chris Lilley",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "update date of last /TR publication",
 		"body": ""
 	},
@@ -1388,6 +1561,7 @@
 		"time": 1449299610,
 		"name": "Chris Lilley",
 		"email": "nantonos@epona.net",
+		"md5": "972851cc3e8bc0b906eee6811fbca082",
 		"subject": "add editor IDs ready for automatic publishing",
 		"body": ""
 	},
@@ -1396,6 +1570,7 @@
 		"time": 1449249064,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use double quotes for IDL strings",
 		"body": "Fix #668 by using \"interactive\" instead of 'interactive'."
 	},
@@ -1404,6 +1579,7 @@
 		"time": 1449179204,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Merge branch 'gh-pages' into 443-lifecycle-clarity",
 		"body": ""
 	},
@@ -1412,6 +1588,7 @@
 		"time": 1449178514,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Merge branch 'gh-pages' into 348-buffering-for-power",
 		"body": ""
 	},
@@ -1420,6 +1597,7 @@
 		"time": 1449164133,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #632 from rtoy/631-createIIRFilter-doubles",
 		"body": "createIIRFilter takes double coefficients"
 	},
@@ -1428,6 +1606,7 @@
 		"time": 1449161660,
 		"name": "Joe Berkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge pull request #634 from WebAudio/52-panner-node-channel-limitations",
 		"body": "Fix #52 by addressing PannerNode and StereoPannerNode limitations explicitly in spec"
 	},
@@ -1436,6 +1615,7 @@
 		"time": 1449160195,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #629 from WebAudio/86-analyzer-node-issues",
 		"body": "Fix #86 by clarifying channel down-mixing."
 	},
@@ -1444,6 +1624,7 @@
 		"time": 1449151302,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Tidy",
 		"body": ""
 	},
@@ -1452,6 +1633,7 @@
 		"time": 1449094062,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Tidy up.",
 		"body": ""
 	},
@@ -1460,6 +1642,7 @@
 		"time": 1449093932,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Swap main informative text on channel limitations into StereoPannerNode, reference from within PannerNode.",
 		"body": ""
 	},
@@ -1468,6 +1651,7 @@
 		"time": 1449093730,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge branch 'gh-pages' into 52-panner-node-channel-limitations",
 		"body": ""
 	},
@@ -1476,6 +1660,7 @@
 		"time": 1449093519,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Reference fact of down mixing in getByte(Float)TimeDomainData definitions.",
 		"body": ""
 	},
@@ -1484,6 +1669,7 @@
 		"time": 1449093498,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Reinstate channelCount declaration for AnalyserNode",
 		"body": ""
 	},
@@ -1492,6 +1678,7 @@
 		"time": 1449092842,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge branch 'gh-pages' into 86-analyzer-node-issues",
 		"body": ""
 	},
@@ -1500,6 +1687,7 @@
 		"time": 1449092719,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Remove unused variable.",
 		"body": ""
 	},
@@ -1508,6 +1696,7 @@
 		"time": 1449092458,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge branch 'gh-pages' into 260-use-js-for-code-examples",
 		"body": "Conflicts:\n\tindex.html"
 	},
@@ -1516,6 +1705,7 @@
 		"time": 1447664088,
 		"name": "Chinmay Pendharkar",
 		"email": "notthetup@gmail.com",
+		"md5": "bb5482b3806c6fe891e6270b99597a71",
 		"subject": "changed href for Parameter Automation methods to confirm to the new function signature (return AudioPrams)",
 		"body": ""
 	},
@@ -1524,6 +1714,7 @@
 		"time": 1447440708,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "fix typo",
 		"body": ""
 	},
@@ -1532,6 +1723,7 @@
 		"time": 1447438727,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "removing \"easy chaining\" statement",
 		"body": ""
 	},
@@ -1540,6 +1732,7 @@
 		"time": 1447437890,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "Merge remote-tracking branch 'upstream/gh-pages' into 650-support-method-chaining",
 		"body": ""
 	},
@@ -1548,6 +1741,7 @@
 		"time": 1447436271,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix bad link to StereoPanner",
 		"body": "Replace \"StereoPanner\" with the correct \"StereoPannerNode\""
 	},
@@ -1556,6 +1750,7 @@
 		"time": 1447373570,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #625 from WebAudio/85-clarify-latency-expectation",
 		"body": "Fix #85 by clarifying AudioContext.currentTime and various events' pl…"
 	},
@@ -1564,6 +1759,7 @@
 		"time": 1447371701,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Clarify wording of currentTime advancement.",
 		"body": ""
 	},
@@ -1572,6 +1768,7 @@
 		"time": 1447369561,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Clarify definition of currentTime further.",
 		"body": ""
 	},
@@ -1580,6 +1777,7 @@
 		"time": 1447367676,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Have OfflineAudioContext inherit from BaseAudioContext, not AudioContext",
 		"body": ""
 	},
@@ -1588,6 +1786,7 @@
 		"time": 1447367074,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge branch 'gh-pages' into 85-clarify-latency-expectation",
 		"body": "Conflicts:\n\tindex.html"
 	},
@@ -1596,6 +1795,7 @@
 		"time": 1447364822,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix up merge mess with AudioListener deprecation. Fix AudioContext type name mistake.",
 		"body": ""
 	},
@@ -1604,6 +1804,7 @@
 		"time": 1447360500,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Tidy up",
 		"body": ""
 	},
@@ -1612,6 +1813,7 @@
 		"time": 1447360362,
 		"name": "User",
 		"email": "user@ubuntu.localdomain",
+		"md5": "b36ecca13990bfcd2fc6fb50ddd6d612",
 		"subject": "Merge branch 'gh-pages' into 308-remove-methods-offline-ctx",
 		"body": ""
 	},
@@ -1620,6 +1822,7 @@
 		"time": 1447360298,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix dangling conflicts.",
 		"body": ""
 	},
@@ -1628,6 +1831,7 @@
 		"time": 1447359917,
 		"name": "User",
 		"email": "user@ubuntu.localdomain",
+		"md5": "b36ecca13990bfcd2fc6fb50ddd6d612",
 		"subject": "Merge branch 'gh-pages' into 308-remove-methods-offline-ctx",
 		"body": "Conflicts:\n\tindex.html"
 	},
@@ -1636,6 +1840,7 @@
 		"time": 1447346190,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #635 from WebAudio/110-NaN-Inf",
 		"body": "Fix #110 by adding explicit section on Audio Signal Values."
 	},
@@ -1644,6 +1849,7 @@
 		"time": 1447339700,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "tidy up",
 		"body": ""
 	},
@@ -1652,6 +1858,7 @@
 		"time": 1447339551,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge branch 'gh-pages' into 85-clarify-latency-expectation",
 		"body": "Conflicts:\n\tindex.html"
 	},
@@ -1660,6 +1867,7 @@
 		"time": 1447338310,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Make notation and language describing signal range consistent with other usage.",
 		"body": ""
 	},
@@ -1668,6 +1876,7 @@
 		"time": 1447338060,
 		"name": "User",
 		"email": "user@ubuntu.localdomain",
+		"md5": "b36ecca13990bfcd2fc6fb50ddd6d612",
 		"subject": "Merge branch 'gh-pages' into 110-NaN-Inf",
 		"body": ""
 	},
@@ -1676,6 +1885,7 @@
 		"time": 1447337821,
 		"name": "Joe Berkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge pull request #636 from WebAudio/125-remove-convolution-doc",
 		"body": "Fix #125: remove redundant convolution doc."
 	},
@@ -1684,6 +1894,7 @@
 		"time": 1447263054,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "Merge remote-tracking branch 'upstream/gh-pages' into 650-support-method-chaining",
 		"body": ""
 	},
@@ -1692,6 +1903,7 @@
 		"time": 1447262930,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "addressed feedback from rtoy",
 		"body": ""
 	},
@@ -1700,6 +1912,7 @@
 		"time": 1447261278,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #643 from WebAudio/34-audio-element-prose2",
 		"body": "Fix #34 by adding ref to video element, on new tidied branch"
 	},
@@ -1708,6 +1921,7 @@
 		"time": 1447097606,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix up problems in preceding merge commit.",
 		"body": ""
 	},
@@ -1716,6 +1930,7 @@
 		"time": 1447097265,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge branch 'gh-pages' into 560-clarify-loop-treatment",
 		"body": "# Conflicts:\n#\tindex.html"
 	},
@@ -1724,6 +1939,7 @@
 		"time": 1446917737,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Add change from <code> to <a> per @padenot",
 		"body": ""
 	},
@@ -1732,6 +1948,7 @@
 		"time": 1446761838,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Specify initial event for linear and exponential ramp.",
 		"body": "If there is no event preceding a linearRampToValueAtTime or\nexponentialRampToValueAtTime, specify that these behave as if a\nsetValueAtTime were inserted at the context currentTime with the\ncurrent attribute value at the time of the call.\n\nFix #130."
 	},
@@ -1740,6 +1957,7 @@
 		"time": 1446679297,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use correct formula for setValueCurveAtTime",
 		"body": "Fix #657 by changing N to N-1.\nAlso slightly adjusted the formula to use larger floor symbols."
 	},
@@ -1748,6 +1966,7 @@
 		"time": 1446571656,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Change wording/naming of bufferingHint to playbackCategory",
 		"body": ""
 	},
@@ -1756,6 +1975,7 @@
 		"time": 1446260672,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Respond to hoch+rtoy comments, SHOULD be ok now :)",
 		"body": ""
 	},
@@ -1764,6 +1984,7 @@
 		"time": 1446221902,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Clean up text about the invalid cases where v0 or v1 have opposite signs or one is 0.",
 		"body": ""
 	},
@@ -1772,6 +1993,7 @@
 		"time": 1446221646,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Add <code> around exception name.",
 		"body": ""
 	},
@@ -1780,6 +2002,7 @@
 		"time": 1446221063,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 612-exponential-ramp-0-behavior",
 		"body": ""
 	},
@@ -1788,6 +2011,7 @@
 		"time": 1446197400,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Respond to @padenot comments",
 		"body": ""
 	},
@@ -1796,6 +2020,7 @@
 		"time": 1446179238,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix #348 add AudioContext constructor dictionary with buffer hint",
 		"body": ""
 	},
@@ -1804,6 +2029,7 @@
 		"time": 1445919129,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "connect() typo, and tidy cleanup.",
 		"body": ""
 	},
@@ -1812,6 +2038,7 @@
 		"time": 1445912834,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Rearrange description of \"currentTime\"",
 		"body": "Fixes #381."
 	},
@@ -1820,6 +2047,7 @@
 		"time": 1445912421,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "loop modification mixup.",
 		"body": "Fixes #281."
 	},
@@ -1828,6 +2056,7 @@
 		"time": 1445912097,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Remove references to Web Workers.",
 		"body": "Fixes #532."
 	},
@@ -1836,6 +2065,7 @@
 		"time": 1445907716,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Return destination node from connect()",
 		"body": "Fixes #258."
 	},
@@ -1844,6 +2074,7 @@
 		"time": 1445907114,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Clamp loopStart, loopEnd and offset.",
 		"body": "Fixes #363."
 	},
@@ -1852,6 +2083,7 @@
 		"time": 1445762610,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Tidy tidy tidy. Trailing space?  Really?",
 		"body": ""
 	},
@@ -1860,6 +2092,7 @@
 		"time": 1445759771,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Tidy Tidy",
 		"body": ""
 	},
@@ -1868,6 +2101,7 @@
 		"time": 1445759199,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Tidy!",
 		"body": ""
 	},
@@ -1876,6 +2110,7 @@
 		"time": 1445757586,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix #443: clarify garbage collection lifecycle for decodeAudioData and OfflineAudioContext startRendering",
 		"body": ""
 	},
@@ -1884,6 +2119,7 @@
 		"time": 1445750063,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #560 clarify loop behavior and time units, also playback start offset, as independent of ABSN playback rate.",
 		"body": ""
 	},
@@ -1892,6 +2128,7 @@
 		"time": 1445727408,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "OK, tidy fix?",
 		"body": ""
 	},
@@ -1900,6 +2137,7 @@
 		"time": 1445725758,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix #34 by adding ref to video element, on new tidied branch",
 		"body": ""
 	},
@@ -1908,6 +2146,7 @@
 		"time": 1445517109,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Don't fire \"complete\" directly.",
 		"body": "It needs to be fired from a queued task.\n\nThis fixes #448."
 	},
@@ -1916,6 +2155,7 @@
 		"time": 1445276253,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix issues caught by tidy.",
 		"body": "Wrap long lines."
 	},
@@ -1924,6 +2164,7 @@
 		"time": 1445275919,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix issues caught by tidy.",
 		"body": "Write sequence&lt;double> as sequence&lt;double&gt;"
 	},
@@ -1932,6 +2173,7 @@
 		"time": 1445275726,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 631-createIIRFilter-doubles",
 		"body": ""
 	},
@@ -1940,6 +2182,7 @@
 		"time": 1445275662,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix bad HTML",
 		"body": "Must write sequence<double> as sequence&lt;double> otherwise <double>\nlooks like an (unknown) tag."
 	},
@@ -1948,6 +2191,7 @@
 		"time": 1445256500,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Tidy the spec after the spatial panner merge",
 		"body": ""
 	},
@@ -1956,6 +2200,7 @@
 		"time": 1445037123,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Typo.",
 		"body": ""
 	},
@@ -1964,6 +2209,7 @@
 		"time": 1445036985,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "SpatialPanner try 2",
 		"body": ""
 	},
@@ -1972,6 +2218,7 @@
 		"time": 1445033613,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #308 by refactoring most of AudioContext into BaseAudioContext. AudioContext and OfflineAudioContext now inherit from BaseAudioContext.",
 		"body": ""
 	},
@@ -1980,6 +2227,7 @@
 		"time": 1445031626,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fir #260 by using JavaScript for all examples.",
 		"body": ""
 	},
@@ -1988,6 +2236,7 @@
 		"time": 1445025154,
 		"name": "User",
 		"email": "user@ubuntu.localdomain",
+		"md5": "b36ecca13990bfcd2fc6fb50ddd6d612",
 		"subject": "Fix tidy errors",
 		"body": ""
 	},
@@ -1996,6 +2245,7 @@
 		"time": 1445023258,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #110: remove redundant convolution doc. Moved normative section on ConvolverNode channel configurations into ConvolverNode section where it belongs.",
 		"body": ""
 	},
@@ -2004,6 +2254,7 @@
 		"time": 1445020111,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #110 by adding explicit section on Audio Signal Values.",
 		"body": ""
 	},
@@ -2012,6 +2263,7 @@
 		"time": 1445019104,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #52 by addressing PannerNode and StereoPannerNode limitations explicitly in spec.",
 		"body": ""
 	},
@@ -2020,6 +2272,7 @@
 		"time": 1445010153,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Tidy the spec before enabling travis",
 		"body": ""
 	},
@@ -2028,6 +2281,7 @@
 		"time": 1445010112,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Add <pre> around maths",
 		"body": ""
 	},
@@ -2036,6 +2290,7 @@
 		"time": 1444946636,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "createIIRFilter takes double coefficients",
 		"body": "The coefficients for createIIRFilter are explicitly doubles and not\nfloats now.\n\nWe also fix a minor issue that was accepted in\nWebAudio/web-audio-api#323 where a sequence<float> was allowed instead\nof Float32Array to make it easier for the developer to specify\ncoefficients.\n\nNote that for some reason respec replaces sequence<double> with just\nsequence in the document.  Is this a bug in respec?\n\nFix WebAudio/web-audio-api#631"
 	},
@@ -2044,6 +2299,7 @@
 		"time": 1444941070,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Further clarify the definition of AudioContext.currentTime in terms of last-processed block, not next-processed block.",
 		"body": ""
 	},
@@ -2052,6 +2308,7 @@
 		"time": 1444918192,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Update the local respec version, and use the hosted version",
 		"body": ""
 	},
@@ -2060,6 +2317,7 @@
 		"time": 1444915505,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #626 from WebAudio/288-audiobuffersourcenode-once",
 		"body": "AudioBufferSourceNode.buffer should only be set once, this fixes #288"
 	},
@@ -2068,6 +2326,7 @@
 		"time": 1444914111,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #622 from WebAudio/619-fix-formulas",
 		"body": "Hack around wrapping in tidy HTML to keep nicely formatted formulas"
 	},
@@ -2076,6 +2335,7 @@
 		"time": 1444840490,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #86 by clarifying channel down-mixing.",
 		"body": ""
 	},
@@ -2084,6 +2344,7 @@
 		"time": 1444828508,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "AudioBufferSourceNode.buffer should only be set once, this fixes #288",
 		"body": ""
 	},
@@ -2092,6 +2353,7 @@
 		"time": 1444826790,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix typo \"a\" -> \"an\"",
 		"body": ""
 	},
@@ -2100,6 +2362,7 @@
 		"time": 1444814526,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #621 from rtoy/569-spec-osc-coef",
 		"body": "Specify PeriodicWave coefficients to generate Oscillator waveforms"
 	},
@@ -2108,6 +2371,7 @@
 		"time": 1444814421,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address review comments",
 		"body": ""
 	},
@@ -2116,6 +2380,7 @@
 		"time": 1444774859,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #85 by clarifying AudioContext.currentTime and various events' playbackTime.",
 		"body": ""
 	},
@@ -2124,6 +2389,7 @@
 		"time": 1444766206,
 		"name": "Joe Berkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge pull request #608 from WebAudio/65-wave-shaper-curve-mod",
 		"body": "Fix #65 by clarifying copy-on-write behavior of WaveShaperNode.curve."
 	},
@@ -2132,6 +2398,7 @@
 		"time": 1444754774,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #615 from WebAudio/60-getFrequencyResponse",
 		"body": "Better spec BiquadFilterNode.getFrequencyResponse\r\n\r\nFix #60"
 	},
@@ -2140,6 +2407,7 @@
 		"time": 1444754622,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Addl link for PeriodicWave.",
 		"body": ""
 	},
@@ -2148,6 +2416,7 @@
 		"time": 1444746589,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Hack around wrapping in tidy HTML to keep nicely formatted formulas",
 		"body": "This wraps formulas in `pre` tags that are ignored by tidy, and we enabled their parsing in MathJax.\nThis also tidies the document."
 	},
@@ -2156,6 +2425,7 @@
 		"time": 1444681958,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Specify exponential ramp behavior when previous value is 0",
 		"body": "Clarify what happens if the previous event value is 0.  We also\nexplicitly allow v0 and v1 to both be negative (the formula is\nwell-defined in this case).\n\nIf an error is thrown, the previous value is propagated.\n\nFixes WebAudio/web-audio-api#612."
 	},
@@ -2164,6 +2434,7 @@
 		"time": 1444680951,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Specify PeriodicWave coefficients to generate basic Oscillator waveforms.",
 		"body": "Include formulas appropriate for PeriodicWave objects to create the\nbasic builtin Oscillator waveforms.\n\nFixes WebAudio/web-audio-api#569."
 	},
@@ -2172,6 +2443,7 @@
 		"time": 1444669014,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use relative link.",
 		"body": ""
 	},
@@ -2180,6 +2452,7 @@
 		"time": 1444668826,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 571-describe-get-byte-data",
 		"body": ""
 	},
@@ -2188,6 +2461,7 @@
 		"time": 1444665594,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address review comments",
 		"body": ""
 	},
@@ -2196,6 +2470,7 @@
 		"time": 1444414357,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Wrap lines to make them shorter. (Why didn't tidy do that?)",
 		"body": ""
 	},
@@ -2204,6 +2479,7 @@
 		"time": 1444413963,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "setTargetAtTime timeConstant must be positive",
 		"body": "Fix WebAudio/web-audio-api#616"
 	},
@@ -2212,6 +2488,7 @@
 		"time": 1444412891,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Describe how byte values are computed for getByteTimeDomainData and getByteFrequencyData.",
 		"body": "Fixes WebAudio/web-audio-api#571."
 	},
@@ -2220,6 +2497,7 @@
 		"time": 1444395970,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Better spec BiquadFilterNode.getFrequencyResponse",
 		"body": "This fixes issue #60."
 	},
@@ -2228,6 +2506,7 @@
 		"time": 1444384207,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #610 from rtoy/326/328-panner-distance-limits",
 		"body": "Update distance formulas to clamp the distance appropriately."
 	},
@@ -2236,6 +2515,7 @@
 		"time": 1444346336,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Add note about using setTargetAtTime for exponential ramp to 0.",
 		"body": "Also state in the formula that V0 and V1 must be both positive.\n\nFixes WebAudio/web-audio-api#486."
 	},
@@ -2244,6 +2524,7 @@
 		"time": 1444343625,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Update distance formulas to clamp the distance appropriately.",
 		"body": "The distance formulas include appropriate clamping of the distances to\nlie between d_ref and d_max (or infinity) as appropriate.\n\nFixes WebAudio/web-audio-api#326 and WebAudio/web-audio-api#328."
 	},
@@ -2252,6 +2533,7 @@
 		"time": 1444333403,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Further changes to address #67 and #68.",
 		"body": ""
 	},
@@ -2260,6 +2542,7 @@
 		"time": 1444333009,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #65 by clarifying copy-on-write behavior of WaveShaperNode.curve.",
 		"body": ""
 	},
@@ -2268,6 +2551,7 @@
 		"time": 1444331818,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #43 by clarifying effect of disconnecting a node from an AudioParam on the parameter value. Also separately document the actions of the various flavors of AudioNode.disconnect().",
 		"body": ""
 	},
@@ -2276,6 +2560,7 @@
 		"time": 1444219076,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Tidy the sources",
 		"body": ""
 	},
@@ -2284,6 +2569,7 @@
 		"time": 1444219016,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Clean markup so that tidy does not complain",
 		"body": ""
 	},
@@ -2292,6 +2578,7 @@
 		"time": 1444196631,
 		"name": "Mark Buer",
 		"email": "mark.buer@booktrack.com",
+		"md5": "00ba82a7e4e138c86885a28e8c8fba88",
 		"subject": "Fixes typo.",
 		"body": ""
 	},
@@ -2300,6 +2587,7 @@
 		"time": 1443810545,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix typos, improve readability of diagram.",
 		"body": ""
 	},
@@ -2308,6 +2596,7 @@
 		"time": 1443720005,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #40 Add detail of connecting audio node to AudioParam.",
 		"body": ""
 	},
@@ -2316,6 +2605,7 @@
 		"time": 1443719885,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@dolby.com",
+		"md5": "b67889153ac850297280ddd0db15aa6d",
 		"subject": "Merge pull request #597 from WebAudio/314-OfflineAudioBuffer-sample-rate",
 		"body": "Fix #314 - sample rate in createBuffer, OfflineAudioContext"
 	},
@@ -2324,6 +2614,7 @@
 		"time": 1443221227,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix some links and capitalizations",
 		"body": "o The link linearRamp automation method in section \"AudioParam\n  Interface\" was incorrect.\no The name of the endTime parameter for exponentialRampToValue was not\n  correctly cased (endtime -> endTime).\no Use correct link for the value attribute in section \"AudioParam\n  Transitions\" and setTargetAtTime link.\no Remove undefined link for timeConstant that caused ReSpec to\n  complain."
 	},
@@ -2332,6 +2623,7 @@
 		"time": 1443114193,
 		"name": "Joe Berkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge pull request #583 from WebAudio/128-clarify-param-value-setter",
 		"body": "Fix #128: clarify effect of setting the value attribute with respect …"
 	},
@@ -2340,6 +2632,7 @@
 		"time": 1443099637,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #600 from WebAudio/57-mimesniff",
 		"body": "Link to the mimesniff spec in `decodeAudioData`"
 	},
@@ -2348,6 +2641,7 @@
 		"time": 1443099614,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #393 from WebAudio/76-remove-dezippering",
 		"body": "Remove dezippering from the spec"
 	},
@@ -2356,6 +2650,7 @@
 		"time": 1443014257,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Add correct style for notes to comment on disconnected nodes",
 		"body": ""
 	},
@@ -2364,6 +2659,7 @@
 		"time": 1442999751,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "typo",
 		"body": ""
 	},
@@ -2372,6 +2668,7 @@
 		"time": 1442999125,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Link to the mimesniff spec in `decodeAudioData`",
 		"body": "This fixes #57"
 	},
@@ -2380,6 +2677,7 @@
 		"time": 1442998876,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #586 from rtoy/5-audioparam-set-target-at-time-example",
 		"body": "Fix #5: Add setTargetAtTime curve to example"
 	},
@@ -2388,6 +2686,7 @@
 		"time": 1442998701,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #594 from WebAudio/25-delaynode-input-count-change",
 		"body": "Clarify DelayNode behavior under changing channel count."
 	},
@@ -2396,6 +2695,7 @@
 		"time": 1442998593,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #590 from WebAudio/497/computed-playbackrate-and-pitch",
 		"body": "Clarify that computedPlaybackRate must be implemented by resampling the audio."
 	},
@@ -2404,6 +2704,7 @@
 		"time": 1442998542,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #599 from rtoy/598-audio-cookbook-reference",
 		"body": "#598: Adjust reference to Audio EQ Cookbook"
 	},
@@ -2412,6 +2713,7 @@
 		"time": 1442998316,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Remove dezippering.",
 		"body": "This fixes #76."
 	},
@@ -2420,6 +2722,7 @@
 		"time": 1442997782,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #591 from WebAudio/565/type-index-copyfromtochannel",
 		"body": "Use `unsigned long` for index type in copyFromChannel and copyToChannel."
 	},
@@ -2428,6 +2731,7 @@
 		"time": 1442997576,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #588 from WebAudio/567-copyToChannel-clarification",
 		"body": "Clarify the meaning of the operation \"acquire the content\"."
 	},
@@ -2436,6 +2740,7 @@
 		"time": 1442996638,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #500 from WebAudio/460-suspend-currentTime",
 		"body": "Clarify that currentTime does not increase when the context is not \"running\""
 	},
@@ -2444,6 +2749,7 @@
 		"time": 1442996593,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #596 from WebAudio/32-link-usecases",
 		"body": "Add reference(s) to use cases in intro + near end"
 	},
@@ -2452,6 +2758,7 @@
 		"time": 1442332139,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #598: Adjust reference to Audio EQ Cookbook",
 		"body": "Instead of saying the biquad formulas from the cookbook, say they're\ninspired by the cookbook because the many of formulas are different\nfrom the ones in the cookbook."
 	},
@@ -2460,6 +2767,7 @@
 		"time": 1442266513,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix #314 - remove text that should stay in createBuffer not OfflineAudioContext, fix grammar (a NotSupported... vs an NotSupported...)",
 		"body": ""
 	},
@@ -2468,6 +2776,7 @@
 		"time": 1442255547,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix #314, refer to createBuffer for valid value ranges for OfflineAudioContext constructor",
 		"body": ""
 	},
@@ -2476,6 +2785,7 @@
 		"time": 1442198494,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix sample rate in createBuffer, OfflineAudioContext",
 		"body": ""
 	},
@@ -2484,6 +2794,7 @@
 		"time": 1441998099,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@dolby.com",
+		"md5": "b67889153ac850297280ddd0db15aa6d",
 		"subject": "Merge pull request #579 from WebAudio/385-Throw-typeerror-for-out-of-range",
 		"body": "Fix #385, TypeError for out of range values"
 	},
@@ -2492,6 +2803,7 @@
 		"time": 1441993774,
 		"name": "Joe Berkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge pull request #592 from WebAudio/8-behavior-of-unconnected-nodes",
 		"body": "Clarify uninterrupted operations of unconnected nodes"
 	},
@@ -2500,6 +2812,7 @@
 		"time": 1441993701,
 		"name": "Joe Berkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Merge pull request #593 from WebAudio/17-invalid-createScriptProcessor-args",
 		"body": "Clarify error thrown for invalid createScriptProcessor() arguments."
 	},
@@ -2508,6 +2821,7 @@
 		"time": 1441991415,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix typo 'parametter' -> 'parameter'",
 		"body": ""
 	},
@@ -2516,6 +2830,7 @@
 		"time": 1441988239,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Add note on resource usage of disconnected nodes",
 		"body": ""
 	},
@@ -2524,6 +2839,7 @@
 		"time": 1441925161,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Add reference(s) to use cases in intro + near end",
 		"body": ""
 	},
@@ -2532,6 +2848,7 @@
 		"time": 1441920549,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Add comment on where the graph for audioparam automation example comes from.",
 		"body": ""
 	},
@@ -2540,6 +2857,7 @@
 		"time": 1441905086,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Clarify DelayNode behavior under changing channel count.",
 		"body": ""
 	},
@@ -2548,6 +2866,7 @@
 		"time": 1441904287,
 		"name": "rtoy",
 		"email": "toy.raymond@gmail.com",
+		"md5": "9342d16e648d947803f4af8f1e6a4871",
 		"subject": "Merge pull request #556 from rtoy/323-define-iir-filter",
 		"body": "Fix #323: Add IIRFilterNode"
 	},
@@ -2556,6 +2875,7 @@
 		"time": 1441904053,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Clarify error thrown for invalid createScriptProcessor() arguments.",
 		"body": ""
 	},
@@ -2564,6 +2884,7 @@
 		"time": 1441903275,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Use `unsigned long` for index type in copyFromChannel and copyToChannel.",
 		"body": "This fixes #565"
 	},
@@ -2572,6 +2893,7 @@
 		"time": 1441903250,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Clarify uninterrupted operations of unconnected nodes",
 		"body": ""
 	},
@@ -2580,6 +2902,7 @@
 		"time": 1441903098,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Clarify that computedPlaybackRate must be implemented by resampling the audio.",
 		"body": "This fixes #497."
 	},
@@ -2588,6 +2911,7 @@
 		"time": 1441902628,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Merge branch 'gh-pages' into 385-Throw-typeerror-for-out-of-range",
 		"body": "# Conflicts:\n#\tindex.html"
 	},
@@ -2596,6 +2920,7 @@
 		"time": 1441902189,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Clarify the meaning of the operation \"acquire the content\".",
 		"body": "This fixes #567"
 	},
@@ -2604,6 +2929,7 @@
 		"time": 1441901403,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #585 from rtoy/584-clarify-biquad-get-frequency-response-",
 		"body": "Describe constraints for getFrequencyResponse."
 	},
@@ -2612,6 +2938,7 @@
 		"time": 1441320318,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #5: Add setTargetAtTime curve to example",
 		"body": "The graph of parameter automation is updated to include an example of\nsetTargetAtTime with the code update appropriately.  The graph also\nincludes some simple annotation of each part and also gives an example\nof how to have another automation follow a setTargetAtTime.  A\nsetValueAtTime is required to terminate the setTargetAtTime and give a\nstarting value for the following exponentialRampToValueAtTime."
 	},
@@ -2620,6 +2947,7 @@
 		"time": 1440711250,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Describe constraints for getFrequencyResponse.",
 		"body": ""
 	},
@@ -2628,6 +2956,7 @@
 		"time": 1440710919,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Describe constraints for getFrequencyResponse.",
 		"body": ""
 	},
@@ -2636,6 +2965,7 @@
 		"time": 1440697029,
 		"name": "joeberkovitz",
 		"email": "joe@noteflight.com",
+		"md5": "64c9e4b2767e0067f8b665f2957a2284",
 		"subject": "Fix #128: clarify effect of setting the value attribute with respect to equivalent parameter automation action.",
 		"body": ""
 	},
@@ -2644,6 +2974,7 @@
 		"time": 1440692823,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #570 from rtoy/131-setvaluecurveattime-linear-interp",
 		"body": "Fix #131: specify linear interpolation for setValueCurveAtTime"
 	},
@@ -2652,6 +2983,7 @@
 		"time": 1440692816,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #568 from rtoy/564-add-description-automation-parameters",
 		"body": "Fix #564: Add descriptions of the parameters for automation functions."
 	},
@@ -2660,6 +2992,7 @@
 		"time": 1440692792,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #580 from WebAudio/536-cancelscheduledvalue",
 		"body": "Clarify cancelScheduledValues behavior for setTargetAtTime"
 	},
@@ -2668,6 +3001,7 @@
 		"time": 1440692616,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Clarify that currentTime does not increase when the context is not \"running\".",
 		"body": "This fixes issue #460"
 	},
@@ -2676,6 +3010,7 @@
 		"time": 1440692422,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix typo.",
 		"body": ""
 	},
@@ -2684,6 +3019,7 @@
 		"time": 1440658564,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Clarify cancelScheduledValues behavior for setTargetAtTime",
 		"body": ""
 	},
@@ -2692,6 +3028,7 @@
 		"time": 1440605506,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use feedback and feedforward instead of a and b.",
 		"body": ""
 	},
@@ -2700,6 +3037,7 @@
 		"time": 1440505083,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix grammar - An TypeError --> A TypeError",
 		"body": ""
 	},
@@ -2708,6 +3046,7 @@
 		"time": 1440483236,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Fix #385, TypeError for out of range values",
 		"body": ""
 	},
@@ -2716,6 +3055,7 @@
 		"time": 1440464685,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Clarify use of AudioBufferSourceNode and provide recommendation for non-memory assets",
 		"body": ""
 	},
@@ -2724,6 +3064,7 @@
 		"time": 1440405027,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "Update wording for AudioBufferSourceNode start (called only once) and stop (can be called multiple times).",
 		"body": ""
 	},
@@ -2732,6 +3073,7 @@
 		"time": 1439594751,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix 572 adding links to the appropriate entries.",
 		"body": ""
 	},
@@ -2740,6 +3082,7 @@
 		"time": 1439479955,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "o Some HTML improvements to show links. o Add text about invalid coefficient settings. o Add the difference equation to make it clearer what the coefficients   are.",
 		"body": ""
 	},
@@ -2748,6 +3091,7 @@
 		"time": 1439322576,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into 323-define-iir-filter",
 		"body": ""
 	},
@@ -2756,6 +3100,7 @@
 		"time": 1438194091,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Remove interpolation formula and just say linear interpolation is used.",
 		"body": ""
 	},
@@ -2764,6 +3109,7 @@
 		"time": 1438112067,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #131: define setValueCurveAtTime to use linear interpolation",
 		"body": ""
 	},
@@ -2772,6 +3118,7 @@
 		"time": 1437766707,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #564: Add descriptions of the parameters for automation functions.",
 		"body": "This moves the description of the parameters for each automation\nfunction from the paragraphs to the description box in the parameter\nlist."
 	},
@@ -2780,6 +3127,7 @@
 		"time": 1437554862,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #555 from rtoy/nice-panner-equations",
 		"body": "Use mathematical notation for panner distance formulas"
 	},
@@ -2788,6 +3136,7 @@
 		"time": 1437554770,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #554 from rtoy/416-analyser-in-db-units",
 		"body": "Fix #416: Specify the units for the frequency data"
 	},
@@ -2796,6 +3145,7 @@
 		"time": 1437554711,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "rebase",
 		"body": ""
 	},
@@ -2804,6 +3154,7 @@
 		"time": 1437553995,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #549 from rtoy/nice-automation-formulas",
 		"body": "Display automation formulas mathematically"
 	},
@@ -2812,6 +3163,7 @@
 		"time": 1437553386,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #545 from rtoy/91-periodicwave-normalization",
 		"body": "Add optional normalization parameter to createPeriodicWave"
 	},
@@ -2820,6 +3172,7 @@
 		"time": 1437553200,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #542 from rtoy/464-waveshapernode.curve-error",
 		"body": "InvalidStateError must be thrown if WaveShaper curve is too short."
 	},
@@ -2828,6 +3181,7 @@
 		"time": 1437552746,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #515 from rtoy/442-add-informative",
 		"body": "Fix issue 442:  Update Lifetime section to say it's informative."
 	},
@@ -2836,6 +3190,7 @@
 		"time": 1437502702,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix typo: \"normalize\" -> \"disableNormalization\".",
 		"body": ""
 	},
@@ -2844,6 +3199,7 @@
 		"time": 1437411506,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use a dictionary to specify how PeriodicWave should be normalized (or not).",
 		"body": ""
 	},
@@ -2852,6 +3208,7 @@
 		"time": 1437080846,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "Fixed more nits: inconsistent expression on rejected promise",
 		"body": ""
 	},
@@ -2860,6 +3217,7 @@
 		"time": 1437080013,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "Fixed more nits with rtoy@",
 		"body": ""
 	},
@@ -2868,6 +3226,7 @@
 		"time": 1437078227,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "applied PR feedback from rtoy@",
 		"body": ""
 	},
@@ -2876,6 +3235,7 @@
 		"time": 1437077830,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "upstream merge",
 		"body": ""
 	},
@@ -2884,6 +3244,7 @@
 		"time": 1435878181,
 		"name": "Bill Hofmann",
 		"email": "bill.hofmann@gmail.com",
+		"md5": "b4e8522d62175413e6068dc8584f168d",
 		"subject": "fix #509, change k-rate to a-rate.",
 		"body": ""
 	},
@@ -2892,6 +3253,7 @@
 		"time": 1435600654,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "Initial commit",
 		"body": ""
 	},
@@ -2900,6 +3262,7 @@
 		"time": 1434909007,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #559 from rtoy/357-fixed-channel-count-and-mode",
 		"body": "Cannot change channelCountMode and channelCount for ScriptProcessor"
 	},
@@ -2908,6 +3271,7 @@
 		"time": 1434908985,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #558 from rtoy/379-update-dom-exception-names",
 		"body": "Use current names for DOM exceptions"
 	},
@@ -2916,6 +3280,7 @@
 		"time": 1434735375,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Cannot change channelCountMode and channelCount for ScriptProcessor",
 		"body": "Fix #357.\n\nSpecify that changing either of these signals an InvalidStateError."
 	},
@@ -2924,6 +3289,7 @@
 		"time": 1434734050,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use current names for DOM exceptions",
 		"body": "Fix #379.\n\nReplaced INVALID_STATE_ERR with InvalidStateError.\nA search for [A-Z]+_[A-Z]+_[A-Z] didn't find anything else."
 	},
@@ -2932,6 +3298,7 @@
 		"time": 1434733746,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Throw InvalidStateError when setting oscillator type to 'custom'.",
 		"body": "Fix #311."
 	},
@@ -2940,6 +3307,7 @@
 		"time": 1434729151,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use mathematical notation for panner distance formulas",
 		"body": ""
 	},
@@ -2948,6 +3316,7 @@
 		"time": 1434675012,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Oops.  Remove the fix for #547.",
 		"body": ""
 	},
@@ -2956,6 +3325,7 @@
 		"time": 1434674736,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #416: Specify the units for the frequency data",
 		"body": "Specify that the output of getFloatFrequencyData and\ngetByteFrequencyData are in dB.  This also updates the description for\nthe FFT Windowing and smoothing to include a section on converted to\ndB. The smoothing section is also replaced with mathematical notation\ninstead of code."
 	},
@@ -2964,6 +3334,7 @@
 		"time": 1434669427,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #547: Define index for setValueCurveAtTime",
 		"body": "The indexing into the values array was not well-defined.  Specify that\nthe floating-point index is rounded to the nearest integer to index\ninto the array.  No interpolation is done."
 	},
@@ -2972,6 +3343,7 @@
 		"time": 1434618782,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #551 from rtoy/470-define-analyzer-fft",
 		"body": "Define FFT for AnalyserNode"
 	},
@@ -2980,6 +3352,7 @@
 		"time": 1434618455,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #550 from rtoy/480-channel-count-not-supported-error",
 		"body": "Fix #480: channelCount throws NotSupportedError for invalid values."
 	},
@@ -2988,6 +3361,7 @@
 		"time": 1434583915,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #323: Add IIRFilterNode",
 		"body": "This adds a new IIRFilterNode that implements a general IIR filter.\nThe filter coefficients are fixed and cannot be changed.  The maximum\nnumber of coefficients is 20."
 	},
@@ -2996,6 +3370,7 @@
 		"time": 1434579815,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #447: Define oscillator carefully.",
 		"body": "Define the oscillators for the builtin types to produce the same\nresults as if a PeriodicWave with the appropriate Fourier coefficients\nwere used to create the oscillator."
 	},
@@ -3004,6 +3379,7 @@
 		"time": 1434576520,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Define FFT for AnalyserNode",
 		"body": "Fix #470.\n\nThe section for the Blackman window is also updated to use\nmathematical notation."
 	},
@@ -3012,6 +3388,7 @@
 		"time": 1434563586,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #480: channelCount throws NotSupportedError for invalid values.",
 		"body": ""
 	},
@@ -3020,6 +3397,7 @@
 		"time": 1434555925,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Clean up some more.",
 		"body": ""
 	},
@@ -3028,6 +3406,7 @@
 		"time": 1434488828,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Display nice formulas for the automation equations.",
 		"body": ""
 	},
@@ -3036,6 +3415,7 @@
 		"time": 1434387990,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Display formulas for the basic oscillator waves nicely.",
 		"body": ""
 	},
@@ -3044,6 +3424,7 @@
 		"time": 1434385026,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix #91: Add optional normalization parameter to createPeriodicWave",
 		"body": "o Add optional normalization parameter to createPeriodicWave.\no Define how normalization is done.\no Define the waveform generation better."
 	},
@@ -3052,6 +3433,7 @@
 		"time": 1434130787,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Add normalization parameter and describe better.",
 		"body": "This fixes #91 by adding the optional normalization parameter to\ncreatePeriodicWave.  We also describe the basic waveform generation\nand the normalization process."
 	},
@@ -3060,6 +3442,7 @@
 		"time": 1434127434,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #540 from rtoy/428-432-biquad-filters",
 		"body": "Use correct formulas for biquad filters"
 	},
@@ -3068,6 +3451,7 @@
 		"time": 1433882917,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "InvalidStateError must be thrown if WaveShaper curve is too short.",
 		"body": "Fixes #464."
 	},
@@ -3076,6 +3460,7 @@
 		"time": 1433872391,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Update the lowpass and highpass filters to use the real implementation.",
 		"body": ""
 	},
@@ -3084,6 +3469,7 @@
 		"time": 1433868339,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Use correct formulas for the bandpass, notch, peaking, lowshelf, and highshelf filters.",
 		"body": "Fix #428, fix #429, fix #430, fix #431, fix #432."
 	},
@@ -3092,6 +3478,7 @@
 		"time": 1433866067,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Remove A_1. It's not used anywhere.",
 		"body": ""
 	},
@@ -3100,6 +3487,7 @@
 		"time": 1433864935,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix a few typos.  Verified that the equations are the same as before.",
 		"body": ""
 	},
@@ -3108,6 +3496,7 @@
 		"time": 1433864365,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Convert the remaining formulas to TeX syntax.  It's now much easier to read and modify the equations.",
 		"body": ""
 	},
@@ -3116,6 +3505,7 @@
 		"time": 1433861406,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Change Mathjax to use Tex-AMS syntax. Update the initial part of the biquad filter section to use TeX syntax.",
 		"body": ""
 	},
@@ -3124,6 +3514,7 @@
 		"time": 1433435299,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #538 from rtoy/386-increase-periodic-wave-limit",
 		"body": "Fix issue #386."
 	},
@@ -3132,6 +3523,7 @@
 		"time": 1433361802,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix issue #386.",
 		"body": "Instead of limiting the max array size to 2048, change the spec to say\nthat arrays of at least 8192 elements must be supported.  No error is\nthrown if larger sizes are specified."
 	},
@@ -3140,6 +3532,7 @@
 		"time": 1433352337,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Merge branch 'gh-pages' into define-outer-cone-gain-more",
 		"body": "Conflicts:\n\tindex.html"
 	},
@@ -3148,6 +3541,7 @@
 		"time": 1433352020,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Invalid coneOuterGain must throw InvalidStateError. Remove code; it's given somewhere else.",
 		"body": ""
 	},
@@ -3156,6 +3550,7 @@
 		"time": 1433351666,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix issue 504.",
 		"body": "Describe the coneOuterGain units (linear) and valid range.\nInclude JS code that computes the cone gain."
 	},
@@ -3164,6 +3559,7 @@
 		"time": 1433174903,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Further hyphenation fixes (#471)",
 		"body": ""
 	},
@@ -3172,6 +3568,7 @@
 		"time": 1433174826,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fix hyphenated instances of \"equal-power\" (part of #471)",
 		"body": ""
 	},
@@ -3180,6 +3577,7 @@
 		"time": 1433174753,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fixes #471",
 		"body": ""
 	},
@@ -3188,6 +3586,7 @@
 		"time": 1431673559,
 		"name": "mark-buer",
 		"email": "mark.buer+github@gmail.com",
+		"md5": "60533c0c61e5069fcab8a3ae880966dc",
 		"subject": "Fixes dead links to createBuffer & decodeAudioData",
 		"body": ""
 	},
@@ -3196,6 +3595,7 @@
 		"time": 1431338229,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #530 from ouhouhsami/patch-1",
 		"body": "Merci !"
 	},
@@ -3204,6 +3604,7 @@
 		"time": 1431338090,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Unbreak the spec (#529)",
 		"body": "This fixes all the respec errors that crept in lately, and fixes the processing\nso the rendering is properly done.\n\nThis only contains editorial changes, no spec changes."
 	},
@@ -3212,6 +3613,7 @@
 		"time": 1431336511,
 		"name": "Samuel Goldszmidt",
 		"email": "samuel.goldszmidt@gmail.com",
+		"md5": "c048e4ec3d4f7a79e9617ad37a0abcc3",
 		"subject": "Update index.html",
 		"body": "Same thing for other AudioNodes"
 	},
@@ -3220,6 +3622,7 @@
 		"time": 1431333931,
 		"name": "Samuel Goldszmidt",
 		"email": "samuel.goldszmidt@gmail.com",
+		"md5": "c048e4ec3d4f7a79e9617ad37a0abcc3",
 		"subject": "Update index.html",
 		"body": "Precise GainNode is an AudioNode. This may seem obvious but it's better to have this declared like other AudioNode."
 	},
@@ -3228,6 +3631,7 @@
 		"time": 1430346519,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Tweaks based on review feedback.",
 		"body": ""
 	},
@@ -3236,6 +3640,7 @@
 		"time": 1430308055,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #511 from cwilso/gh-pages",
 		"body": "New factory-based AudioWorkers, with examples."
 	},
@@ -3244,6 +3649,7 @@
 		"time": 1430158286,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix issue 442:  Update Lifetime section to say it's informative.",
 		"body": ""
 	},
@@ -3252,6 +3658,7 @@
 		"time": 1429202210,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Typo",
 		"body": ""
 	},
@@ -3260,6 +3667,7 @@
 		"time": 1429202166,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "onaudioprocess restoration/nodecreate addition",
 		"body": "Revive the onaudioprocess event I inadvertently deleted a couple\ncommits ago, and add the proper node create event."
 	},
@@ -3268,6 +3676,7 @@
 		"time": 1429199586,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fix up merger example",
 		"body": ""
 	},
@@ -3276,6 +3685,7 @@
 		"time": 1429198687,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Rewrote vuMeter example",
 		"body": ""
 	},
@@ -3284,6 +3694,7 @@
 		"time": 1428052968,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix dead link to mixing rules",
 		"body": ""
 	},
@@ -3292,6 +3703,7 @@
 		"time": 1427906436,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Resolutions on proposal from WG call.",
 		"body": ""
 	},
@@ -3300,6 +3712,7 @@
 		"time": 1427903308,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "NodeProcessor postMessage",
 		"body": ""
 	},
@@ -3308,6 +3721,7 @@
 		"time": 1427845284,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Further updates.",
 		"body": ""
 	},
@@ -3316,6 +3730,7 @@
 		"time": 1427836216,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Resolve merge conflicts.",
 		"body": ""
 	},
@@ -3324,6 +3739,7 @@
 		"time": 1427835749,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Updates",
 		"body": ""
 	},
@@ -3332,6 +3748,7 @@
 		"time": 1427748177,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "Merge remote-tracking branch 'upstream/gh-pages' into gh-pages",
 		"body": ""
 	},
@@ -3340,6 +3757,7 @@
 		"time": 1427748038,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "6.3 panning algorithm section cleaned up",
 		"body": ""
 	},
@@ -3348,6 +3766,7 @@
 		"time": 1427741581,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "fixed typos and clean-ups for StereoPannerNode",
 		"body": ""
 	},
@@ -3356,6 +3775,7 @@
 		"time": 1427398746,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #494 from WebAudio/origin/101-define-numberOf-Input-Output-Channels",
 		"body": "Clarify the numberOf{In,Out}puts description."
 	},
@@ -3364,6 +3784,7 @@
 		"time": 1427398719,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #495 from WebAudio/356-angles-modulo-360",
 		"body": "Value for the cone* members must be used modulo 360"
 	},
@@ -3372,6 +3793,7 @@
 		"time": 1427398651,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #499 from WebAudio/487-remove-hw-scalability",
 		"body": "Love it, love it love it."
 	},
@@ -3380,6 +3802,7 @@
 		"time": 1427206028,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Remove section on hardware scalability",
 		"body": ""
 	},
@@ -3388,6 +3811,7 @@
 		"time": 1427205822,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Promises for suspend/resume/close should be parametrized on <void>",
 		"body": "This is the new syntax for promises that don't pass in a value, and fixes #488."
 	},
@@ -3396,6 +3820,7 @@
 		"time": 1426728513,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "AudioWorker rework.",
 		"body": ""
 	},
@@ -3404,6 +3829,7 @@
 		"time": 1426727332,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "TOC changes",
 		"body": ""
 	},
@@ -3412,6 +3838,7 @@
 		"time": 1426716691,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Round 1 of factory-based AudioWorker",
 		"body": ""
 	},
@@ -3420,6 +3847,7 @@
 		"time": 1426677552,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix typos",
 		"body": ""
 	},
@@ -3428,6 +3856,7 @@
 		"time": 1426618425,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #396 from WebAudio/351-audionode-different-contexts",
 		"body": "LGTM"
 	},
@@ -3436,6 +3865,7 @@
 		"time": 1426595338,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address review comments",
 		"body": ""
 	},
@@ -3444,6 +3874,7 @@
 		"time": 1426595121,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Angles for the PannerNode are modulo 360deg.",
 		"body": "Fixes 356."
 	},
@@ -3452,6 +3883,7 @@
 		"time": 1426592098,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "AudioNodes can't connect to AudioNodes from another context.",
 		"body": "This fixes #351."
 	},
@@ -3460,6 +3892,7 @@
 		"time": 1426591596,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Review comments",
 		"body": ""
 	},
@@ -3468,6 +3901,7 @@
 		"time": 1426591418,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Clarify the numberOf{In,Out}puts description.",
 		"body": "This fixes #101."
 	},
@@ -3476,6 +3910,7 @@
 		"time": 1425933305,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "Changed affiliation",
 		"body": ""
 	},
@@ -3484,6 +3919,7 @@
 		"time": 1425917446,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "Added missing names to the WG memeber list",
 		"body": ""
 	},
@@ -3492,6 +3928,7 @@
 		"time": 1425677070,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "update",
 		"body": ""
 	},
@@ -3500,6 +3937,7 @@
 		"time": 1425669431,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "update",
 		"body": ""
 	},
@@ -3508,6 +3946,7 @@
 		"time": 1425665334,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "update",
 		"body": ""
 	},
@@ -3516,6 +3955,7 @@
 		"time": 1425660899,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "Merge remote-tracking branch 'upstream/gh-pages' into gh-pages",
 		"body": ""
 	},
@@ -3524,6 +3964,7 @@
 		"time": 1425660891,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "304-channel-merger",
 		"body": ""
 	},
@@ -3532,6 +3973,7 @@
 		"time": 1425644153,
 		"name": "Mathias Bynens",
 		"email": "mathias@qiwi.be",
+		"md5": "24e08a9ea84deb17ae121074d0f17125",
 		"subject": "Use HTTPS URLs where possible",
 		"body": "This also fixes the mixed content issues on https://webaudio.github.io/web-audio-api/."
 	},
@@ -3540,6 +3982,7 @@
 		"time": 1425398549,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #467 from WebAudio/panner-clamp",
 		"body": "Clamp the gain of the `distanceModel` in [0; 1]"
 	},
@@ -3548,6 +3991,7 @@
 		"time": 1425398520,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #483 from chrislo/crl-clarify-dc-offset",
 		"body": "Clarify real array usage in createPeriodicWave"
 	},
@@ -3556,6 +4000,7 @@
 		"time": 1425398474,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #479 from hoch/gh-pages",
 		"body": "#6 Support selective disconnection"
 	},
@@ -3564,6 +4009,7 @@
 		"time": 1424282146,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "update",
 		"body": ""
 	},
@@ -3572,6 +4018,7 @@
 		"time": 1424212494,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Address issue 477, making the max array size 2048, not 4096.",
 		"body": ""
 	},
@@ -3580,6 +4027,7 @@
 		"time": 1423746659,
 		"name": "Chris Lowis",
 		"email": "chris.lowis@gmail.com",
+		"md5": "a8486651a974d7d9ecc35d25de96c7ee",
 		"subject": "Clarify real array usage in createPeriodicWave",
 		"body": "Addresses #478. Implementations must ignore any value set for the first\nelement of the real array when creating a periodic wave."
 	},
@@ -3588,6 +4036,7 @@
 		"time": 1423597497,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "change in IDL",
 		"body": ""
 	},
@@ -3596,6 +4045,7 @@
 		"time": 1423247018,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "update",
 		"body": ""
 	},
@@ -3604,6 +4054,7 @@
 		"time": 1423246196,
 		"name": "Hongchan Choi",
 		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
 		"subject": "#6 Support selective disconnection",
 		"body": ""
 	},
@@ -3612,6 +4063,7 @@
 		"time": 1423155027,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Factory-based addition to worker nodes.",
 		"body": ""
 	},
@@ -3620,6 +4072,7 @@
 		"time": 1421346914,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Add note about FFT cost.",
 		"body": ""
 	},
@@ -3628,6 +4081,7 @@
 		"time": 1421337564,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Range notation should use a colon and not a semicolon.",
 		"body": ""
 	},
@@ -3636,6 +4090,7 @@
 		"time": 1421321322,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Panning markup clean-up.",
 		"body": ""
 	},
@@ -3644,6 +4099,7 @@
 		"time": 1421321223,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Spec that the distance effect gain cannot be negative/apply a gain > 1.",
 		"body": "https://bugzilla.mozilla.org/show_bug.cgi?id=1002513 for test case: the gain\nwould become negative because of the distance, and the phase would be flipped,\nwhich, I believe, is not the intention here."
 	},
@@ -3652,6 +4108,7 @@
 		"time": 1421172328,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix issue #375:  Update spec to say 32K FFTs are allowed for AnalyserNode.",
 		"body": ""
 	},
@@ -3660,6 +4117,7 @@
 		"time": 1420542688,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Trivial markup fix in AudioWorker.",
 		"body": ""
 	},
@@ -3668,6 +4126,7 @@
 		"time": 1418920754,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "sequence => Array",
 		"body": ""
 	},
@@ -3676,6 +4135,7 @@
 		"time": 1418768893,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fixes #461",
 		"body": "Inadvertent ReSpec refactoring issue."
 	},
@@ -3684,6 +4144,7 @@
 		"time": 1418428736,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Initial Multi-IO AudioWorker.",
 		"body": "Note this does not include a change to have a single factory-style\ninitiation."
 	},
@@ -3692,6 +4153,7 @@
 		"time": 1418045053,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Change the default panningModel of the PannerNode to \"equal-power\"",
 		"body": "This fixes #368."
 	},
@@ -3700,6 +4162,7 @@
 		"time": 1417481864,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "channelCountMode for the AnalyserNode should be \"max\"",
 		"body": "So it respects the paragraph above: \"The audio stream will be passed un-processed from input to output\".\n\nThis fixes #450."
 	},
@@ -3708,6 +4171,7 @@
 		"time": 1417481683,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Revert previous patch, I meant to open a PR",
 		"body": ""
 	},
@@ -3716,6 +4180,7 @@
 		"time": 1417481603,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "channelCountMode for the AnalyserNode",
 		"body": "So it respects the paragraph above: \"The audio stream will be passed un-processed from input to output.\"\r\n\r\nThis fixes #450."
 	},
@@ -3724,6 +4189,7 @@
 		"time": 1416417111,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix algorithm issue for stereo->stereo",
 		"body": ""
 	},
@@ -3732,6 +4198,7 @@
 		"time": 1416390771,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix typos added when fixing typos",
 		"body": ""
 	},
@@ -3740,6 +4207,7 @@
 		"time": 1416329683,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix typos",
 		"body": ""
 	},
@@ -3748,6 +4216,7 @@
 		"time": 1416329050,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make StereoPannerNode a-rate and spec the algorithm",
 		"body": "It was somewhat obvious, but it's clearer to also have the formulas for [-1, +1]\n\nThis fixes #439."
 	},
@@ -3756,6 +4225,7 @@
 		"time": 1416007952,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #438 from hoch/gh-pages",
 		"body": "Fix typo"
 	},
@@ -3764,6 +4234,7 @@
 		"time": 1416007402,
 		"name": "Hongchan Choi",
 		"email": "hongchan.choi@gmail.com",
+		"md5": "be6d86637aa7890ade1eb520a7c31253",
 		"subject": "Fix typo",
 		"body": ""
 	},
@@ -3772,6 +4243,7 @@
 		"time": 1415905024,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #434 from rtoy/rtoy-onstatechange-transitions",
 		"body": "Fix typo and state that any change to a different state fires the onstatechange event"
 	},
@@ -3780,6 +4252,7 @@
 		"time": 1415903694,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix typo and state that any change to a different state fires the onstatechange event.",
 		"body": ""
 	},
@@ -3788,6 +4261,7 @@
 		"time": 1415765858,
 		"name": "kubosho_",
 		"email": "ta2@o2p.jp",
+		"md5": "1f9e7066d4a1b6eb720fced005a15e84",
 		"subject": "Fix typo",
 		"body": "- modular rounting -> modular routing\n- to the node .  This -> to the node. This"
 	},
@@ -3796,6 +4270,7 @@
 		"time": 1415756331,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fixes #424.",
 		"body": ""
 	},
@@ -3804,6 +4279,7 @@
 		"time": 1415720543,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #408 from WebAudio/109-channel-layout",
 		"body": "Define channel layouts a bit more."
 	},
@@ -3812,6 +4288,7 @@
 		"time": 1415379746,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #420 from WebAudio/372-StereoPanner",
 		"body": "Part 1 of #372: Add StereoPannerNode"
 	},
@@ -3820,6 +4297,7 @@
 		"time": 1415379677,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Address review feedback.",
 		"body": ""
 	},
@@ -3828,6 +4306,7 @@
 		"time": 1415379523,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #403 from WebAudio/256-no-instrospection",
 		"body": "Explain lack of serialization or introspection"
 	},
@@ -3836,6 +4315,7 @@
 		"time": 1415379489,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #402 from WebAudio/19-offlineaudiocontext-arguments",
 		"body": "Define what the ctor's argument of OfflineAudioContext do."
 	},
@@ -3844,6 +4324,7 @@
 		"time": 1415379452,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #401 from WebAudio/329-oscillator-no-duratio",
 		"body": "Clarify that OscillatorNode.start only has one parameter"
 	},
@@ -3852,6 +4333,7 @@
 		"time": 1415379408,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #395 from WebAudio/366-no-intermediate-clipping",
 		"body": "Clarify that no clipping is applied to intermediate nodes"
 	},
@@ -3860,6 +4342,7 @@
 		"time": 1415379324,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge fixes",
 		"body": ""
 	},
@@ -3868,6 +4351,7 @@
 		"time": 1415297791,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Changed name of parameter to \"pan\" due to feedback",
 		"body": ""
 	},
@@ -3876,6 +4360,7 @@
 		"time": 1415229670,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Stereo panner proposal",
 		"body": ""
 	},
@@ -3884,6 +4369,7 @@
 		"time": 1415194946,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Mention that other channel layouts may be supported in future version of this spec.",
 		"body": ""
 	},
@@ -3892,6 +4378,7 @@
 		"time": 1415194680,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix typo",
 		"body": ""
 	},
@@ -3900,6 +4387,7 @@
 		"time": 1415194431,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix typo",
 		"body": ""
 	},
@@ -3908,6 +4396,7 @@
 		"time": 1415194388,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Explain lack of serialization or introspection",
 		"body": "This fixes #256."
 	},
@@ -3916,6 +4405,7 @@
 		"time": 1415194009,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address review comments",
 		"body": ""
 	},
@@ -3924,6 +4414,7 @@
 		"time": 1415193866,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Clarify that OscillatorNode.start only has one parameter",
 		"body": "This fixes #329."
 	},
@@ -3932,6 +4423,7 @@
 		"time": 1415193193,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix typos + comma",
 		"body": ""
 	},
@@ -3940,6 +4432,7 @@
 		"time": 1415134577,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #412 from WebAudio/74-add-webidl-reference",
 		"body": "Add WebIDL normative reference"
 	},
@@ -3948,6 +4441,7 @@
 		"time": 1415134556,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #411 from WebAudio/64-biquad-detune",
 		"body": "Add a detune attribute for the BiquadFilterNode"
 	},
@@ -3956,6 +4450,7 @@
 		"time": 1415134189,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #409 from WebAudio/107-fix-warnings-and-links",
 		"body": "Fix ReSpec warnings and errors"
 	},
@@ -3964,6 +4459,7 @@
 		"time": 1415134076,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fix gain param error.",
 		"body": ""
 	},
@@ -3972,6 +4468,7 @@
 		"time": 1415133841,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #407 from WebAudio/121-float-double-inconsistency",
 		"body": "Use doubles for time, float otherwise."
 	},
@@ -3980,6 +4477,7 @@
 		"time": 1415133784,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #406 from WebAudio/123-spec-gain",
 		"body": "Spec GainNode."
 	},
@@ -3988,6 +4486,7 @@
 		"time": 1415133723,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #405 from WebAudio/136-oscillator-switch-phase-conservation",
 		"body": "Spec that OscillatorNode phase should be conserved when `type` is set."
 	},
@@ -3996,6 +4495,7 @@
 		"time": 1415133701,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #404 from WebAudio/243-reduction-float",
 		"body": "Make DynamicsCompressorNode.reduction a readonly float"
 	},
@@ -4004,6 +4504,7 @@
 		"time": 1415133451,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #400 from WebAudio/332-audiobuffersourcenode-start-round",
 		"body": "Spec that subsample scheduling with AudioBufferSourceNode is impossible."
 	},
@@ -4012,6 +4513,7 @@
 		"time": 1415133414,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #399 from WebAudio/333-audiobuffersourcenode-detune",
 		"body": "Make playbackRate a k-rate and add a detune attribute"
 	},
@@ -4020,6 +4522,7 @@
 		"time": 1415133335,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #398 from WebAudio/343-disconnect-param",
 		"body": "Add a class to the AudioNode.disconnect parameters"
 	},
@@ -4028,6 +4531,7 @@
 		"time": 1415126131,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #388 from WebAudio/waveshaper-length",
 		"body": "WaveShaperNode curve lower limit and clarification"
 	},
@@ -4036,6 +4540,7 @@
 		"time": 1415126093,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #384 from padenot/gh-pages",
 		"body": "Specify the filter type to be used for the BiquadFilterNode"
 	},
@@ -4044,6 +4549,7 @@
 		"time": 1415126076,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #374 from cwilso/gh-pages",
 		"body": "Suspend/resume/close/state added to AudioContext"
 	},
@@ -4052,6 +4558,7 @@
 		"time": 1415126049,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Added exception for node creation when released.",
 		"body": ""
 	},
@@ -4060,6 +4567,7 @@
 		"time": 1415111656,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Add WebIDL normative reference",
 		"body": "This fixes #74"
 	},
@@ -4068,6 +4576,7 @@
 		"time": 1415111359,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Define what the ctor's argument of OfflineAudioContext do.",
 		"body": "This fixes #19."
 	},
@@ -4076,6 +4585,7 @@
 		"time": 1415110921,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #392 from WebAudio/98-js-synthesis-processing",
 		"body": "Remove section Javascript Synthesis and Processing"
 	},
@@ -4084,6 +4594,7 @@
 		"time": 1415109387,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #390 from WebAudio/377-clarify-smoothing",
 		"body": "Clarify smoothing of FFT data in AnalyserNode"
 	},
@@ -4092,6 +4603,7 @@
 		"time": 1415108433,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Clarify smoothing of FFT data in AnalyserNode",
 		"body": "This fixes #377."
 	},
@@ -4100,6 +4612,7 @@
 		"time": 1415096749,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address review comments.",
 		"body": ""
 	},
@@ -4108,6 +4621,7 @@
 		"time": 1415034974,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #387 from WebAudio/scalability-non-normative",
 		"body": "Mark the section \"Hardware Scalability\" as non-normative."
 	},
@@ -4116,6 +4630,7 @@
 		"time": 1415034336,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #389 from WebAudio/delay-cycle-clamp",
 		"body": "If a DelayNode is in a cycle, delayTime is clamped to a minimum of 128 f..."
 	},
@@ -4124,6 +4639,7 @@
 		"time": 1415007229,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Clarify that no clipping is applied to intermediate nodes",
 		"body": "This fixes #366."
 	},
@@ -4132,6 +4648,7 @@
 		"time": 1415006581,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Use DOM4 exception instead of legacy names",
 		"body": "Patch generated mostly with the following script, assuming GNU sed:\n\n    #!/bin/sh\n    FILE=index.html\n\n    sed -i 's/INDEX_SIZE_ERR/IndexSizeError/' $FILE\n    sed -i 's/HIERARCHY_REQUEST_ERR/HierarchyRequestError/' $FILE\n    sed -i 's/WRONG_DOCUMENT_ERR/WrongDocumentError/' $FILE\n    sed -i 's/INVALID_CHARACTER_ERR/InvalidCharacterError/' $FILE\n    sed -i 's/NO_MODIFICATION_ALLOWED_ERR/NoModificationAllowedError/' $FILE\n    sed -i 's/NOT_FOUND_ERR/NotFoundError/' $FILE\n    sed -i 's/NOT_SUPPORTED_ERR/NotSupportedError/' $FILE\n    sed -i 's/INUSE_ATTRIBUTE_ERR/InUseAttributeError/' $FILE\n    sed -i 's/INVALID_STATE_ERR/InvalidStateError/' $FILE\n    sed -i 's/SYNTAX_ERR/SyntaxError/' $FILE\n    sed -i 's/INVALID_MODIFICATION_ERR/InvalidModificationError/' $FILE\n    sed -i 's/NAMESPACE_ERR/NamespaceError/' $FILE\n    sed -i 's/INVALID_ACCESS_ERR/InvalidAccessError/' $FILE\n    sed -i 's/TYPE_MISMATCH_ERR/TypeMismatchError/' $FILE\n    sed -i 's/SECURITY_ERR/SecurityError/' $FILE\n    sed -i 's/NETWORK_ERR/NetworkError/' $FILE\n    sed -i 's/ABORT_ERR/AbortError/' $FILE\n    sed -i 's/URL_MISMATCH_ERR/URLMismatchError/' $FILE\n    sed -i 's/QUOTA_EXCEEDED_ERR/QuotaExceededError/' $FILE\n    sed -i 's/TIMEOUT_ERR/TimeoutError/' $FILE\n    sed -i 's/INVALID_NODE_TYPE_ERR/InvalidNodeTypeError/' $FILE\n    sed -i 's/DATA_CLONE_ERR/DataCloneError/' $FILE\n    sed -i 's/INVALID_POINTER_ERR/InvalidPointerId/' $FILE"
 	},
@@ -4140,6 +4657,7 @@
 		"time": 1415004937,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Spec that subsample scheduling with AudioBufferSourceNode is impossible.",
 		"body": "This fixes #332."
 	},
@@ -4148,6 +4666,7 @@
 		"time": 1415004428,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "make playbackRate a k-rate and add a detune attribute",
 		"body": "This fixes #333."
 	},
@@ -4156,6 +4675,7 @@
 		"time": 1415003756,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Add a class to the AudioNode.disconnect parameters",
 		"body": "This fixes #343."
 	},
@@ -4164,6 +4684,7 @@
 		"time": 1415001474,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Remove section Javascript Synthesis and Processing",
 		"body": "This fixes #98."
 	},
@@ -4172,6 +4693,7 @@
 		"time": 1415000073,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix ReSpec warnings and errors",
 		"body": "Fixes #107"
 	},
@@ -4180,6 +4702,7 @@
 		"time": 1414997006,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Define channel layouts a bit more.",
 		"body": "Fixes #109."
 	},
@@ -4188,6 +4711,7 @@
 		"time": 1414996538,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Use doubles for time, float otherwise.",
 		"body": "Fixes #121."
 	},
@@ -4196,6 +4720,7 @@
 		"time": 1414996018,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Spec GainNode.",
 		"body": "Fixes #123."
 	},
@@ -4204,6 +4729,7 @@
 		"time": 1414994879,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Spec that OscillatorNode phase should be conserved when `type` is set.",
 		"body": "Fixes #136."
 	},
@@ -4212,6 +4738,7 @@
 		"time": 1414994753,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make DynamicsCompressorNode.reduction a float",
 		"body": ""
 	},
@@ -4220,6 +4747,7 @@
 		"time": 1414787903,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Mark the section \"Hardware Scalability\" as non-normative.",
 		"body": "There are still weird text in this section, I might do a followup to clean it."
 	},
@@ -4228,6 +4756,7 @@
 		"time": 1414787855,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "If a DelayNode is in a cycle, delayTime is clamped to a minimum of 128 frames.",
 		"body": ""
 	},
@@ -4236,6 +4765,7 @@
 		"time": 1414787736,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "WaveShaperNode curve lower limit and clarification",
 		"body": "Fixes issue #90"
 	},
@@ -4244,6 +4774,7 @@
 		"time": 1414712097,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Spec detune (default value + meaning) for the BiquadFilterNode",
 		"body": "This fixes #64 and #51."
 	},
@@ -4252,6 +4783,7 @@
 		"time": 1414690979,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Fixes #93.",
 		"body": ""
 	},
@@ -4260,6 +4792,7 @@
 		"time": 1414688649,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Fixes #82.",
 		"body": ""
 	},
@@ -4268,6 +4801,7 @@
 		"time": 1414618808,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Distinguish between the two A terms, fix ascii formulas",
 		"body": ""
 	},
@@ -4276,6 +4810,7 @@
 		"time": 1414614357,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Specifiy which alpha term to use for each filter type",
 		"body": ""
 	},
@@ -4284,6 +4819,7 @@
 		"time": 1414610508,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix bad markup for MathML equations",
 		"body": ""
 	},
@@ -4292,6 +4828,7 @@
 		"time": 1414609662,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix bad MathJax script so that it works in browser that don't have MathML",
 		"body": ""
 	},
@@ -4300,6 +4837,7 @@
 		"time": 1414606858,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Address rtoy's comments",
 		"body": "- Add tranfer function, remove algorithm\n- Add MathJax.js in the repo\n- Cleanup markup indentation"
 	},
@@ -4308,6 +4846,7 @@
 		"time": 1414174655,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fixes issue #380.",
 		"body": ""
 	},
@@ -4316,6 +4855,7 @@
 		"time": 1414164258,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Put the Audio-EQ-Cookbook formulas in the spec",
 		"body": ""
 	},
@@ -4324,6 +4864,7 @@
 		"time": 1414150317,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "s/AudioPannerNode/PannerNode/ + links",
 		"body": ""
 	},
@@ -4332,6 +4873,7 @@
 		"time": 1413995512,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Tweaks to informative code examples",
 		"body": "Reported by @root66 on ##webaudio on freenode."
 	},
@@ -4340,6 +4882,7 @@
 		"time": 1413912600,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Fix typo in formula for Blackman Window.",
 		"body": "aSize is undefined. It should be buffer.length."
 	},
@@ -4348,6 +4891,7 @@
 		"time": 1413834098,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "State description for OfflineAudioContexts.",
 		"body": ""
 	},
@@ -4356,6 +4900,7 @@
 		"time": 1413830730,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Further refinements.",
 		"body": ""
 	},
@@ -4364,6 +4909,7 @@
 		"time": 1413829318,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Tweaks based on comments.",
 		"body": ""
 	},
@@ -4372,6 +4918,7 @@
 		"time": 1413823330,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Suspend/resume/close/state.  Fixes #317 and #361",
 		"body": ""
 	},
@@ -4380,6 +4927,7 @@
 		"time": 1412800912,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Oops.  Typo.",
 		"body": ""
 	},
@@ -4388,6 +4936,7 @@
 		"time": 1412800784,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge branch 'rtoy-negative-time-errors' of https://github.com/rtoy/web-audio-api into rtoy-rtoy-negative-time-errors",
 		"body": "Conflicts:\n\tindex.html"
 	},
@@ -4396,6 +4945,7 @@
 		"time": 1412791857,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Change INVALID_STATE_ERR to INVALID_ACCESS_ERR.",
 		"body": ""
 	},
@@ -4404,6 +4954,7 @@
 		"time": 1412721625,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #364 from rtoy/rtoy-remove-dup-sentence-looping",
 		"body": "Remove duplicated sentence in AudioBufferSource looping section"
 	},
@@ -4412,6 +4963,7 @@
 		"time": 1412717212,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Correct typo.",
 		"body": ""
 	},
@@ -4420,6 +4972,7 @@
 		"time": 1412717047,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Errors must be thrown for negative or non-finite values for the time and/or duration.",
 		"body": ""
 	},
@@ -4428,6 +4981,7 @@
 		"time": 1412715733,
 		"name": "Raymond Toy",
 		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
 		"subject": "Remove duplicated sentence.",
 		"body": ""
 	},
@@ -4436,6 +4990,7 @@
 		"time": 1412630945,
 		"name": "Arthur Barstow",
 		"email": "art.barstow@gmail.com",
+		"md5": "155d9e02f3947569a1b19c48096227c0",
 		"subject": "Use ED rather than WD stylesheet",
 		"body": "For the Editor's Draft, I think it would help set expectations if you used the ED stylesheet rather than the TR/WD stylesheet. Just askin'."
 	},
@@ -4444,6 +4999,7 @@
 		"time": 1411752260,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fixes #355.",
 		"body": "Inputs to Panner and Convolver Nodes must be mono or stereo."
 	},
@@ -4452,6 +5008,7 @@
 		"time": 1410430585,
 		"name": "Chris Wilson",
 		"email": "cwilso@google.com",
+		"md5": "f4e14136a440c32260f584846821baf4",
 		"subject": "Explanatory text for Worker threads.",
 		"body": ""
 	},
@@ -4460,6 +5017,7 @@
 		"time": 1409334361,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Misc Respec warning cleanup",
 		"body": ""
 	},
@@ -4468,6 +5026,7 @@
 		"time": 1409333704,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge branch 'rtoy-cone-angle-units' of https://github.com/rtoy/web-audio-api into rtoy-rtoy-cone-angle-units",
 		"body": "Conflicts:\n\tindex.html"
 	},
@@ -4476,6 +5035,7 @@
 		"time": 1409332852,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #350 from cwilso/gh-pages",
 		"body": "Audio Workers"
 	},
@@ -4484,6 +5044,7 @@
 		"time": 1409332782,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #309 from padenot/window-analyzer",
 		"body": "Clarify the processing applied before and after the FFT in AnalyserNode"
 	},
@@ -4492,6 +5053,7 @@
 		"time": 1409261106,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Reverting onaudioprocess description for SPs.",
 		"body": ""
 	},
@@ -4500,6 +5062,7 @@
 		"time": 1409260955,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Extraneous parameters object removal",
 		"body": ""
 	},
@@ -4508,6 +5071,7 @@
 		"time": 1409260730,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "AudioWorkers: examples, Float32Arrays, worker collapsing",
 		"body": ""
 	},
@@ -4516,6 +5080,7 @@
 		"time": 1409001974,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "formatting.",
 		"body": ""
 	},
@@ -4524,6 +5089,7 @@
 		"time": 1409001852,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Moved parameters to sub-object.",
 		"body": ""
 	},
@@ -4532,6 +5098,7 @@
 		"time": 1408738539,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Added Parameters to AudioWorkers",
 		"body": "(and some minor cleanup)"
 	},
@@ -4540,6 +5107,7 @@
 		"time": 1408735542,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Add descriptive AudioWorker text.",
 		"body": ""
 	},
@@ -4548,6 +5116,7 @@
 		"time": 1407866860,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "First draft of AudioWorker.",
 		"body": ""
 	},
@@ -4556,6 +5125,7 @@
 		"time": 1403837978,
 		"name": "Si Robertson",
 		"email": "retromodular@gmail.com",
+		"md5": "bb7d3c34d9d3343afac9ee4f3dca4be3",
 		"subject": "Update index.html",
 		"body": "Removed the stray \"<\" character. It was preventing \":AudioNode\" from being rendered."
 	},
@@ -4564,6 +5134,7 @@
 		"time": 1403054467,
 		"name": "Kevin Barabash",
 		"email": "kevinb7@gmail.com",
+		"md5": "de8cd250d9fe39b78f1c0f98b718670d",
 		"subject": "added 'optional' modifier to WebIDL for OscillatorNode",
 		"body": ""
 	},
@@ -4572,6 +5143,7 @@
 		"time": 1401734700,
 		"name": "Raymond Toy",
 		"email": "rtoy@google.com",
+		"md5": "e7d25b26293db603771567ec2201a24c",
 		"subject": "Indicate that cone angles are in degrees.",
 		"body": ""
 	},
@@ -4580,6 +5152,7 @@
 		"time": 1399914382,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #320 from padenot/remove-un-neuter",
 		"body": "Remove the non-existant concept of un-neutering from the spec"
 	},
@@ -4588,6 +5161,7 @@
 		"time": 1399912517,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Simply divide instead of dividing by the inverse.",
 		"body": ""
 	},
@@ -4596,6 +5170,7 @@
 		"time": 1399912194,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Throw if the channel count of the Convolver impulse is incorrect.",
 		"body": "Rebased #306 against current master."
 	},
@@ -4604,6 +5179,7 @@
 		"time": 1399910981,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Remove the non-existant concept of un-neutering from the spec",
 		"body": ""
 	},
@@ -4612,6 +5188,7 @@
 		"time": 1399316053,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #316 from domenic/start-rendering-with-promises",
 		"body": "OfflineAudioContext.prototype.startRendering returns a promise"
 	},
@@ -4620,6 +5197,7 @@
 		"time": 1398938826,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Remove broken link to #ExampleApplications",
 		"body": "This section does not exist anymore."
 	},
@@ -4628,6 +5206,7 @@
 		"time": 1398639145,
 		"name": "Domenic Denicola",
 		"email": "domenic@domenicdenicola.com",
+		"md5": "c6d819207a3010b39d13e1f59f2c0029",
 		"subject": "OfflineAudioContext.prototype.startRendering returns a promise",
 		"body": "The steps are now more clearly sequenced and outlined, which helps make things explicit: e.g. the same `AudioBuffer` instance is used for both the event and the promise, and the details of how the buffer gets filled and initialized are no longer spread out across the method definition, the event definition, and the introductory paragraph."
 	},
@@ -4636,6 +5215,7 @@
 		"time": 1398444699,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fix Lifetime in AudioContext numbering.",
 		"body": ""
 	},
@@ -4644,6 +5224,7 @@
 		"time": 1398230252,
 		"name": "Domenic Denicola",
 		"email": "domenic@domenicdenicola.com",
+		"md5": "c6d819207a3010b39d13e1f59f2c0029",
 		"subject": "Remove trailing whitespace.",
 		"body": ""
 	},
@@ -4652,6 +5233,7 @@
 		"time": 1398230178,
 		"name": "Domenic Denicola",
 		"email": "domenic@domenicdenicola.com",
+		"md5": "c6d819207a3010b39d13e1f59f2c0029",
 		"subject": "Rewrite decodeAudioData to return a promise.",
 		"body": "It still takes the callbacks, although they are now optional and noted as legacy."
 	},
@@ -4660,6 +5242,7 @@
 		"time": 1396616872,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Clarify the processing applied before and after the FFT in AnalyserNode",
 		"body": ""
 	},
@@ -4668,6 +5251,7 @@
 		"time": 1396370740,
 		"name": "Raymond Toy",
 		"email": "rtoy@google.com",
+		"md5": "e7d25b26293db603771567ec2201a24c",
 		"subject": "Upcase MUST.",
 		"body": ""
 	},
@@ -4676,6 +5260,7 @@
 		"time": 1396304180,
 		"name": "Raymond Toy",
 		"email": "rtoy@google.com",
+		"md5": "e7d25b26293db603771567ec2201a24c",
 		"subject": "Note that an error must be thrown if the buffer does not have 1, 2, or 4 channels.",
 		"body": ""
 	},
@@ -4684,6 +5269,7 @@
 		"time": 1395080931,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #294 from cwilso/getFloatTimeDomainData",
 		"body": "Added getFloatTimeDomainData() method to AnalyserNode"
 	},
@@ -4692,6 +5278,7 @@
 		"time": 1395080922,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #292 from cwilso/removal",
 		"body": "Removal of Example Apps and Recording Impulse Responses"
 	},
@@ -4700,6 +5287,7 @@
 		"time": 1394610852,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make OscillatorNode.{start, end} like AudioBufferSourceNode's",
 		"body": "OscillatorNode.{start, end} argument is now optional, and default to zero, so it\nis similar to AudioBufferSourceNode methods."
 	},
@@ -4708,6 +5296,7 @@
 		"time": 1393872285,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Minor correction of Respec reordering.",
 		"body": ""
 	},
@@ -4716,6 +5305,7 @@
 		"time": 1393276346,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "length -> duration in loop description",
 		"body": "Fixes issue #280."
 	},
@@ -4724,6 +5314,7 @@
 		"time": 1393275353,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fix issue #277",
 		"body": "Remove mention of \"playback of buffer\" from OscillatorNode."
 	},
@@ -4732,6 +5323,7 @@
 		"time": 1393269187,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #291 from cwilso/gh-pages",
 		"body": "Stop time changes (fixes #15)."
 	},
@@ -4740,6 +5332,7 @@
 		"time": 1393268632,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Added getFloatTimeDomainData() method to AnalyserNode",
 		"body": "As per issue #278, https://github.com/WebAudio/web-audio-api/issues/278."
 	},
@@ -4748,6 +5341,7 @@
 		"time": 1393015775,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "ReSpec-ize the new section on oscillator types, and fix markup.",
 		"body": ""
 	},
@@ -4756,6 +5350,7 @@
 		"time": 1393006623,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Resolve merge conflicts",
 		"body": ""
 	},
@@ -4764,6 +5359,7 @@
 		"time": 1392852963,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Removal of Example Applications and Recording Impulse Responses sections.",
 		"body": "As per http://www.w3.org/2011/audio/track/actions/80.  After reading\ncarefully, there is nothing in these sections that is not either\nconfusing disconnected (IR) or duplicative with the scenarios laid out\nin a separate document (Example Apps)."
 	},
@@ -4772,6 +5368,7 @@
 		"time": 1392850604,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Revert \"Remove Example Applications and Recording Impulse Responses sections.\"",
 		"body": "This reverts commit f82682f2901fe5938d41fb158653e443212677ad."
 	},
@@ -4780,6 +5377,7 @@
 		"time": 1392850506,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Remove Example Applications and Recording Impulse Responses sections.",
 		"body": "Per http://www.w3.org/2011/audio/track/actions/80:  These sections are\nof questionable value, and raise licensing concerns."
 	},
@@ -4788,6 +5386,7 @@
 		"time": 1392847607,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Stop time changes (fixes #15).",
 		"body": ""
 	},
@@ -4796,6 +5395,7 @@
 		"time": 1392830445,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fixed typos in cross-origin checkin.",
 		"body": ""
 	},
@@ -4804,6 +5404,7 @@
 		"time": 1392830348,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Merge pull request #290 from padenot/cross-origin",
 		"body": "Fix for issue #282"
 	},
@@ -4812,6 +5413,7 @@
 		"time": 1392820052,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Rename a last occurence of copyChannelDataTo to the new name, copyFromChannel",
 		"body": ""
 	},
@@ -4820,6 +5422,7 @@
 		"time": 1392818607,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Markup cleanup for the MediaElementAudioSourceNode section",
 		"body": ""
 	},
@@ -4828,6 +5431,7 @@
 		"time": 1392818590,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Resolution for #282 - Cross-origin MediaElementAudioSourceNode",
 		"body": ""
 	},
@@ -4836,6 +5440,7 @@
 		"time": 1392807085,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make a-rate and k-rate properly link to their definition.",
 		"body": ""
 	},
@@ -4844,6 +5449,7 @@
 		"time": 1392806861,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix for Visible Data Races (Issue #254)",
 		"body": ""
 	},
@@ -4852,6 +5458,7 @@
 		"time": 1392759226,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "remove redundant link tag.",
 		"body": ""
 	},
@@ -4860,6 +5467,7 @@
 		"time": 1392749646,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Fix three broken internal links",
 		"body": ""
 	},
@@ -4868,6 +5476,7 @@
 		"time": 1392745051,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "The html now validates using the html5 conformance checker",
 		"body": ""
 	},
@@ -4876,6 +5485,7 @@
 		"time": 1392646863,
 		"name": "Paul Adenot",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Refactor the specification to use ReSpec",
 		"body": ""
 	},
@@ -4884,6 +5494,7 @@
 		"time": 1387489222,
 		"name": "Raymond Toy",
 		"email": "rtoy@google.com",
+		"md5": "e7d25b26293db603771567ec2201a24c",
 		"subject": "Clean up according to review:",
 		"body": "o Replace < with appropriate HTML entities.\no Add some text to say these are idealized waveforms\no Add link to Oscillator Types section from Oscillator Node Interface\n  section."
 	},
@@ -4892,6 +5503,7 @@
 		"time": 1383869859,
 		"name": "Raymond Toy",
 		"email": "rtoy@google.com",
+		"md5": "e7d25b26293db603771567ec2201a24c",
 		"subject": "Define oscillator phases for the predefined types.",
 		"body": ""
 	},
@@ -4900,6 +5512,7 @@
 		"time": 1382630323,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Merge pull request #245 from padenot/114",
 		"body": "Issue #114 - Spec argument range of createBuffer."
 	},
@@ -4908,6 +5521,7 @@
 		"time": 1382366134,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Revert branch pushed to gh-pages by mistakes.",
 		"body": "This reverts a bunch of commits."
 	},
@@ -4916,6 +5530,7 @@
 		"time": 1382365500,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Move previous editors into their own section",
 		"body": ""
 	},
@@ -4924,6 +5539,7 @@
 		"time": 1382365260,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Add repo and bug tracker to the front matter",
 		"body": ""
 	},
@@ -4932,6 +5548,7 @@
 		"time": 1381855369,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Make the references normative",
 		"body": ""
 	},
@@ -4940,6 +5557,7 @@
 		"time": 1381855214,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "cleanup non-normative sections",
 		"body": ""
 	},
@@ -4948,6 +5566,7 @@
 		"time": 1381854792,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "some crossref, intro cleanup",
 		"body": ""
 	},
@@ -4956,6 +5575,7 @@
 		"time": 1381760693,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "rebase",
 		"body": ""
 	},
@@ -4964,6 +5584,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "cross-ref",
 		"body": ""
 	},
@@ -4972,6 +5593,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "crossref and stuff",
 		"body": ""
 	},
@@ -4980,6 +5602,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "some more nodes converted again",
 		"body": ""
 	},
@@ -4988,6 +5611,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "converted more nodes to respec",
 		"body": ""
 	},
@@ -4996,6 +5620,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "changed > to &gt; and removed last section numbers",
 		"body": ""
 	},
@@ -5004,6 +5629,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "ported audiocontext over to respec",
 		"body": ""
 	},
@@ -5012,6 +5638,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "highlight more coe",
 		"body": ""
 	},
@@ -5020,6 +5647,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Use respec to track normative and informative references",
 		"body": ""
 	},
@@ -5028,6 +5656,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "cleanup markup around tool list",
 		"body": ""
 	},
@@ -5036,6 +5665,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "remove <br>",
 		"body": ""
 	},
@@ -5044,6 +5674,7 @@
 		"time": 1381752797,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "add captions and use <figure>",
 		"body": ""
 	},
@@ -5052,6 +5683,7 @@
 		"time": 1381752793,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "first pass at cleaning the markup",
 		"body": ""
 	},
@@ -5060,6 +5692,7 @@
 		"time": 1381752310,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Issue 114 - Spec argument range of createBuffer.",
 		"body": "Those can only be non-null positive and inside their eventual nominal range.\nINDEX_SIZE_ERR is thrown."
 	},
@@ -5068,6 +5701,7 @@
 		"time": 1380923872,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Re-adding Chris Rogers to editors.",
 		"body": ""
 	},
@@ -5076,6 +5710,7 @@
 		"time": 1380885491,
 		"name": "Olivier Thereaux",
 		"email": "ot@zoy.org",
+		"md5": "699b47eb1dc49fa8def2f0745243a4ab",
 		"subject": "minor tweaks to pass w3c publication checker",
 		"body": ""
 	},
@@ -5084,6 +5719,7 @@
 		"time": 1380884254,
 		"name": "Olivier Thereaux",
 		"email": "ot@zoy.org",
+		"md5": "699b47eb1dc49fa8def2f0745243a4ab",
 		"subject": "more markup fixes and consolidation",
 		"body": ""
 	},
@@ -5092,6 +5728,7 @@
 		"time": 1380883685,
 		"name": "Olivier Thereaux",
 		"email": "ot@zoy.org",
+		"md5": "699b47eb1dc49fa8def2f0745243a4ab",
 		"subject": "markup validation",
 		"body": ""
 	},
@@ -5100,6 +5737,7 @@
 		"time": 1380882789,
 		"name": "Olivier Thereaux",
 		"email": "ot@zoy.org",
+		"md5": "699b47eb1dc49fa8def2f0745243a4ab",
 		"subject": "merging the two separate change logs into changelog.html, updating with changes up to Oct 4th, 2013",
 		"body": ""
 	},
@@ -5108,6 +5746,7 @@
 		"time": 1380881613,
 		"name": "Olivier Thereaux",
 		"email": "ot@zoy.org",
+		"md5": "699b47eb1dc49fa8def2f0745243a4ab",
 		"subject": "copyright year change",
 		"body": ""
 	},
@@ -5116,6 +5755,7 @@
 		"time": 1380881385,
 		"name": "Olivier Thereaux",
 		"email": "ot@zoy.org",
+		"md5": "699b47eb1dc49fa8def2f0745243a4ab",
 		"subject": "Updated Editors and Acknowledgments",
 		"body": "* Updated editor list\r\n* Updated acks with current WG membership list and a list of past WG members\r\n* Added WG as \"authors\""
 	},
@@ -5124,6 +5764,7 @@
 		"time": 1380879749,
 		"name": "Olivier Thereaux",
 		"email": "ot@zoy.org",
+		"md5": "699b47eb1dc49fa8def2f0745243a4ab",
 		"subject": "Update previous version",
 		"body": ""
 	},
@@ -5132,6 +5773,7 @@
 		"time": 1380879592,
 		"name": "Olivier Thereaux",
 		"email": "ot@zoy.org",
+		"md5": "699b47eb1dc49fa8def2f0745243a4ab",
 		"subject": "Update link to latest Editor's Draft",
 		"body": ""
 	},
@@ -5140,6 +5782,7 @@
 		"time": 1380569511,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Issue 114 - Spec argument range of createBuffer.",
 		"body": "Those can only be non-null positive and inside their eventual nominal range.\nINDEX_SIZE_ERR is thrown."
 	},
@@ -5148,6 +5791,7 @@
 		"time": 1379083858,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Fixed reported mistype in quad up-mix.",
 		"body": ""
 	},
@@ -5156,6 +5800,7 @@
 		"time": 1378486845,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Rename specification.html to index.html and update the link to the convolution.html document.",
 		"body": ""
 	},
@@ -5164,6 +5809,7 @@
 		"time": 1378486645,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "To prepare for mercurial import",
 		"body": ""
 	},
@@ -5172,6 +5818,7 @@
 		"time": 1378482196,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Reword the text where exceptions are thrown.",
 		"body": "The goal was to make it consistent and more RFC2119-y."
 	},
@@ -5180,6 +5827,7 @@
 		"time": 1378482053,
 		"name": "Paul ADENOT",
 		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
 		"subject": "Bug 17325 - Specify which exception to throw.",
 		"body": ""
 	},
@@ -5188,6 +5836,7 @@
 		"time": 1378223231,
 		"name": "Chris Wilson",
 		"email": "cwilso@gmail.com",
+		"md5": "f42ace1f6e35d42dadfe3136e498fe2b",
 		"subject": "Added current snap of spec.",
 		"body": ""
 	}

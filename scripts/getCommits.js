@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const childProcess = require('child_process');
+const crypto = require('crypto');
 const execSync = childProcess.execSync;
 const fs = require('fs');
 const gitDir = `${__dirname}/../web-audio-api/`;
@@ -20,7 +21,11 @@ const commits = commitsAsText.split('\n').map((line) => {
   const email = gitLog('%ce', hash, 1);
   const subject = gitLog('%s', hash, 1);
   const body = gitLog('%b', hash, 1);
-  return { hash, time, name, email, subject, body };
+  // create md5 hash of email
+  const md5Hash = crypto.createHash('md5');
+  md5Hash.update(email.trim().toLowerCase());
+  const md5 = md5Hash.digest('hex');
+  return { hash, time, name, email, md5, subject, body };
 });
 
 const commitsStringified = JSON.stringify(commits, null, '\t');
