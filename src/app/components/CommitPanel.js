@@ -2,13 +2,16 @@ import {
   Card, CardActions, CardHeader, CardText
 } from 'material-ui/Card';
 import React, { Component } from 'react';
+import {
+  selectedBody, selectedEmail, selectedHash, selectedMd5, selectedName,
+  selectedSubject, selectedTimeFormat, selectedTimeHuman
+} from '~/src/app/selectors/index';
 import FlatButton from 'material-ui/FlatButton';
 import GithubIcon from '~/src/app/components/icons/GithubIcon';
 import { ImageRemoveRedEye } from 'material-ui/svg-icons';
 import RawgitIcon from '~/src/app/components/icons/RawgitIcon';
 import WaybackIcon from '~/src/app/components/icons/WaybackIcon';
 import { connect } from 'react-redux';
-import moment from 'moment';
 import packageInfo from '~/package.json';
 import { push } from 'react-router-redux';
 
@@ -16,18 +19,9 @@ const githubCommitUrl = 'https://github.com/WebAudio/web-audio-api/commit/';
 
 class CommitPanel extends Component {
   render() {
-    const { dispatch, selectedCommit } = this.props;
-    const time = selectedCommit.get('time');
-    const timeMs = time * 1000;
-    const timeMoment = moment(timeMs);
-    const timeFormatted = timeMoment.format('dddd, MMMM Do YYYY, h:mm:ss a');
-    const timeHuman = timeMoment.fromNow();
-    const hash = selectedCommit.get('hash');
-    const name = selectedCommit.get('name');
-    const email = selectedCommit.get('email');
-    const subject = selectedCommit.get('subject');
-    const body = selectedCommit.get('body');
-    const md5 = selectedCommit.get('md5');
+    const {
+      dispatch, hash, name, email, subject, body, md5, timeHuman, timeFormat
+    } = this.props;
     const subtitle = (
       <span>
         <strong>{name}</strong>
@@ -35,9 +29,6 @@ class CommitPanel extends Component {
         <strong>{timeHuman}</strong>
       </span>
     );
-    const goto = (path) => {
-      return () => dispatch(push(`/${packageInfo.name}${path}`));
-    };
     return (
       <Card>
         <CardHeader
@@ -53,7 +44,7 @@ class CommitPanel extends Component {
             <dd>{name} <small>&lt;{email}&gt;</small></dd>
 
             <dt><strong>Date:</strong></dt>
-            <dd>{timeFormatted} <small>({timeHuman})</small></dd>
+            <dd>{timeFormat} <small>({timeHuman})</small></dd>
 
             <dt><strong>Subject:</strong></dt>
             <dd>{subject}</dd>
@@ -66,13 +57,26 @@ class CommitPanel extends Component {
           <FlatButton label="Commit"
             icon={<GithubIcon />}
             href={`${githubCommitUrl}${hash}`}
-            linkButton={true} />
+            linkButton={true}
+          />
           <FlatButton label="Archive"
-            icon={<ImageRemoveRedEye />} onTouchTap={goto('/view/')} />
+            href={`/${packageInfo.name}/view`}
+            linkButton={true}
+            onTouchTap={(e) => dispatch(push(e.currentTarget.href))}
+            icon={<ImageRemoveRedEye />}
+          />
           <FlatButton label="Rawgit"
-            icon={<RawgitIcon />} onTouchTap={goto('/view/rawgit')} />
+            href={`/${packageInfo.name}/view/rawgit`}
+            linkButton={true}
+            onTouchTap={(e) => dispatch(push(e.currentTarget.href))}
+            icon={<RawgitIcon />}
+          />
           <FlatButton label="Wayback"
-            icon={<WaybackIcon />} onTouchTap={goto('/view/wayback')} />
+            href={`/${packageInfo.name}/view/wayback`}
+            linkButton={true}
+            onTouchTap={(e) => dispatch(push(e.currentTarget.href))}
+            icon={<WaybackIcon />}
+          />
         </CardActions>
       </Card>
     );
@@ -81,6 +85,13 @@ class CommitPanel extends Component {
 
 export default connect((state) => {
   return {
-    selectedCommit: state.selectedCommit
+    hash: selectedHash(state),
+    name: selectedName(state),
+    email: selectedEmail(state),
+    subject: selectedSubject(state),
+    body: selectedBody(state),
+    md5: selectedMd5(state),
+    timeFormat: selectedTimeFormat(state),
+    timeHuman: selectedTimeHuman(state)
   };
 })(CommitPanel);

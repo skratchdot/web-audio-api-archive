@@ -2,6 +2,9 @@ import {
   ActionBugReport, ActionHome, ActionInfo, ImageRemoveRedEye, NavigationMoreVert
 } from 'material-ui/svg-icons';
 import React, { Component } from 'react';
+import {
+  selectedName, selectedTimeHuman
+} from '~/src/app/selectors/index';
 import AppBar from 'material-ui/AppBar';
 import Divider from 'material-ui/Divider';
 import GithubIcon from '~/src/app/components/icons/GithubIcon';
@@ -24,7 +27,7 @@ const leave = (url) => {
 
 class Header extends Component {
   render() {
-    const { dispatch, selectedIndex } = this.props;
+    const { dispatch, commits, name, selectedIndex, timeHuman } = this.props;
     const goto = (path) => {
       return () => dispatch(push(`/${packageInfo.name}${path}`));
     };
@@ -51,8 +54,16 @@ class Header extends Component {
                 </Link>
               </div>
               <div style={{ float: 'right' }}>
-                <Link to={`/${packageInfo.name}`} style={linkStyle}>
-                  commit #{selectedIndex + 1} selected
+                <Link to={`/${packageInfo.name}`} style={{
+                  fontSize: 12,
+                  textAlign: 'right',
+                  ...linkStyle
+                }}>
+                  <div style={{ textDecoration: 'underline' }}>
+                    commit #{selectedIndex + 1} of {commits.count()}
+                  </div>
+                  <div>by {name}</div>
+                  <div>{timeHuman}</div>
                 </Link>
               </div>
             </div>
@@ -105,6 +116,10 @@ Header.contextTypes = {
 
 export default connect((state) => {
   return {
-    selectedIndex: selectedIndexSelector(state)
+    commits: state.commits,
+    selectedCommit: state.selectedCommmit,
+    name: selectedName(state),
+    selectedIndex: selectedIndexSelector(state),
+    timeHuman: selectedTimeHuman(state)
   };
 })(Header);
