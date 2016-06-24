@@ -20,6 +20,35 @@ spec using 3rd Party tools like
 - [Web Audio API: Source Code](https://github.com/webaudio/web-audio-api/)
 
 
+## Developers
+
+To contribute, or build yourself, first clone the repo by running:
+```bash
+git clone git@github.com:skratchdot/web-audio-api-archive.git
+```
+
+Then update the submodules:
+```bash
+cd web-audio-api-archive
+git submodules update --init
+```
+
+Then install dependencies:
+```bash
+npm install
+```
+
+Then build the commit data:
+```bash
+./scripts/getCommits.js
+```
+
+Then start developing by using gulp:
+```bash
+gulp
+```
+
+
 ## TODO
 
 - Make the site responsive
