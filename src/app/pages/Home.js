@@ -19,8 +19,10 @@ class Home extends Component {
           </Paper>
         </VBox>
         <VBox fit>
-          <Paper style={{ margin: 40, padding: 40 }}>
-            <CommitList />
+          <Paper style={{ margin: 40, padding: 40, height: '100%' }}>
+            <Paper style={{ height: '100%' }}>
+              <CommitList />
+            </Paper>
           </Paper>
         </VBox>
       </Box>

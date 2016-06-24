@@ -27,7 +27,7 @@ spec using 3rd Party tools like
 - Add a stats page
 - Add a timeline browser
 - Implement local archive pages
-- Add commit list using react-virtual
+- Add commit search/filter
 
 
 ## License

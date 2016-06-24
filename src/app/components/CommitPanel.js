@@ -59,7 +59,7 @@ class CommitPanel extends Component {
             href={`${githubCommitUrl}${hash}`}
             linkButton={true}
           />
-          <FlatButton label="Archive"
+          <FlatButton label="Snapshot"
             href={`/${packageInfo.name}/view`}
             linkButton={true}
             onTouchTap={(e) => dispatch(push(e.currentTarget.href))}
