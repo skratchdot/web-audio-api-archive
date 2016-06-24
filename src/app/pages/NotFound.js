@@ -12,7 +12,7 @@ class NotFound extends Component {
         <Paper style={{ padding: 40 }}>
           <h1 className="title">404 - Not Found</h1>
           <p>
-            We couldn't find the page you are looking for.
+            We couldn&#39;t find the page you are looking for.
             You may want to visit the home page by clicking
             the button below:
           </p>

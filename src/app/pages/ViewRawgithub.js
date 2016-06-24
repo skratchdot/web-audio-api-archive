@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import UnviewableCommit from '~/src/app/components/UnviewableCommit';
 import { connect } from 'react-redux';
 
 class ViewRawgithub extends Component {
   render() {
     const { selectedCommit } = this.props;
     const hash = selectedCommit.get('hash');
-    const url = `https://cdn.rawgit.com/WebAudio/web-audio-api/${hash}/index.html`;
+    const index = selectedCommit.get('index');
+    if (!index) {
+      return (
+        <UnviewableCommit />
+      );
+    }
+    const url = `https://cdn.rawgit.com/WebAudio/web-audio-api/${hash}/${index}`;
     return (
       <iframe
         src={url}
