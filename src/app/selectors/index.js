@@ -4,6 +4,12 @@ import moment from 'moment';
 export function commitsSelector(state) {
   return state.commits;
 }
+export const commitsReversedSelector = createSelector(
+  commitsSelector,
+  (commits) => {
+    return commits.reverse();
+  }
+);
 export function selectedCommitSelector(state) {
   return state.selectedCommit;
 }
