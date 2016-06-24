@@ -9,7 +9,7 @@ import { setSelectedCommit } from '~/src/app/actions/selectedCommit';
 
 class CommitList extends Component {
   render() {
-    const { dispatch, commitsReversed } = this.props;
+    const { dispatch, commitsReversed, selectedCommit } = this.props;
     const count = commitsReversed.count();
     return (
       <AutoSizer>
@@ -21,6 +21,10 @@ class CommitList extends Component {
             rowHeight={72}
             rowRenderer={({ index }) => {
               const commit = commitsReversed.get(index);
+              const listStyle = {};
+              if (commit === selectedCommit) {
+                listStyle.backgroundColor = 'rgba(0, 0, 0, 0.2)';
+              }
               const md5 = commit.get('md5');
               const time = commit.get('time') || 0;
               const timeMs = time * 1000;
@@ -31,6 +35,7 @@ class CommitList extends Component {
               }
               return (
                 <ListItem
+                  style={listStyle}
                   leftAvatar={<Avatar src={gravatarUrl} />}
                   primaryText={
                     <div className="truncate">
@@ -61,6 +66,7 @@ class CommitList extends Component {
 
 export default connect((state) => {
   return {
-    commitsReversed: commitsReversedSelector(state)
+    commitsReversed: commitsReversedSelector(state),
+    selectedCommit: state.selectedCommit
   };
 })(CommitList);
