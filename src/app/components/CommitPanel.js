@@ -40,6 +40,9 @@ class CommitPanel extends Component {
         />
         <CardText expandable={true}>
           <dl>
+            <dt><strong>Commit:</strong></dt>
+            <dd>{hash}</dd>
+
             <dt><strong>Committer:</strong></dt>
             <dd>{name} <small>&lt;{email}&gt;</small></dd>
 
