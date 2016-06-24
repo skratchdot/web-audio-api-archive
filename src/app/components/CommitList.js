@@ -10,12 +10,6 @@ import { setSelectedCommit } from '~/src/app/actions/selectedCommit';
 class CommitList extends Component {
   render() {
     const { dispatch, commitsReversed } = this.props;
-    const ellipsisStyle = {
-      width: '100%',
-      whiteSpace: 'nowrap',
-      textOverflow: 'ellipsis',
-      overflow: 'hidden'
-    };
     const count = commitsReversed.count();
     return (
       <AutoSizer>
@@ -39,14 +33,14 @@ class CommitList extends Component {
                 <ListItem
                   leftAvatar={<Avatar src={gravatarUrl} />}
                   primaryText={
-                    <div style={ellipsisStyle}>
+                    <div className="truncate">
                       <strong>#{count - index}:</strong>
                       &nbsp;
                       {commit.get('subject')}
                     </div>
                   }
                   secondaryText={
-                    <div style={ellipsisStyle}>
+                    <div className="truncate">
                       <strong>{commit.get('name')}</strong>
                       &nbsp;committed&nbsp;
                       <strong>{fromNow}</strong>

@@ -16,24 +16,28 @@ import packageInfo from '~/package.json';
 import { push } from 'react-router-redux';
 
 const githubCommitUrl = 'https://github.com/WebAudio/web-audio-api/commit/';
+const maxWidth = 360;
 
 class CommitPanel extends Component {
   render() {
     const {
       dispatch, hash, name, email, subject, body, md5, timeHuman, timeFormat
     } = this.props;
-    const subtitle = (
-      <span>
-        <strong>{name}</strong>
-        &nbsp;committed&nbsp;
-        <strong>{timeHuman}</strong>
-      </span>
-    );
     return (
       <Card>
         <CardHeader
-          title={subject}
-          subtitle={subtitle}
+          title={
+            <div className="truncate" style={{ maxWidth: maxWidth }}>
+              {subject}
+            </div>
+          }
+          subtitle={
+            <div className="truncate" style={{ maxWidth: maxWidth }}>
+              <strong>{name}</strong>
+              &nbsp;committed&nbsp;
+              <strong>{timeHuman}</strong>
+            </div>
+          }
           avatar={`https://www.gravatar.com/avatar/${md5}`}
           actAsExpander={true}
           showExpandableButton={true}
