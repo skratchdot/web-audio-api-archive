@@ -57,6 +57,7 @@ gulp
 - Add a timeline browser
 - Implement local archive pages
 - Add commit search/filter
+- Update urls with commit hash so deep linking works
 
 
 ## License
