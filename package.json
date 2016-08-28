@@ -1,7 +1,7 @@
 {
   "name": "web-audio-api-archive",
   "description": "An archive of the Web Audio API Spec",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/skratchdot/web-audio-api-archive/",
   "author": {
     "name": "skratchdot",
