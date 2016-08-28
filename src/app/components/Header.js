@@ -10,7 +10,6 @@ import Divider from 'material-ui/Divider';
 import GithubIcon from '~/src/app/components/icons/GithubIcon';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
-import Immutable from 'immutable';
 import { Link } from 'react-router';
 import MenuItem from 'material-ui/MenuItem';
 import Subheader from 'material-ui/Subheader';
