@@ -37,7 +37,7 @@
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
-    "babel-root-import": "^4.1.0",
+    "babel-root-import": "^4.1.1",
     "bootstrap": "^3.3.7",
     "brfs": "^1.4.3",
     "chai": "^3.5.0",
