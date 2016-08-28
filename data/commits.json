@@ -1,5 +1,1445 @@
 [
 	{
+		"hash": "4bccc20dc05f0334006695be50652ac24abda342",
+		"time": 1472138197,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #943 from dontcallmedom/webild-typo2",
+		"body": "Fix typo in interface name",
+		"index": "index.html"
+	},
+	{
+		"hash": "f1f68c898eb6979a324d38b05816b6daeb61a6fb",
+		"time": 1472133765,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #940 from hoch/gh-pages",
+		"body": "Refining AudioWorklet introduction",
+		"index": "index.html"
+	},
+	{
+		"hash": "2c9efc53c8a62ffa1df969a4bb3c094ca2a0e4d5",
+		"time": 1472130073,
+		"name": "Dominique Hazael-Massieux",
+		"email": "dom@w3.org",
+		"md5": "f899d431f2c6c7079dba0e4dca031482",
+		"subject": "Fix \"Object\" into \"object\" in WebIDL declaration",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "c5d67b14406af0b6544ad929579a08e766d385b9",
+		"time": 1472129913,
+		"name": "Dominique Hazael-Massieux",
+		"email": "dom@w3.org",
+		"md5": "f899d431f2c6c7079dba0e4dca031482",
+		"subject": "Fix another type in WebIDL interface name",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "c2d219485ddc74e0bb720b1101bad67ab4bd4927",
+		"time": 1472129747,
+		"name": "Dominique Hazael-Massieux",
+		"email": "dom@w3.org",
+		"md5": "f899d431f2c6c7079dba0e4dca031482",
+		"subject": "Fix typo in interface name",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "3e4b4f3410b63eed0e805bb6cd769c1520fcf738",
+		"time": 1472070893,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "Update the concept diagram per Joe`s comment",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "7154ff478dd7b871ae47aafacd8f255e9b966337",
+		"time": 1471985239,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "Adding the original project file for the diagram",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "b90bc6712f76fa4c2a7c95e4b26909c38db9a7c1",
+		"time": 1471985218,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "Addressing feedback from rtoy and joe",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "2434bc5cdb6154e2d6be5f656bcc66e82da85bcd",
+		"time": 1471978038,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "Merge branch 'worklet-intro' into gh-pages",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "bf1b798e2d6b9202f1ebd8620ccbe6cdb28da904",
+		"time": 1471978020,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "addressing joe`s feedback: typo fixed",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "0300ac19ca92b718e123d60f7c2b31c496f22264",
+		"time": 1471891334,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "Applyied the new version of Tidy",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "051b6e1ddde90cea1cbe34942a9046a84ad5de17",
+		"time": 1471890403,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "Added an informative diagram",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "e77c98b8db97108c9b3e547b7e564b12767927dd",
+		"time": 1471890294,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "Refining the AudioWorklet introduction",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "f32800396d8b4c5a31e1f3c77b3333458a0fe571",
+		"time": 1471878168,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #939 from dontcallmedom/webidl-typo",
+		"body": "Fix name of Constructor extended attribute for DelayNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "f68a449472d5bd88ddacb1f0fb7847aa49f61cd3",
+		"time": 1471868855,
+		"name": "Dominique Hazael-Massieux",
+		"email": "dom@w3.org",
+		"md5": "f899d431f2c6c7079dba0e4dca031482",
+		"subject": "Fix name of Constructor extended attribute for DelayNode",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "5cadcb22e169146f20b9bce9c66daf6ed5cff645",
+		"time": 1471629014,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #869 from hoch/gh-pages",
+		"body": "Add AudioWorklet section",
+		"index": "index.html"
+	},
+	{
+		"hash": "ca1a380209481f7c7f929014b2d8cb9ab99a58cf",
+		"time": 1471280352,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #934 from rtoy/fix-spelling-errors",
+		"body": "Fix a few spelling mistakes.",
+		"index": "index.html"
+	},
+	{
+		"hash": "86fad4c4ad4d49710cc77d1ecd5e7641907e5f59",
+		"time": 1471279217,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "8b8d4e08fd9cd0a08dadfc73a5232193c0bdf5cb",
+		"time": 1471278834,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix a few spelling mistakes.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "d513d6befbf5e9b8d973e9ddc6ee3311c5e2163b",
+		"time": 1470849598,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #933 from rtoy/932-specify-default-biquad-type",
+		"body": "Fix #932: specify default type for BiquadFilter",
+		"index": "index.html"
+	},
+	{
+		"hash": "a9a69c9055384208566b0961b8c28d893bb4d2a4",
+		"time": 1470849202,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "55a735ad67db3d51549be971905ae3091fcb58df",
+		"time": 1470848956,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #932: specify default type for BiquadFilter",
+		"body": "Specify the default type for a BiquadFilter in the description of the\ntype attribute.",
+		"index": "index.html"
+	},
+	{
+		"hash": "48f541bafbf9bf5be1f3a5fecaf54a7ae327d7b7",
+		"time": 1470848215,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #897 from rtoy/881-construct-media-element-audio-source",
+		"body": "Fix #881: Construct MediaElementAudioSource",
+		"index": "index.html"
+	},
+	{
+		"hash": "75ca59fc82e3fca5530e0a17eb81c98fc5ab2afa",
+		"time": 1470434217,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "addressing feedback from domenic - part 1",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "d66ffdd2f7d45568fe1e3d91fe97df72866976fb",
+		"time": 1470352744,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "merging with upstream",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "4f193791e77d6c13794129825519a044f6738226",
+		"time": 1470352580,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "addressing feedback from Paul (part 1)",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "e30b9b21163f75453a195724aab0501d8d8de835",
+		"time": 1470330593,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #889 from rtoy/874-construct-convolver",
+		"body": "Fix #874: Construct ConvolverNode.",
+		"index": "index.html"
+	},
+	{
+		"hash": "84b88b08a5293909dab13ee88d8a89b98d8fc2f0",
+		"time": 1470250012,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #890 from rtoy/875-construct-delay",
+		"body": "Fix #875: Construct DelayNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "5115f06eb120105b739841dbf0747237bc6335d4",
+		"time": 1470249630,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Update according to review, with some editorial changes.",
+		"body": "Set maxDelayTime to default to 1.\n\nThe DelayOptions section should be a subsection of the DelayNode\ninterface.\n\nAdd a mention of the maxDelayTime member of the attribute to the\ndescription of the delayTime attribute of the node.  This description\nmentioned the parameter for the factory method, so we should a one for\nthe constructor dictionary.",
+		"index": "index.html"
+	},
+	{
+		"hash": "e482984be37e3c409e5a6d018fbf5cd9290a7971",
+		"time": 1470248901,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions and add link.",
+		"body": "It's AudioNodeOptions now, and added a link to the normalize\nattribute.",
+		"index": "index.html"
+	},
+	{
+		"hash": "1112fcbea87563137adfc2cc7da3458014a3290a",
+		"time": 1470239289,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #898 from rtoy/882-construct-media-stream-audio-destination",
+		"body": "Fix #882: Construct MediaStreamAudioDestination",
+		"index": "index.html"
+	},
+	{
+		"hash": "ab41805c0986b9005cc8adeaebe6f92b6b636275",
+		"time": 1470239036,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "760c459d3578e28f4a16864ae27e0270c367fa8b",
+		"time": 1470173815,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #920 from rtoy/918-fix-typo-state-changed",
+		"body": "Fix #918: fix typo in statechange",
+		"index": "index.html"
+	},
+	{
+		"hash": "ba655be744c312393bc3fd0a31e499782f959cc0",
+		"time": 1470173418,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Merge branch 'gh-pages' into 918-fix-typo-state-changed",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "42c596318e15fde6d39b89046cb07c5b250d0e52",
+		"time": 1470171215,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #918: Fix typo in \"statechange\".",
+		"body": "\"statechanged\" -> \"statechange\".",
+		"index": "index.html"
+	},
+	{
+		"hash": "4eac2655cbd73f0cb5c9a942d9482cb0eb86c5fb",
+		"time": 1470171074,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "91f27a1424800271660c6b00008644ae2d9ecfb7",
+		"time": 1470171074,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "c45d6a292cb5613af212bfd41de1921f2e27ef87",
+		"time": 1470171074,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "2c734cf1514d10af81ad1e7104c3abc0f43f1435",
+		"time": 1470171074,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "08ebf70c4bfa187877f1017271a41ec5ae3804bd",
+		"time": 1470171074,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #880: Construct WaveShaper",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "33169f32f322e1d2f1a6e8a4730117eee5f9bd33",
+		"time": 1470171074,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #879: Construct StereoPanner",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "997a7bca1b4c921a48d9f9b26be367a2b2d6fdda",
+		"time": 1470171074,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #878: Construct PannerNode",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "b5c617d1d9e99a5896e6cb8610c56ade2ba3b9b9",
+		"time": 1470171074,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #877: Construct GainNode",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "0e45143134ff842d55dae85d4b42c00b61492827",
+		"time": 1470155929,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #896 from rtoy/880-construct-waveshaper",
+		"body": "Fix #880: Construct WaveShaper",
+		"index": "index.html"
+	},
+	{
+		"hash": "3a04ca3af6bdbbcf0b232dd233f3e0f7c085207c",
+		"time": 1470155560,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "e32b3b1eaf021dfa5cf884edff2a57cd28086755",
+		"time": 1470155446,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #895 from rtoy/879-construct-stereopanner",
+		"body": "Fix #879: Construct StereoPanner",
+		"index": "index.html"
+	},
+	{
+		"hash": "6fc2275738d4b0cbb39b47280c20573f5c6c9adf",
+		"time": 1470155432,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #894 from rtoy/878-construct-panner",
+		"body": "Fix #878: Construct PannerNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "1a986d0ab2974bf2ae90630c8ae4866014de02be",
+		"time": 1470155148,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "6ed7485ecadb28cd728f1070afd3064603dfe7ad",
+		"time": 1470155009,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "86f2c14409ac2e6b5f9d2e4c386340b69bed2975",
+		"time": 1470154976,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #893 from rtoy/877-construct-gain",
+		"body": "Fix #877: Construct GainNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "dbd28a8293eb09ca36bf0d563c2d70234d9f666c",
+		"time": 1470154820,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "c6def979ba34eab64ef5c2ccb351c5cefa26c361",
+		"time": 1470152629,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #891 from rtoy/876-construct-dynamicscompressor",
+		"body": "Fix #876: Construct DynamicsCompressorNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "8e75e9fd884fc5870cd8ef2363998c45a8204d18",
+		"time": 1470152168,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #888 from rtoy/873-construct-biquad",
+		"body": "Fix #873: Construct BiquadFilterNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "46fdf6b3e26d827051b91a10a6afda32c64e5b66",
+		"time": 1470152147,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "67c753b5971faa5f9dde787333da7e1ce2d18851",
+		"time": 1470152121,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "8bd28fcdde2ed864312b9ef8182468947912c657",
+		"time": 1470151918,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Merge branch 'gh-pages' into 873-construct-biquad",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "5710511fbc2aa7a32754993837c67d49dc56337f",
+		"time": 1470151858,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #885 from rtoy/871-construct-analyser",
+		"body": "Fix #871: Constructor for AnalyserNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "91a75664e246b4c7940fdfd7bc7f7a5274b6b14e",
+		"time": 1470151677,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Merge branch 'gh-pages' into 873-construct-biquad",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "9ec3bc2dbeadf63db83a63527db100cb8c9f1bd7",
+		"time": 1470151629,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Merge and run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "3ea5d6deef6f0b711c1a7afd6cf6d325bca15684",
+		"time": 1470151607,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Merge branch 'gh-pages' into 871-construct-analyser",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "e16afb527107dd1da45b366abe03c734d35d798a",
+		"time": 1470151552,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Merge branch 'gh-pages' into 871-construct-analyser",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "8da004f7d083702d23ec59f4f6bdeb93dde79e36",
+		"time": 1470151392,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "df13577309934396d73a5dacb42c098a5ff01f2f",
+		"time": 1470151372,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "10ed19dc4cdc6c91498f0bb8611057ccef6af5be",
+		"time": 1470151243,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "1feda1e15c977225a62c5c58d9d3edf6f6b484aa",
+		"time": 1470150689,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "30fb76ab1f335b2c60a08c32f2e74ed0c061f758",
+		"time": 1470150585,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #868 from rtoy/703-construct-periodicwave",
+		"body": "Fix #703: Add constructor for PeriodicWave.",
+		"index": "index.html"
+	},
+	{
+		"hash": "6fde083b46203f56cd3e2c6572a4abe34c3afc90",
+		"time": 1470150403,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #867 from rtoy/702-contruct-oscillator",
+		"body": "Fix #702: Add constructor for OscillatorNode.",
+		"index": "index.html"
+	},
+	{
+		"hash": "9bf5f314d18bea2386af541702a7678bc1ccbc53",
+		"time": 1470150284,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "85f06cf574c475c0883359517c462f77fcdcb9a6",
+		"time": 1470150256,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix typo in dicitionary.",
+		"body": "The dictionary key named \"type\"  was erroneously declared to be of\ntype Oscillator. It should be OscillatorType.",
+		"index": "index.html"
+	},
+	{
+		"hash": "ce9a6338a26dc9c81ff04ca5555c25fcc10fcb1e",
+		"time": 1470150175,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "3e04879b5a5895fd8fd68ba8cdbc5ba5a832698c",
+		"time": 1470150074,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #866 from rtoy/701-construct-iirfilter",
+		"body": "Fix #701: Add constructor for IIRFilterNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "0dfcfd514dda648d24739881eb39d467e49be4e9",
+		"time": 1470150042,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "752454df37084313a9deb80fc8bb94e8b4d414c3",
+		"time": 1470149932,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Merge branch 'gh-pages' into 701-construct-iirfilter Fix conflicts too.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "c16c8178594603f9c82fcf5c0745d34c59d2894b",
+		"time": 1470149738,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #865 from rtoy/700-construct-channel-merger/splitter",
+		"body": "Fix #700: Add constructor for ChannelMergerNode and ChannelSplitterNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "1a9b19a928f8bb76f4340ec3a5fe9bce36be813f",
+		"time": 1470149184,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Nest the dictionary sections into the sections.",
+		"body": "Minor editorial fix.  The sections for the dictionaries should be\nsub-sections of the node interface section.",
+		"index": "index.html"
+	},
+	{
+		"hash": "e3abb2a6c602c6ab181e420fd30fef560f05267f",
+		"time": 1470148320,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "1eba1d47591c8c35579ddd8df83f8e059edd5956",
+		"time": 1470148241,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Merge branch 'gh-pages' into 700-construct-channel-merger/splitter",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "01039bcd7c28fc80ae9197f70927f01019217c9d",
+		"time": 1470064090,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #917 from rtoy/901-remove-incorrect-value-setter-clause",
+		"body": "Fix #901: Remove incorrect value setter clause.",
+		"index": "index.html"
+	},
+	{
+		"hash": "3b87c5fedacca5539c2747c3d004a7915f46d7d2",
+		"time": 1470063911,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #863 from rtoy/697-audio-node-channel-options",
+		"body": "Fix #697: AudioNode channel options dictionary",
+		"index": "index.html"
+	},
+	{
+		"hash": "ad86d8e8cc56ad87a308d1f0928b1da361a634b2",
+		"time": 1470063877,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "d3c9557ef3e98e498e997809d2f052a094776ee5",
+		"time": 1470063637,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Rename AudioNodeChannelOptions to AudioNodeOptions.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "8895c99a9bd2029fb2d87f3570015ed20c1f47e1",
+		"time": 1469737196,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #901: Remove incorrect value setter clause.",
+		"body": "Setting the value attribute shouldn't remove events from the timeline;\nnobody does that and this conflicts with the idea that the setter is\nthe same as calling setValueAtTime().",
+		"index": "index.html"
+	},
+	{
+		"hash": "d793556fb4e1a714b172dcb1033ba30928fd5441",
+		"time": 1469622590,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #910 from rtoy/907-correct-up-and-forward-values",
+		"body": "Fix #907: Define initial up and forward vectors correctly.",
+		"index": "index.html"
+	},
+	{
+		"hash": "f7591ccd92cd302213d972157710a615fa89884e",
+		"time": 1469614784,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #914 from rtoy/903-osc-start-clarification",
+		"body": "Fix #903: Clarify Oscillator.start()/stop()",
+		"index": "index.html"
+	},
+	{
+		"hash": "bc54b71a312f2659827581686abad88a4f6eb7ae",
+		"time": 1469614779,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #913 from rtoy/912-fix-text-for-absn-stop",
+		"body": "Fix #912: Fix text for stop() for AudioBufferSourceNode",
+		"index": "index.html"
+	},
+	{
+		"hash": "a0b739d9da30174069798269fcd4ffa09b6283bf",
+		"time": 1469614345,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #911 from rtoy/909-clarify-setposition/orientation",
+		"body": "Fix #909: Clarify setPosition/setOrientation text",
+		"index": "index.html"
+	},
+	{
+		"hash": "3e9ff1c0e163a5c6d091ad7a953b781b0be26398",
+		"time": 1469558713,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Reference AudioBufferSourceNode more.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "d4847649fed508d3917d2bd43f913619335ed8a3",
+		"time": 1469557867,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #912: Fix text for stop() for AudioBufferSourceNode",
+		"body": "The description of the when parameter described what happens with\nmultiple calls to stop().  This is wrong.  Move this text to the\nparagraph describing the stop() method.",
+		"index": "index.html"
+	},
+	{
+		"hash": "ef88fd6897d917031df68eca207e6198425df0b4",
+		"time": 1469557484,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #903: Clarify Oscillator.start()",
+		"body": "Clarify the text for start and stop methods along with the description\nof the parameters for these methods.\n\nMostly just reference the corresponding methods/parameters from\nAudioBufferSource.",
+		"index": "index.html"
+	},
+	{
+		"hash": "030b93e97b6db1fd31eba3008b46903356d3604b",
+		"time": 1469553757,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #909: Clarify setPosition/setOrientation text",
+		"body": "Clarify the text for setPosition/setOrientation to say that we're\nsetting the values of the corresponding AudioParam's, not the\nAudioParam itself.",
+		"index": "index.html"
+	},
+	{
+		"hash": "5f3523fd6db5bf60a5421eb472e2f8536162cde9",
+		"time": 1469553311,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #907: Define initial up and forward vectors correctly.",
+		"body": "Set the initial values for the up and forward vectors correctly.  This\nwas a mistake introduced in adding the up and forward AudioParams.\n\nAlso took the opportunity to move some of the descriptive text out of\nforwardX and upX to the introduction paragraph to describe forward\nand up vectors better.  They didn't really belong there anyway.  And\nthis makes the description of each component uniform so it's easier to\nread and find the default values.\n\nFinally, add a dfn entry for the Spatialization/Panning section so\nthat it's easier to refer to.  Updated links in the listener section\nappropriately.",
+		"index": "index.html"
+	},
+	{
+		"hash": "b90832134ec0ca31b591dc5af332a76912a799de",
+		"time": 1468873602,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "wating for feedback from joe",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "5cea8613978b993ab1a08260c961309d4f75c81c",
+		"time": 1468339770,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "addressed feedback from rtoy",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "4f479a239e8bef0063db488ebc94066d48f25722",
+		"time": 1467925352,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "fixing typos",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "d31a873469bd5c3b6006c00f398b8c99eaaf4f82",
+		"time": 1467920941,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #846 from WebAudio/737-render-quantum",
+		"body": "Define the term \"render quantum\" and link back to the definition.\r\nFix #737.",
+		"index": "index.html"
+	},
+	{
+		"hash": "b3c914b52c283fb96d3f98720d22bdb780af0ce6",
+		"time": 1467920721,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #900 from rtoy/892-update-tidy-version",
+		"body": "Fix #892: Update tidy version to 5.2.0.",
+		"index": "index.html"
+	},
+	{
+		"hash": "8449641e53c84e17b11abf833ad4df39cab664bb",
+		"time": 1467917389,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Update tidy version to 5.2.0.",
+		"body": "Check the repo using the tag 5.2.0.",
+		"index": "index.html"
+	},
+	{
+		"hash": "feb33228ec9c4d02f901c17036c4869530dcbe04",
+		"time": 1467916871,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #882: Construct MediaStreamAudioDestination",
+		"body": "Add constructor.",
+		"index": "index.html"
+	},
+	{
+		"hash": "3314d43c88bc21903194e82a691f47b9c3307ad7",
+		"time": 1467916549,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #881: Construct MediaElementAudioSource",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "e1b5b7cd33a84914580603d504070ed25ff9471a",
+		"time": 1467916048,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #880: Construct WaveShaper",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "6fbfada199cf6b4697b4dc6da9c55ccda24b1d44",
+		"time": 1467915624,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #879: Construct StereoPanner",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "550f9e4f3b8440724035d22a0b6995189fed64e3",
+		"time": 1467915258,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #878: Construct PannerNode",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "aa51a966e5247ba20e4cb24a6366fd82f291771b",
+		"time": 1467914781,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "remove redundant header",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "721064f2eecffdd1ef883faa08f63561b26fb9e9",
+		"time": 1467914564,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "addressing feedback from the first pass review",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "92421bb7a30ecb60fa126bbbcf24bb78f50fc072",
+		"time": 1467914421,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #877: Construct GainNode",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "a9d92b75839fc2f096ca6211ed43a04e898c0f21",
+		"time": 1467912992,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #876: Construct DynamicsCompressorNode",
+		"body": "Add constructor and define dictionary of options.",
+		"index": "index.html"
+	},
+	{
+		"hash": "c5d539687c660e21b7b1edb2a0e635d5c1f228b8",
+		"time": 1467821865,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "f37dcdd13ceefda114c84efa8118b9e77235a820",
+		"time": 1467821804,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #875: Construct DelayNode",
+		"body": "Add constructor and define the options dictionary.",
+		"index": "index.html"
+	},
+	{
+		"hash": "8e37c9ba259b6f02301f970c1323a9f686ee617e",
+		"time": 1467821443,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "0dc24219d311ffd982eaea599ce7449229b4a54f",
+		"time": 1467819982,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "9d2a1b99a156835f04173d37f40412fa096cc093",
+		"time": 1467819807,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #874: Construct ConvolverNode.",
+		"body": "Add constructor and define the options dictionary.",
+		"index": "index.html"
+	},
+	{
+		"hash": "f401a5f0b7875b1f8e78c97115675450f7f608cb",
+		"time": 1467818816,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #873: Construct BiquadFilterNode",
+		"body": "Add constructor and define the options dictionary.",
+		"index": "index.html"
+	},
+	{
+		"hash": "34d94cc2d685009512008169330b8ca42b1f4355",
+		"time": 1467817295,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #887 from rtoy/tidy-after-2b827f2",
+		"body": "Run tidy after commit 2b827f2",
+		"index": "index.html"
+	},
+	{
+		"hash": "b59f1e62022eb2300df7f244aa418b6e5fbe7a3b",
+		"time": 1467815725,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Run tidy after commit 2b827f2",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "2b827f23cf6daeadea3c85a99335fa5b2a12e025",
+		"time": 1467815631,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #886 from mark-buer/patch-1",
+		"body": "Fix minor grammatical error",
+		"index": "index.html"
+	},
+	{
+		"hash": "c8f25a8df69067a7c7543c0d9a065cc9916e137e",
+		"time": 1467785260,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Fix minor grammatical error",
+		"body": "Replace \"Because Web Audio can allows one to inspect the content ...\" with \"Because Web Audio allows inspection of the content ...\".",
+		"index": "index.html"
+	},
+	{
+		"hash": "2c51672867740f081b8dcc8fa16b7d10531ed6dd",
+		"time": 1467377242,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #859 from rtoy/823-define-baselatency-better",
+		"body": "Fix #823: Refine definition of baseLatency",
+		"index": "index.html"
+	},
+	{
+		"hash": "efa3372788dd96900cedb7d9bc58b6942e5530d6",
+		"time": 1467377164,
+		"name": "Paul Adenot",
+		"email": "paul@paul.cx",
+		"md5": "56566788314477c51b94743ea7f68494",
+		"subject": "Define the term \"render quantum\" and link back to the definition.",
+		"body": "This fixes #737.",
+		"index": "index.html"
+	},
+	{
+		"hash": "97f6464ea5e308773d99278a069df690ec6f22a8",
+		"time": 1467312080,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "a59a22a19bd279ca22733dc892e890ebdaebb107",
+		"time": 1467312012,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #871: Constructor for AnalyserNode",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "afd34a4f84f50235e7813dab9307e87873c16c08",
+		"time": 1467265779,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "tidy fix again...",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "cc6beeb9e6dd45f739f46f673e90e5c47912266c",
+		"time": 1467265464,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "tidy fix again",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "fff16a99640b1803d84f0bd6310f183d5e02ddbe",
+		"time": 1467264959,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "tidy fix",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "fdd47784b129f134ff9fd11db521f8ee0dcc2554",
+		"time": 1467264392,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "addressing feedback from rtoy",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "77015588ff33dbedb1c6e448b53467725f5d157b",
+		"time": 1467264244,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "addressing feedback from rtoy",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "d0181c16e5b5e1421c4845635597406dd65bddfe",
+		"time": 1467215481,
+		"name": "Hongchan Choi",
+		"email": "hongchan@chromium.org",
+		"md5": "9713ae376ba042298b78b6fa3baace2f",
+		"subject": "initial commit",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "4b0d850d9ce42bab216bafa4b59316e7192ce571",
+		"time": 1467154673,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Tidy",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "031a2641bed8a874578f0f7d403b029c3eea2935",
+		"time": 1467154612,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #703: Add constructor for PeriodicWave.",
+		"body": "Define the dictionary too.",
+		"index": "index.html"
+	},
+	{
+		"hash": "7b45ed1a5ff80b8e94cfb8cfef1d51849a444261",
+		"time": 1467150098,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #702: Add constructor for OscillatorNode.",
+		"body": "The appropriate dictionary for the constructor is also defined.",
+		"index": "index.html"
+	},
+	{
+		"hash": "563c64b14c97248605948339e2363d5fbc35667e",
+		"time": 1467148832,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Remove the channelmerger/splitter changes",
+		"body": "These aren't part of the PR and are removed now.",
+		"index": "index.html"
+	},
+	{
+		"hash": "e5b03821545ca5961265b720fb4452aa8d548385",
+		"time": 1467148211,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Tidy",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "ec0b7a2c277606ee42011a018306dbd8f056b633",
+		"time": 1467148178,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #701: Add constructor for IIRFilterNode.",
+		"body": "Add constructor and define the options dictionary.",
+		"index": "index.html"
+	},
+	{
+		"hash": "9f0cf3b16968bf7193f972ca0e5850ff6a232269",
+		"time": 1467147662,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Tidy",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "8d7259209ba79c1ab09525003392962230117b2f",
+		"time": 1467147459,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #698: Add constructor for ChannelMergerNode and ChannelSplitterNode",
+		"body": "Add constructors and define the options dictionary for each\nconstructor.",
+		"index": "index.html"
+	},
+	{
+		"hash": "bd6833821a68872803ea04d6f92fda432273ad65",
+		"time": 1467143672,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Tidy",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "886ebb57c3d098c8e3d694db2052ba25e3f1738a",
+		"time": 1467137388,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #697: AudioNode channel options dictionary",
+		"body": "Add the AudioNodeChannelOptions dictionary that can be inherited by\nmost dictionaries for the AudioNode constructors.",
+		"index": "index.html"
+	},
+	{
+		"hash": "3225f5d53ed8e28acb8537f3a4044a4acf3f6484",
+		"time": 1466784928,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #823: Refine definition of baseLatency",
+		"body": "Clarify what baseLatency is.  In particular it is not the audio graph\nlatency.",
+		"index": "index.html"
+	},
+	{
+		"hash": "a25fe372107c1f30c7b5cb11afabfbc0dd337ac9",
+		"time": 1466784521,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #858 from rtoy/857-add-currenttime-link",
+		"body": "Fix #857: add currenttime link\r\n\r\nSome links were missing the actual url for the ilnk. There's no dfn for currentTime, so a url is required.",
+		"index": "index.html"
+	},
+	{
+		"hash": "f1440785c137f63bcef31773a264cc177951bdc4",
+		"time": 1466784278,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #857: Fix up warnings about currentTime missing link",
+		"body": "Update all references to currentTime to include the appropriate link.\n(There is no dfn for currentTime.)",
+		"index": "index.html"
+	},
+	{
+		"hash": "ae5c288e4433ef7ec7b57b12b5e5c8dc985a4fc0",
+		"time": 1466783498,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #852: Add new sections for AudioContextOptions and AudioTimestamp",
+		"body": "Not sure if this is the best solution, but by adding new sections for\neach of these dictionaries, the WebIDL fragment shows up in the\ncorrect section next to the dictionary instead of being placed in the\npreceeding section.",
+		"index": "index.html"
+	},
+	{
+		"hash": "8142aff0a476fe48cf8b4b0a9ab1c85df8142096",
+		"time": 1466783498,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Remove ReSpec 3.2.97.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "a2e1fd0cb276b3f2ecdfddc34ca44ea42f258855",
+		"time": 1466783498,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Tidy.",
+		"body": "",
+		"index": "index.html"
+	},
+	{
+		"hash": "51ada3f5b2ae4989fffebbc7a5c1651e4ccd6f7a",
+		"time": 1466783498,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #840 in a different way",
+		"body": "ReSpec 3.2.97 is missing too much stuff that makes the spec look right\nlike automatically generating the IDL for dictionaries.\n\nThus, grab a copy of version 3.3.2 and fixup everything to put back\nthe missing text.  This basically means putting <p> tags around most\n<dd> tags.  I didn't do this for every <dd> tag; only the ones that\nneeded it.",
+		"index": "index.html"
+	},
+	{
+		"hash": "a4aeddd8be212257ad9507f78a536b014dc1a335",
+		"time": 1466775670,
+		"name": "GitHub",
+		"email": "noreply@github.com",
+		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
+		"subject": "Merge pull request #854 from rtoy/852-add-sections-for-audiocontextoptions-and-audiotimestamp",
+		"body": "Fix #852: Add new sections for AudioContextOptions and AudioTimestamp",
+		"index": "index.html"
+	},
+	{
 		"hash": "e4483dbf84ba42737900a41e8d7c63384b976dc4",
 		"time": 1466704848,
 		"name": "GitHub",
@@ -7,6 +1447,16 @@
 		"md5": "9181eb84f9c35729a3bad740fb7f9d93",
 		"subject": "Merge pull request #853 from rtoy/840-add-missing-p-tags",
 		"body": "Fix #840: add missing p tags\r\n\r\nInstead of using 3.2.97 (which is missing some features), use 3.3.2 and fix up all of the\r\nmissing sections by adding <p> tags to <dd> tags as needed.\r\n\r\nVisually compared the two versions and it looks like all the missing sections are back.",
+		"index": "index.html"
+	},
+	{
+		"hash": "90da51893d8ca854c61663c50dc5673db913d0f1",
+		"time": 1466704246,
+		"name": "Raymond Toy",
+		"email": "rtoy@chromium.org",
+		"md5": "21d423a97db1b635bf4053cc01218fd6",
+		"subject": "Fix #852: Add new sections for AudioContextOptions and AudioTimestamp",
+		"body": "Not sure if this is the best solution, but by adding new sections for\neach of these dictionaries, the WebIDL fragment shows up in the\ncorrect section next to the dictionary instead of being placed in the\npreceeding section.",
 		"index": "index.html"
 	},
 	{
