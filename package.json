@@ -18,7 +18,14 @@
     "node": ">= 4.x.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "commits": "cd web-audio-api;git pull;cd ..;node scripts/getCommits.js",
+    "cover": "gulp cover",
+    "lint": "gulp lint",
+    "start": "gulp default",
+    "test": "gulp test",
+    "transpile": "gulp transpile"
   },
   "dependencies": {},
   "devDependencies": {
